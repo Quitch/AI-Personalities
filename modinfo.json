@@ -2,7 +2,7 @@
   "context": "server",
   "identifier": "com.pa.quitch.qaipersonalities-dev",
   "display_name": "AI Personalities DEV",
-  "description": "Additional AI personalities for use with the vanilla AI.",
+  "description": "Additional AI personalities for use with the vanilla AI. Compatible with the Queller AI.",
   "author": "Quitch",
   "version": "0.1-beta",
   "build": "99377",
