@@ -83,7 +83,7 @@ Yes, though these personalities will use the vanilla brain rather than Queller. 
 Yes.
 
 ### How can I provide feedback?
-Please use the mod's [forum thread](https://forums.uberent.com/threads/wip-client-galactic-war-ai-overhaul.72360/). I am especially interested in hearing feedback on the difficulty levels.
+Please use the mod's [forum thread](https://forums.uberent.com/threads/rel-server-ai-personalities.72363/). I am especially interested in hearing feedback on the difficulty levels.
 
 
 ## Incompatible mods
