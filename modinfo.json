@@ -1,10 +1,10 @@
 {
   "context": "server",
-  "identifier": "com.pa.quitch.qaipersonalities-dev",
-  "display_name": "AI Personalities DEV",
+  "identifier": "com.pa.quitch.qaipersonalities",
+  "display_name": "AI Personalities",
   "description": "Additional AI personalities for use with the vanilla AI. Compatible with the Queller AI.",
   "author": "Quitch",
-  "version": "0.1-beta",
+  "version": "0.1",
   "build": "99377",
   "date": "2017/03/17",
   "signature": " ",
