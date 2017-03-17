@@ -30,8 +30,8 @@ function qaipersonalities() {
         });
 
         var newPersonalities = {
-            'AIP-Land': {
-                display_name: '!LOC:Land',
+            'AIP-Absurd Land': {
+                display_name: '!LOC:Absurd Land',
                 percent_land: 1,
                 percent_air: 0,
                 percent_naval: 0,
@@ -42,8 +42,8 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'AIP-Tank': {
-                display_name: '!LOC:Tank',
+            'AIP-Absurd Tank': {
+                display_name: '!LOC:Absurd Tank',
                 percent_vehicle: 1,
                 percent_bot: 0,
                 percent_air: 0,
@@ -55,8 +55,8 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'AIP-Bot': {
-                display_name: '!LOC:Bot',
+            'AIP-Absurd Bot': {
+                display_name: '!LOC:Absurd Bot',
                 percent_vehicle: 0,
                 percent_bot: 1,
                 percent_naval: 0,
@@ -67,8 +67,8 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'AIP-Air': {
-                display_name: '!LOC:Air',
+            'AIP-Absurd Air': {
+                display_name: '!LOC:Absurd Air',
                 percent_land: 0,
                 percent_air: 1,
                 percent_naval: 0,
@@ -79,8 +79,8 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'AIP-Balanced': {
-                display_name: '!LOC:Balance',
+            'AIP-Absurd Balanced': {
+                display_name: '!LOC:Absurd Balance',
                 percent_land: 0.4,
                 percent_air: 0.2,
                 percent_naval: 0.2,
@@ -91,8 +91,8 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'AIP-Naval': {
-                display_name: '!LOC:Naval',
+            'AIP-Absurd Naval': {
+                display_name: '!LOC:Absurd Naval',
                 percent_land: 0,
                 percent_air: 0,
                 percent_naval: 1,
@@ -103,8 +103,8 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'AIP-Orbital': {
-                display_name: '!LOC:Orbital',
+            'AIP-Absurd Orbital': {
+                display_name: '!LOC:Absurd Orbital',
                 percent_land: 0,
                 percent_air: 0,
                 percent_naval: 0,
@@ -115,8 +115,8 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'AIP-AIP-Low Tech': {
-                display_name: '!LOC:Low Tech',
+            'AIP-Absurd Low Tech': {
+                display_name: '!LOC:Absurd Low Tech',
                 adv_eco_mod: 3,
                 adv_eco_mod_alone: 3,
                 personality_tags:
@@ -125,8 +125,8 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'Fast Tech': {
-                display_name: '!LOC:Fast Tech',
+            'AIP-Absurd Fast Tech': {
+                display_name: '!LOC:Absurd Fast Tech',
                 adv_eco_mod: 0,
                 adv_eco_mod_alone: 0,
                 min_basic_fabbers: 4,
@@ -136,8 +136,8 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'AIP-Cautious': {
-                display_name: '!LOC:Cautious',
+            'AIP-Absurd Cautious': {
+                display_name: '!LOC:Absurd Cautious',
                 neural_data_mod: 0.5,
                 min_basic_fabbers: 4,
                 personality_tags:
@@ -146,8 +146,8 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'AIP-Aggressive': {
-                display_name: '!LOC:Aggressive',
+            'AIP-Absurd Aggressive': {
+                display_name: '!LOC:Absurd Aggressive',
                 neural_data_mod: 2,
                 personality_tags:
                 [
@@ -155,8 +155,8 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'AIP-Rush': {
-                display_name: '!LOC:Rush',
+            'AIP-Absurd Rush': {
+                display_name: '!LOC:Absurd Rush',
                 percent_bot: 1,
                 percent_vehicle: 0,
                 percent_air: 0,
@@ -170,8 +170,8 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'AIP-Turtle': {
-                display_name: '!LOC:Turtle',
+            'AIP-Absurd Turtle': {
+                display_name: '!LOC:Absurd Turtle',
                 neural_data_mod: 0.25,
                 adv_eco_mod: 0,
                 adv_eco_mod_alone: 0,
