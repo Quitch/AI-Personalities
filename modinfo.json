@@ -19,10 +19,10 @@
     ]
   },
   "dependencies": [
-    "com.pa.quitch.qaipersonalities-client-dev"
+    "com.pa.quitch.qaipersonalities-client"
   ],
   "companions": [
-    "com.pa.quitch.qaipersonalities-client-dev"
+    "com.pa.quitch.qaipersonalities-client"
   ],
   "priority": 100
 }
