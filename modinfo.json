@@ -12,7 +12,7 @@
   "category": [
     "ai"
   ],
-  "icon": "",
+  "icon": "https://i.imgur.com/fFDcAFj.png",
   "scenes": {
     "new_game": [
       "coui://ui/mods/com.pa.quitch.qaipersonalities/new_game.js"
