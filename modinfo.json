@@ -4,7 +4,7 @@
   "display_name": "AI Personalities DEV",
   "description": "Additional AI personalities for use with the vanilla AI.",
   "author": "Quitch",
-  "version": "dev",
+  "version": "0.1-beta",
   "build": "99377",
   "date": "2017/03/17",
   "signature": " ",
@@ -18,7 +18,7 @@
       "coui://ui/mods/com.pa.quitch.qaipersonalities/new_game.js"
     ]
   },
-  "dependencies": [
+  "companions": [
     "com.pa.quitch.qaipersonalities-client-dev"
   ],
   "priority": 100,
