@@ -1,0 +1,26 @@
+{
+  "context": "server",
+  "identifier": "com.pa.quitch.qaipersonalities-dev",
+  "display_name": "AI Personalities DEV",
+  "description": "Additional AI personalities for use with the vanilla AI.",
+  "author": "Quitch",
+  "version": "dev",
+  "build": "99377",
+  "date": "2017/03/17",
+  "signature": " ",
+  "forum": "",
+  "category": [
+    "ai"
+  ],
+  "icon": "",
+  "scenes": {
+    "new_game": [
+      "coui://ui/mods/com.pa.quitch.qaipersonalities/new_game.js"
+    ]
+  },
+  "dependencies": [
+    "com.pa.quitch.qaipersonalities-client-dev"
+  ],
+  "priority": 100,
+  "hidden": true
+}
