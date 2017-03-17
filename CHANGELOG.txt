@@ -1,5 +1,5 @@
 # CHANGELOG
 
-## v0.1-beta
+## v0.1 - 2017-03-17
 
- - Implemented 14 personalities
+ - Implemented 13 personalities

@@ -1,26 +1,28 @@
 {
   "context": "server",
-  "identifier": "com.pa.quitch.qaipersonalities-dev",
-  "display_name": "AI Personalities DEV",
-  "description": "Additional AI personalities for use with the vanilla AI.",
+  "identifier": "com.pa.quitch.qaipersonalities",
+  "display_name": "AI Personalities",
+  "description": "Additional AI personalities for use with the vanilla AI. Compatible with the Queller AI.",
   "author": "Quitch",
-  "version": "0.1-beta",
+  "version": "0.1",
   "build": "99377",
   "date": "2017/03/17",
   "signature": " ",
-  "forum": "",
+  "forum": "https://forums.uberent.com/threads/rel-server-ai-personalities.72363/",
   "category": [
     "ai"
   ],
-  "icon": "",
+  "icon": "https://i.imgur.com/fFDcAFj.png",
   "scenes": {
     "new_game": [
       "coui://ui/mods/com.pa.quitch.qaipersonalities/new_game.js"
     ]
   },
-  "companions": [
-    "com.pa.quitch.qaipersonalities-client-dev"
+  "dependencies": [
+    "com.pa.quitch.qaipersonalities-client"
   ],
-  "priority": 100,
-  "hidden": true
+  "companions": [
+    "com.pa.quitch.qaipersonalities-client"
+  ],
+  "priority": 100
 }
