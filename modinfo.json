@@ -24,6 +24,5 @@
   "companions": [
     "com.pa.quitch.qaipersonalities-client-dev"
   ],
-  "priority": 100,
-  "hidden": true
+  "priority": 100
 }
