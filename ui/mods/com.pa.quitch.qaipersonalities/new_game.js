@@ -30,7 +30,7 @@ function qaipersonalities() {
         });
 
         var newPersonalities = {
-            'Land': {
+            'AIP-Land': {
                 display_name: '!LOC:Land',
                 percent_land: 1,
                 percent_air: 0,
@@ -42,7 +42,7 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'Tank': {
+            'AIP-Tank': {
                 display_name: '!LOC:Tank',
                 percent_vehicle: 1,
                 percent_bot: 0,
@@ -55,7 +55,7 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'Bot': {
+            'AIP-Bot': {
                 display_name: '!LOC:Bot',
                 percent_vehicle: 0,
                 percent_bot: 1,
@@ -67,7 +67,7 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'Air': {
+            'AIP-Air': {
                 display_name: '!LOC:Air',
                 percent_land: 0,
                 percent_air: 1,
@@ -79,7 +79,7 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'Balanced': {
+            'AIP-Balanced': {
                 display_name: '!LOC:Balance',
                 percent_land: 0.4,
                 percent_air: 0.2,
@@ -91,7 +91,7 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'Naval': {
+            'AIP-Naval': {
                 display_name: '!LOC:Naval',
                 percent_land: 0,
                 percent_air: 0,
@@ -103,7 +103,7 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'Orbital': {
+            'AIP-Orbital': {
                 display_name: '!LOC:Orbital',
                 percent_land: 0,
                 percent_air: 0,
@@ -115,7 +115,7 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'Low Tech': {
+            'AIP-AIP-Low Tech': {
                 display_name: '!LOC:Low Tech',
                 adv_eco_mod: 3,
                 adv_eco_mod_alone: 3,
@@ -136,7 +136,7 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'Cautious': {
+            'AIP-Cautious': {
                 display_name: '!LOC:Cautious',
                 neural_data_mod: 0.5,
                 min_basic_fabbers: 4,
@@ -146,7 +146,7 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'Aggressive': {
+            'AIP-Aggressive': {
                 display_name: '!LOC:Aggressive',
                 neural_data_mod: 2,
                 personality_tags:
@@ -155,7 +155,7 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'Rush': {
+            'AIP-Rush': {
                 display_name: '!LOC:Rush',
                 percent_bot: 1,
                 percent_vehicle: 0,
@@ -170,7 +170,7 @@ function qaipersonalities() {
                     "PreventsWaste"
                 ]
             },
-            'Turtle': {
+            'AIP-Turtle': {
                 display_name: '!LOC:Turtle',
                 neural_data_mod: 0.25,
                 adv_eco_mod: 0,
