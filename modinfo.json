@@ -18,6 +18,9 @@
       "coui://ui/mods/com.pa.quitch.qaipersonalities/new_game.js"
     ]
   },
+  "dependencies": [
+    "com.pa.quitch.qaipersonalities-client-dev"
+  ],
   "companions": [
     "com.pa.quitch.qaipersonalities-client-dev"
   ],
