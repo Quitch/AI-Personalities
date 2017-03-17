@@ -82,6 +82,9 @@ Yes, though these personalities will use the vanilla brain rather than Queller. 
 ### Will this work in multiplayer?
 Yes.
 
+### Does this affect Galactic War?
+No. Use the Galactic War AI Overhaul mod for that.
+
 ### How can I provide feedback?
 Please use the mod's [forum thread](https://forums.uberent.com/threads/rel-server-ai-personalities.72363/). I am especially interested in hearing feedback on the difficulty levels.
 
