@@ -1,10 +1,10 @@
 {
   "context": "server",
-  "identifier": "com.pa.quitch.qaipersonalities-dev",
-  "display_name": "AI Personalities for Skirmish and Multiplayer DEV",
+  "identifier": "com.pa.quitch.qaipersonalities",
+  "display_name": "AI Personalities for Skirmish and Multiplayer",
   "description": "Additional AI personalities for use with the vanilla AI. Compatible with the Queller AI.",
   "author": "Quitch",
-  "version": "0.2-beta",
+  "version": "0.2",
   "build": "99377",
   "date": "2017/03/17",
   "signature": " ",
