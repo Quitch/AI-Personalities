@@ -1,16 +1,18 @@
 {
   "context": "server",
   "identifier": "com.pa.quitch.qaipersonalities",
-  "display_name": "AI Personalities",
+  "display_name": "AI Personalities for Skirmish and Multiplayer",
   "description": "Additional AI personalities for use with the vanilla AI. Compatible with the Queller AI.",
   "author": "Quitch",
-  "version": "0.1",
+  "version": "0.2",
   "build": "99377",
   "date": "2017/03/17",
   "signature": " ",
   "forum": "https://forums.uberent.com/threads/rel-server-ai-personalities.72363/",
   "category": [
-    "ai"
+    "ai",
+    "classic",
+    "titans"
   ],
   "icon": "https://i.imgur.com/fFDcAFj.png",
   "scenes": {
@@ -18,11 +20,5 @@
       "coui://ui/mods/com.pa.quitch.qaipersonalities/new_game.js"
     ]
   },
-  "dependencies": [
-    "com.pa.quitch.qaipersonalities-client"
-  ],
-  "companions": [
-    "com.pa.quitch.qaipersonalities-client"
-  ],
   "priority": 100
 }
