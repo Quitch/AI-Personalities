@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## v0.2 - 2017-03-17
+## v0.2 - 2017-03-24
 
 The AI Personalities **Client** is no longer required and should be uninstalled.
 
