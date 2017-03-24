@@ -44,7 +44,7 @@ This mod can be installed via the in-game Community Mod manager.
 
  - Remains at T1 for longer.
 
-## Fast Tech
+### Fast Tech
 
  - Techs to T2 as quickly as possible.
 
