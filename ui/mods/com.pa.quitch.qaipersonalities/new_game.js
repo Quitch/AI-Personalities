@@ -70,7 +70,7 @@ function qaipersonalities() {
             ]
         },
         'AIP-Absurd Balanced': {
-            display_name: '!LOC:Absurd Balance',
+            display_name: '!LOC:Absurd Balanced',
             percent_land: 0.4,
             percent_air: 0.2,
             percent_naval: 0.2,

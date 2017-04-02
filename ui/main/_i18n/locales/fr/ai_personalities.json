@@ -1,0 +1,41 @@
+{
+    "Absurd Land": {
+        "message": "Dément Terrestre"
+    },
+    "Absurd Tank": {
+        "message": "Dément Tank"
+    },
+    "Absurd Bot": {
+        "message": "Dément Robot"
+    },
+    "Absurd Air": {
+        "message": "Dément Aérienne"
+    },
+    "Absurd Balanced": {
+        "message": "Dément Équilibré"
+    },
+    "Absurd Naval": {
+        "message": "Dément Navale"
+    },
+    "Absurd Orbital": {
+        "message": "Dément Orbitale"
+    },
+    "Absurd Low Tech": {
+        "message": "Dément Basse Technologie"
+    },
+    "Absurd Fast Tech": {
+        "message": "Dément Technologie Rapide"
+    },
+    "Absurd Cautious": {
+        "message": "Dément Prudente"
+    },
+    "Absurd Aggressive": {
+        "message": "Dément Agressive"
+    },
+    "Absurd Rush": {
+        "message": "Dément Rush"
+    },
+    "Absurd Turtle": {
+        "message": "Dément Tortue"
+    }
+}
