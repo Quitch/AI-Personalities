@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## v0.3 - 2017-04-02
+## v1.0 - 2017-04-02
 
  - Absurd Balanced now correctly named
  - Added language support:
