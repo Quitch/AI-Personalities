@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## v0.3 - 2017-04-02
+
+ - Absurd Balanced now correctly named
+ - Added language support:
+   - Deutsch (de)
+   - English (en-US)
+   - Français (fr)
+   - Italiano (it)
+   - Español (es)
+   - Nederlands (nl)
+   - Nederlands (België) (nl-BE)
+ - Better mod description
+
 ## v0.2 - 2017-03-24
 
 The AI Personalities **Client** is no longer required and should be uninstalled.
