@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.0.1 - 2017-11-17
+
+ - Updated for changes to Absurd personality in 108271
+
 ## v1.0 - 2017-04-02
 
  - Absurd Balanced now correctly named

@@ -13,8 +13,8 @@ function qaipersonalities() {
 
     var defaultAiPersonalities = ['Idle', 'Normal', 'Hard', 'Relentless', 'Absurd'];
 
-    _.forEach( aiPersonalities, function(personality, name) {
-        if(defaultAiPersonalities.indexOf(name) != -1) {
+    _.forEach(aiPersonalities, function (personality, name) {
+        if (defaultAiPersonalities.indexOf(name) != -1) {
             personality.personality_tags = _.union(personality.personality_tags || [], ['Vanilla']);
         }
     });
@@ -202,17 +202,17 @@ function qaipersonalities() {
         adv_eco_mod: 1.3,
         adv_eco_mod_alone: 0.85,
         fabber_to_factory_ratio_basic: 1.0,
-        fabber_to_factory_ratio_advanced: 1.0,
-        fabber_alone_on_planet_mod: 2.0,
+        fabber_to_factory_ratio_advanced: 2,
+        fabber_alone_on_planet_mod: 3,
         basic_to_advanced_factory_ratio: 0,
         factory_alone_on_planet_mod: 0.5,
-        min_basic_fabbers: 2,
-        max_basic_fabbers: 6,
-        min_advanced_fabbers: 3,
-        max_advanced_fabbers: 20
+        min_basic_fabbers: 3,
+        max_basic_fabbers: 20,
+        min_advanced_fabbers: 1,
+        max_advanced_fabbers: 50
     }
 
-    newPersonalities = _.mapValues( newPersonalities, function(personality, name) {
+    newPersonalities = _.mapValues(newPersonalities, function (personality, name) {
         var result = _.extend(_.clone(baseline), personality);
         result['name'] = name;
         return result;
