@@ -20,10 +20,22 @@ function qaipersonalities() {
     });
 
     var newPersonalities = {
-        'AIP-Absurd Land': {
-            display_name: '!LOC:Absurd Land',
-            percent_land: 1,
-            percent_air: 0,
+        'AIP-Absurd Aggressive': {
+            display_name: '!LOC:Absurd Aggressive',
+            percent_vehicle: 0.45,
+            percent_bot: 0.25,
+            neural_data_mod: 2,
+            personality_tags:
+            [
+                "vanilla",
+                "PreventsWaste"
+            ]
+        },
+        'AIP-Absurd Air': {
+            display_name: '!LOC:Absurd Air',
+            percent_vehicle: 0,
+            percent_bot: 0,
+            percent_air: 1,
             percent_naval: 0,
             percent_orbital: 0,
             personality_tags:
@@ -32,13 +44,13 @@ function qaipersonalities() {
                 "PreventsWaste"
             ]
         },
-        'AIP-Absurd Tank': {
-            display_name: '!LOC:Absurd Tank',
-            percent_vehicle: 1,
-            percent_bot: 0,
-            percent_air: 0,
-            percent_naval: 0,
-            percent_orbital: 0,
+        'AIP-Absurd Balanced': {
+            display_name: '!LOC:Absurd Balanced',
+            percent_vehicle: 0.2,
+            percent_bot: 0.2,
+            percent_air: 0.2,
+            percent_naval: 0.2,
+            percent_orbital: 0.2,
             personality_tags:
             [
                 "vanilla",
@@ -57,10 +69,36 @@ function qaipersonalities() {
                 "PreventsWaste"
             ]
         },
-        'AIP-Absurd Air': {
-            display_name: '!LOC:Absurd Air',
-            percent_land: 0,
-            percent_air: 1,
+        'AIP-Absurd Cautious': {
+            display_name: '!LOC:Absurd Cautious',
+            percent_vehicle: 0.45,
+            percent_bot: 0.25,
+            neural_data_mod: 0.5,
+            min_basic_fabbers: 4,
+            personality_tags:
+            [
+                "vanilla",
+                "PreventsWaste"
+            ]
+        },
+        'AIP-Absurd Fast Tech': {
+            display_name: '!LOC:Absurd Fast Tech',
+            percent_vehicle: 0.45,
+            percent_bot: 0.25,
+            adv_eco_mod: 0,
+            adv_eco_mod_alone: 0,
+            min_basic_fabbers: 4,
+            personality_tags:
+            [
+                "vanilla",
+                "PreventsWaste"
+            ]
+        },
+        'AIP-Absurd Land': {
+            display_name: '!LOC:Absurd Land',
+            percent_vehicle: 0.5,
+            percent_bot: 0.5,
+            percent_air: 0,
             percent_naval: 0,
             percent_orbital: 0,
             personality_tags:
@@ -69,12 +107,12 @@ function qaipersonalities() {
                 "PreventsWaste"
             ]
         },
-        'AIP-Absurd Balanced': {
-            display_name: '!LOC:Absurd Balanced',
-            percent_land: 0.4,
-            percent_air: 0.2,
-            percent_naval: 0.2,
-            percent_orbital: 0.2,
+        'AIP-Absurd Low Tech': {
+            display_name: '!LOC:Absurd Low Tech',
+            percent_vehicle: 0.45,
+            percent_bot: 0.25,
+            adv_eco_mod: 3,
+            adv_eco_mod_alone: 3,
             personality_tags:
             [
                 "vanilla",
@@ -83,7 +121,8 @@ function qaipersonalities() {
         },
         'AIP-Absurd Naval': {
             display_name: '!LOC:Absurd Naval',
-            percent_land: 0,
+            percent_vehicle: 0,
+            percent_bot: 0,
             percent_air: 0,
             percent_naval: 1,
             percent_orbital: 0,
@@ -95,50 +134,11 @@ function qaipersonalities() {
         },
         'AIP-Absurd Orbital': {
             display_name: '!LOC:Absurd Orbital',
-            percent_land: 0,
+            percent_vehicle: 0,
+            percent_bot: 0,
             percent_air: 0,
             percent_naval: 0,
             percent_orbital: 1,
-            personality_tags:
-            [
-                "vanilla",
-                "PreventsWaste"
-            ]
-        },
-        'AIP-Absurd Low Tech': {
-            display_name: '!LOC:Absurd Low Tech',
-            adv_eco_mod: 3,
-            adv_eco_mod_alone: 3,
-            personality_tags:
-            [
-                "vanilla",
-                "PreventsWaste"
-            ]
-        },
-        'AIP-Absurd Fast Tech': {
-            display_name: '!LOC:Absurd Fast Tech',
-            adv_eco_mod: 0,
-            adv_eco_mod_alone: 0,
-            min_basic_fabbers: 4,
-            personality_tags:
-            [
-                "vanilla",
-                "PreventsWaste"
-            ]
-        },
-        'AIP-Absurd Cautious': {
-            display_name: '!LOC:Absurd Cautious',
-            neural_data_mod: 0.5,
-            min_basic_fabbers: 4,
-            personality_tags:
-            [
-                "vanilla",
-                "PreventsWaste"
-            ]
-        },
-        'AIP-Absurd Aggressive': {
-            display_name: '!LOC:Absurd Aggressive',
-            neural_data_mod: 2,
             personality_tags:
             [
                 "vanilla",
@@ -160,8 +160,23 @@ function qaipersonalities() {
                 "PreventsWaste"
             ]
         },
+        'AIP-Absurd Tank': {
+            display_name: '!LOC:Absurd Tank',
+            percent_vehicle: 1,
+            percent_bot: 0,
+            percent_air: 0,
+            percent_naval: 0,
+            percent_orbital: 0,
+            personality_tags:
+            [
+                "vanilla",
+                "PreventsWaste"
+            ]
+        },
         'AIP-Absurd Turtle': {
             display_name: '!LOC:Absurd Turtle',
+            percent_vehicle: 0.45,
+            percent_bot: 0.25,
             neural_data_mod: 0.25,
             adv_eco_mod: 0,
             adv_eco_mod_alone: 0,
@@ -179,38 +194,7 @@ function qaipersonalities() {
         }
     }
 
-    var baseline = aiPersonalities.Absurd || {
-        display_name: '!LOC:Absurd',
-        percent_vehicle: 0.45,
-        percent_bot: 0.25,
-        percent_air: 0.2,
-        percent_naval: 0.05,
-        percent_orbital: 0.05,
-        personality_tags:
-        [
-            "PreventsWaste"
-        ],
-        metal_drain_check: 0.54,
-        energy_drain_check: 0.65,
-        metal_demand_check: 0.71,
-        energy_demand_check: 0.8,
-        micro_type: 2,
-        go_for_the_kill: true,
-        priority_scout_metal_spots: true,
-        enable_commander_danger_responses: true,
-        neural_data_mod: 1.0,
-        adv_eco_mod: 1.3,
-        adv_eco_mod_alone: 0.85,
-        fabber_to_factory_ratio_basic: 1.0,
-        fabber_to_factory_ratio_advanced: 2,
-        fabber_alone_on_planet_mod: 3,
-        basic_to_advanced_factory_ratio: 0,
-        factory_alone_on_planet_mod: 0.5,
-        min_basic_fabbers: 3,
-        max_basic_fabbers: 20,
-        min_advanced_fabbers: 1,
-        max_advanced_fabbers: 50
-    }
+    var baseline = aiPersonalities.Absurd
 
     newPersonalities = _.mapValues(newPersonalities, function (personality, name) {
         var result = _.extend(_.clone(baseline), personality);

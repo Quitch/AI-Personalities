@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v1.0.2 - 2018-03-03
+
+ - Made an adjustment to ensure land personality settings were respected
+ - Sorted personality order alphabetically
+
 ## v1.0.1 - 2017-11-17
 
  - Updated for changes to Absurd personality in 108271
