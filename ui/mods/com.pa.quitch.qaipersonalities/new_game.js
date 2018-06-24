@@ -22,8 +22,6 @@ function qaipersonalities() {
     var newPersonalities = {
         'AIP-Absurd Aggressive': {
             display_name: '!LOC:Absurd Aggressive',
-            percent_vehicle: 0.45,
-            percent_bot: 0.25,
             neural_data_mod: 2,
             personality_tags:
             [
@@ -71,8 +69,6 @@ function qaipersonalities() {
         },
         'AIP-Absurd Cautious': {
             display_name: '!LOC:Absurd Cautious',
-            percent_vehicle: 0.45,
-            percent_bot: 0.25,
             neural_data_mod: 0.5,
             min_basic_fabbers: 4,
             personality_tags:
@@ -83,8 +79,6 @@ function qaipersonalities() {
         },
         'AIP-Absurd Fast Tech': {
             display_name: '!LOC:Absurd Fast Tech',
-            percent_vehicle: 0.45,
-            percent_bot: 0.25,
             adv_eco_mod: 0,
             adv_eco_mod_alone: 0,
             min_basic_fabbers: 4,
@@ -109,8 +103,6 @@ function qaipersonalities() {
         },
         'AIP-Absurd Low Tech': {
             display_name: '!LOC:Absurd Low Tech',
-            percent_vehicle: 0.45,
-            percent_bot: 0.25,
             adv_eco_mod: 3,
             adv_eco_mod_alone: 3,
             personality_tags:
@@ -175,8 +167,6 @@ function qaipersonalities() {
         },
         'AIP-Absurd Turtle': {
             display_name: '!LOC:Absurd Turtle',
-            percent_vehicle: 0.45,
-            percent_bot: 0.25,
             neural_data_mod: 0.25,
             adv_eco_mod: 0,
             adv_eco_mod_alone: 0,
