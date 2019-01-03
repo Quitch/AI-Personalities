@@ -69,7 +69,7 @@ function qaipersonalities() {
         },
         'AIP-Absurd Cautious': {
             display_name: '!LOC:Absurd Cautious',
-            neural_data_mod: 0.5,
+            neural_data_mod: 0.75,
             min_basic_fabbers: 4,
             personality_tags:
             [

@@ -5,6 +5,7 @@
  - Add Absurd Galactic War personality using settings from Galactic War Absurd difficulty
  - Absurd Land favours vehicles over bots in alignment with Absurd's default weightings
  - Absurd Low Tech will tech a little faster when alone
+ - Absurd Cautious is less cautious
 
 ## v1.0.2 - 2018-03-03
 
