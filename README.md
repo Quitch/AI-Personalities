@@ -26,10 +26,6 @@ You should download and install this mod via the Planetary Annihilation TITANS i
 
  - Focuses almost exclusively on air.
 
-### Balanced
-
- - Uses all factory types equally.
-
 ### Naval
 
  - Focuses more heavily on naval.
