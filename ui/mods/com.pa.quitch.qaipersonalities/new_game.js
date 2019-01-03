@@ -193,7 +193,11 @@ function qaipersonalities() {
             [
                 "vanilla",
                 "PreventsWaste"
-            ]
+            ],
+            metalDrainCheck: 0.45,
+            metalDemandCheck: 0.562,
+            energyDrainCheck: 0.62,
+            energyDemandCheck: 0.712,
         }
     }
 
