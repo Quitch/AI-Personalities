@@ -6,6 +6,7 @@
  - Absurd Land favours vehicles over bots in alignment with Absurd's default weightings
  - Absurd Low Tech will tech a little faster when alone
  - Absurd Cautious is less cautious
+ - Absurd Aggressive is less aggressive
 
 ## v1.0.2 - 2018-03-03
 

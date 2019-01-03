@@ -22,7 +22,7 @@ function qaipersonalities() {
     var newPersonalities = {
         'AIP-Absurd Aggressive': {
             display_name: '!LOC:Absurd Aggressive',
-            neural_data_mod: 2,
+            neural_data_mod: 1.33,
             personality_tags:
             [
                 "vanilla",
