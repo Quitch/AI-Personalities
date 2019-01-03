@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## v1.1.0 - 2019-01-03
+
+Please help [translate AI Personalities](https://poeditor.com/join/project/3u9vtw8xUf) to your local language.
+
+ - Add Absurd Galactic War personality using settings from Galactic War Absurd difficulty
+ - Absurd Land favours vehicles over bots in alignment with Absurd's default weightings
+ - Absurd Low Tech will tech a little faster when alone
+ - Absurd Cautious is less cautious
+ - Absurd Aggressive is less aggressive
+ - Add a small amount of air into Absurd Naval
+ - Absurd Rush is less aggressive
+ - Removed Absurd Balanced due to tendancy to stop building factories
+ - Added the default amount of orbital back to Absurd Bot and Tank
+ - Added some land weightings to Absurd Orbital
+
 ## v1.0.2 - 2018-03-03
 
  - Made an adjustment to ensure land personality settings were respected

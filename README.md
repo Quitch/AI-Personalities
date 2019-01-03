@@ -4,11 +4,9 @@
 
 This mod works with both Planetary Annihilation and Planetary Annihilation Titans. It introduces a number of new personalities for the vanilla AI, based off the Absurd difficulty level. These personalities will work with faction mods such as Legion. Installing the Queller AI will not interfere with this mod.
 
-
 ## Installation
 
-This mod can be installed via the in-game Community Mod manager.
-
+You should download and install this mod via the Planetary Annihilation TITANS in-game [Community Mods](https://steamcommunity.com/sharedfiles/filedetails/?id=1417396826).
 
 ## Personalities
 
@@ -70,6 +68,13 @@ This mod can be installed via the in-game Community Mod manager.
  - Requires vastly superior numbers before attacking.
  - Far more likely to retreat.
 
+### Galactic War
+
+ - Uses the same settings as Absurd diff
+
+## TRANSLATIONS
+
+Please help [translate AI Personalities](https://poeditor.com/join/project/3u9vtw8xUf) to your local language.
 
 ## FAQ
 
