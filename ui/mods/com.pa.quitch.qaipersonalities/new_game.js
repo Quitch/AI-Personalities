@@ -45,9 +45,9 @@ function qaipersonalities() {
         'AIP-Absurd Bot': {
             display_name: '!LOC:Absurd Bot',
             percent_vehicle: 0,
-            percent_bot: 1,
+            percent_bot: 0.95,
             percent_naval: 0,
-            percent_orbital: 0,
+            percent_orbital: 0.05,
             personality_tags:
             [
                 "vanilla",
@@ -141,11 +141,11 @@ function qaipersonalities() {
         },
         'AIP-Absurd Tank': {
             display_name: '!LOC:Absurd Tank',
-            percent_vehicle: 1,
+            percent_vehicle: 0.95,
             percent_bot: 0,
             percent_air: 0,
             percent_naval: 0,
-            percent_orbital: 0,
+            percent_orbital: 0.05,
             personality_tags:
             [
                 "vanilla",
