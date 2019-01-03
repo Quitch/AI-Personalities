@@ -115,8 +115,8 @@ function qaipersonalities() {
             display_name: '!LOC:Absurd Naval',
             percent_vehicle: 0,
             percent_bot: 0,
-            percent_air: 0,
-            percent_naval: 1,
+            percent_air: 0.2,
+            percent_naval: 0.8,
             percent_orbital: 0,
             personality_tags:
             [

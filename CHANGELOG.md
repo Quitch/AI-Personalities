@@ -7,6 +7,7 @@
  - Absurd Low Tech will tech a little faster when alone
  - Absurd Cautious is less cautious
  - Absurd Aggressive is less aggressive
+ - Add a small amount of air into Absurd Naval
 
 ## v1.0.2 - 2018-03-03
 
