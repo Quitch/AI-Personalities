@@ -11,6 +11,7 @@ Please help [translate AI Personalities](https://poeditor.com/join/project/3u9vt
  - Absurd Aggressive is less aggressive
  - Add a small amount of air into Absurd Naval
  - Absurd Rush is less aggressive
+ - Removed Absurd Balanced due to tendancy to stop building factories
 
 ## v1.0.2 - 2018-03-03
 

@@ -42,19 +42,6 @@ function qaipersonalities() {
                 "PreventsWaste"
             ]
         },
-        'AIP-Absurd Balanced': {
-            display_name: '!LOC:Absurd Balanced',
-            percent_vehicle: 0.2,
-            percent_bot: 0.2,
-            percent_air: 0.2,
-            percent_naval: 0.2,
-            percent_orbital: 0.2,
-            personality_tags:
-            [
-                "vanilla",
-                "PreventsWaste"
-            ]
-        },
         'AIP-Absurd Bot': {
             display_name: '!LOC:Absurd Bot',
             percent_vehicle: 0,
