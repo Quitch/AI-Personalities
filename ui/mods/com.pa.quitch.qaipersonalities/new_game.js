@@ -104,7 +104,7 @@ function qaipersonalities() {
         'AIP-Absurd Low Tech': {
             display_name: '!LOC:Absurd Low Tech',
             adv_eco_mod: 3,
-            adv_eco_mod_alone: 3,
+            adv_eco_mod_alone: 2,
             personality_tags:
             [
                 "vanilla",
