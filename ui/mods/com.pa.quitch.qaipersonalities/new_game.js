@@ -113,11 +113,11 @@ function qaipersonalities() {
         },
         'AIP-Absurd Orbital': {
             display_name: '!LOC:Absurd Orbital',
-            percent_vehicle: 0,
-            percent_bot: 0,
-            percent_air: 0,
+            percent_vehicle: 0.1125,
+            percent_bot: 0.0625,
+            percent_air: 0.05,
             percent_naval: 0,
-            percent_orbital: 1,
+            percent_orbital: 0.775,
             personality_tags:
             [
                 "vanilla",
