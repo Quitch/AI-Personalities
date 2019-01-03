@@ -70,7 +70,7 @@ You should download and install this mod via the Planetary Annihilation TITANS i
 
 ### Galactic War
 
- - Uses the same settings as Absurd diff
+ - Uses the same settings as Absurd difficulty in Galactic War
 
 ## TRANSLATIONS
 
