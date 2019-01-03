@@ -144,7 +144,7 @@ function qaipersonalities() {
             percent_air: 0,
             percent_naval: 0,
             percent_orbital: 0,
-            neural_data_mod: 2,
+            neural_data_mod: 1.33,
             adv_eco_mod: 3,
             personality_tags:
             [
