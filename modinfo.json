@@ -1,10 +1,10 @@
 {
   "context": "server",
-  "identifier": "com.pa.quitch.qaipersonalities-dev",
-  "display_name": "AI Personalities for Skirmish and Multiplayer DEV",
+  "identifier": "com.pa.quitch.qaipersonalities",
+  "display_name": "AI Personalities for Skirmish and Multiplayer",
   "description": "Tailor the AI to play how you want it to play at Absurd difficulty. Want it to mass ships? Absurd Naval. Want it to play defensive? Absurd Turtle. Compatible with the Queller AI. Does not affect Galactic War. See forum thread for full personality descriptions.",
   "author": "Quitch",
-  "version": "dev",
+  "version": "1.1.0",
   "build": "112595",
   "date": "2019/01/03",
   "signature": " ",
