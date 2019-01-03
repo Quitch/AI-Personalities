@@ -90,8 +90,8 @@ function qaipersonalities() {
         },
         'AIP-Absurd Land': {
             display_name: '!LOC:Absurd Land',
-            percent_vehicle: 0.5,
-            percent_bot: 0.5,
+            percent_vehicle: 0.6,
+            percent_bot: 0.4,
             percent_air: 0,
             percent_naval: 0,
             percent_orbital: 0,
