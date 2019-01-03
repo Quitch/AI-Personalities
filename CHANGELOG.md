@@ -1,5 +1,9 @@
 # CHANGELOG
 
+##
+
+ - Add Absurd Galactic War personality using settings from Galactic War Absurd difficulty
+
 ## v1.0.2 - 2018-03-03
 
  - Made an adjustment to ensure land personality settings were respected

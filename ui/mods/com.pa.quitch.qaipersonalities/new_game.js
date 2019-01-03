@@ -181,6 +181,19 @@ function qaipersonalities() {
                 "vanilla",
                 "PreventsWaste"
             ]
+        },
+        'AIP-Absurd Galactic War': {
+            display_name: '!LOC:Absurd Galactic War',
+            fabber_to_factory_ratio_basic: 1.5,
+            fabber_to_factory_ratio_advanced: 1.0,
+            min_basic_fabbers: 1,
+            max_basic_fabbers: 15,
+            max_advanced_fabbers: 50,
+            personality_tags:
+            [
+                "vanilla",
+                "PreventsWaste"
+            ]
         }
     }
 
