@@ -1,6 +1,6 @@
 # CHANGELOG
 
-##
+## v1.1.0 - 2019-01-03
 
 Please help [translate AI Personalities](https://poeditor.com/join/project/3u9vtw8xUf) to your local language.
 
