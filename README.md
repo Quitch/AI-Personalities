@@ -72,6 +72,9 @@ You should download and install this mod via the Planetary Annihilation TITANS i
 
  - Uses the same settings as Absurd diff
 
+## TRANSLATIONS
+
+Please help [translate AI Personalities](https://poeditor.com/join/project/3u9vtw8xUf) to your local language.
 
 ## FAQ
 

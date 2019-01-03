@@ -2,6 +2,8 @@
 
 ##
 
+Please help [translate AI Personalities](https://poeditor.com/join/project/3u9vtw8xUf) to your local language.
+
  - Add Absurd Galactic War personality using settings from Galactic War Absurd difficulty
  - Absurd Land favours vehicles over bots in alignment with Absurd's default weightings
  - Absurd Low Tech will tech a little faster when alone
