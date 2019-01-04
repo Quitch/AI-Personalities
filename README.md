@@ -1,4 +1,4 @@
-# AI Personalities Readme
+# AI Personalities for Skirmish and Multiplayer Readme
 
 ## Description
 
@@ -10,25 +10,39 @@ You should download and install this mod via the Planetary Annihilation TITANS i
 
 ## Personalities
 
-### Land
+### Aggressive
 
- - Focuses almost exclusively on land units.
-
-### Tank
-
- - Focuses almost exclusively on vehicles.
-
-### Bot
-
- - Focuses almost exclusively on bots.
+ - More willing to attack.
+ - Less likely to retreat.
 
 ### Air
 
  - Focuses almost exclusively on air.
 
-### Balanced
+### Bot
 
- - Uses all factory types equally.
+ - Focuses almost exclusively on bots.
+
+### Cautious
+
+ - Requires better odds before attacking.
+ - More likely to retreat.
+
+### Fast Tech
+
+ - Techs to T2 as quickly as possible.
+
+### Galactic War
+
+ - Uses the same settings as Absurd difficulty in Galactic War
+
+### Land
+
+ - Focuses almost exclusively on land units.
+
+### Low Tech
+
+ - Remains at T1 for longer.
 
 ### Naval
 
@@ -38,29 +52,15 @@ You should download and install this mod via the Planetary Annihilation TITANS i
 
  - Puts more emphasis on an orbital presence.
 
-### Low Tech
-
- - Remains at T1 for longer.
-
-### Fast Tech
-
- - Techs to T2 as quickly as possible.
-
-### Cautious
-
- - Requires better odds before attacking.
- - More likely to retreat.
-
-### Aggressive
-
- - More willing to attack.
- - Less likely to retreat.
-
 ### Rush
 
  - Focuses on T1 and bots.
  - More likely to attack.
  - Less likely to retreat.
+
+### Tank
+
+ - Focuses almost exclusively on vehicles.
 
 ### Turtle
 
@@ -68,11 +68,7 @@ You should download and install this mod via the Planetary Annihilation TITANS i
  - Requires vastly superior numbers before attacking.
  - Far more likely to retreat.
 
-### Galactic War
-
- - Uses the same settings as Absurd diff
-
-## TRANSLATIONS
+## Translations
 
 Please help [translate AI Personalities](https://poeditor.com/join/project/3u9vtw8xUf) to your local language.
 
@@ -95,7 +91,6 @@ No. Use the Galactic War AI Overhaul mod for that.
 
 ### How can I provide feedback?
 Please use the mod's [forum thread](https://forums.uberent.com/threads/rel-server-ai-personalities.72363/). I am especially interested in hearing feedback on the difficulty levels.
-
 
 ## Incompatible mods
 
