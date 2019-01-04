@@ -10,21 +10,35 @@ You should download and install this mod via the Planetary Annihilation TITANS i
 
 ## Personalities
 
-### Land
+### Aggressive
 
- - Focuses almost exclusively on land units.
+ - More willing to attack.
+ - Less likely to retreat.
 
-### Tank
+### Air
 
- - Focuses almost exclusively on vehicles.
+ - Focuses almost exclusively on air.
 
 ### Bot
 
  - Focuses almost exclusively on bots.
 
-### Air
+### Cautious
 
- - Focuses almost exclusively on air.
+ - Requires better odds before attacking.
+ - More likely to retreat.
+
+### Fast Tech
+
+ - Techs to T2 as quickly as possible.
+
+### Land
+
+ - Focuses almost exclusively on land units.
+
+### Low Tech
+
+ - Remains at T1 for longer.
 
 ### Naval
 
@@ -34,29 +48,15 @@ You should download and install this mod via the Planetary Annihilation TITANS i
 
  - Puts more emphasis on an orbital presence.
 
-### Low Tech
-
- - Remains at T1 for longer.
-
-### Fast Tech
-
- - Techs to T2 as quickly as possible.
-
-### Cautious
-
- - Requires better odds before attacking.
- - More likely to retreat.
-
-### Aggressive
-
- - More willing to attack.
- - Less likely to retreat.
-
 ### Rush
 
  - Focuses on T1 and bots.
  - More likely to attack.
  - Less likely to retreat.
+
+### Tank
+
+ - Focuses almost exclusively on vehicles.
 
 ### Turtle
 
