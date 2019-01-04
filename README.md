@@ -1,4 +1,4 @@
-# AI Personalities Readme
+# AI Personalities for Skirmish and Multiplayer Readme
 
 ## Description
 
