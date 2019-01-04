@@ -32,6 +32,10 @@ You should download and install this mod via the Planetary Annihilation TITANS i
 
  - Techs to T2 as quickly as possible.
 
+### Galactic War
+
+ - Uses the same settings as Absurd difficulty in Galactic War
+
 ### Land
 
  - Focuses almost exclusively on land units.
@@ -63,10 +67,6 @@ You should download and install this mod via the Planetary Annihilation TITANS i
  - Favours a much higher ratio of fabbers to factories.
  - Requires vastly superior numbers before attacking.
  - Far more likely to retreat.
-
-### Galactic War
-
- - Uses the same settings as Absurd difficulty in Galactic War
 
 ## Translations
 
