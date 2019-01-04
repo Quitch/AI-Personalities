@@ -1,6 +1,6 @@
 # CHANGELOG
 
-##
+## v1.1.1 - 2019-01-04
 
  - Put Absurd Galactic War into alphabetical position on the list
 
