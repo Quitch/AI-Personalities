@@ -11,14 +11,6 @@ function qaipersonalities() {
 
     var aiPersonalities = model.aiPersonalities();
 
-    var defaultAiPersonalities = ['Idle', 'Normal', 'Hard', 'Relentless', 'Absurd'];
-
-    _.forEach(aiPersonalities, function (personality, name) {
-        if (defaultAiPersonalities.indexOf(name) != -1) {
-            personality.personality_tags = _.union(personality.personality_tags || [], ['Vanilla']);
-        }
-    });
-
     var newPersonalities = {
         'AIP-Absurd Aggressive': {
             display_name: '!LOC:Absurd Aggressive',
