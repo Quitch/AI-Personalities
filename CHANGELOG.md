@@ -3,6 +3,7 @@
 ##
 
  - Tidied up personality injection script
+ - Added Russian (ru) translation with thanks to something more than human
 
 ## v1.1.1 - 2019-01-04
 

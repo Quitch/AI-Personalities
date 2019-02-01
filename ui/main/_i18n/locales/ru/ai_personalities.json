@@ -1,0 +1,44 @@
+{
+    "Absurd Land": {
+        "message": "Абсурд Земля"
+    },
+    "Absurd Tank": {
+        "message": "Абсурд Танки"
+    },
+    "Absurd Bot": {
+        "message": "Абсурд Боты"
+    },
+    "Absurd Air": {
+        "message": "Абсурд Воздух"
+    },
+    "Absurd Balanced": {
+        "message": "Абсурд Баланс"
+    },
+    "Absurd Naval": {
+        "message": "Абсурд Море"
+    },
+    "Absurd Orbital": {
+        "message": "Абсурд Орбитал"
+    },
+    "Absurd Low Tech": {
+        "message": "Абсурд Низкие Технологии"
+    },
+    "Absurd Fast Tech": {
+        "message": "Абсурд Быстрые Технологии"
+    },
+    "Absurd Cautious": {
+        "message": "Абсурд Осторожный"
+    },
+    "Absurd Aggressive": {
+        "message": "Абсурд Агрессивный"
+    },
+    "Absurd Rush": {
+        "message": "Абсурд Раш"
+    },
+    "Absurd Turtle": {
+        "message": "Абсурд Медленный"
+    },
+    "Absurd Galactic War": {
+        "message": "Абсурд Галактическая Война"
+    }
+}
