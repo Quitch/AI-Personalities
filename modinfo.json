@@ -1,24 +1,18 @@
 {
   "context": "server",
   "identifier": "com.pa.quitch.qaipersonalities",
-  "display_name": "AI Personalities for Skirmish and Multiplayer",
+  "display_name": "AI Personalities for Skirmish and Multiplayer ",
   "description": "Tailor the AI to play how you want it to play at Absurd difficulty. Want it to mass ships? Absurd Naval. Want it to play defensive? Absurd Turtle. Compatible with the Queller AI. Does not affect Galactic War. See the forum thread below for full personality descriptions.",
   "author": "Quitch",
-  "version": "1.1.1",
-  "build": "112595",
-  "date": "2019/01/04",
+  "version": "1.2.0",
+  "build": "113657",
+  "date": "2019/09/16",
   "signature": " ",
   "forum": "https://forums.planetaryannihilation.com/threads/rel-server-ai-personalities.72363/",
-  "category": [
-    "ai",
-    "classic",
-    "titans"
-  ],
+  "category": ["ai", "classic", "titans"],
   "icon": "https://i.imgur.com/fFDcAFj.png",
   "scenes": {
-    "new_game": [
-      "coui://ui/mods/com.pa.quitch.qaipersonalities/new_game.js"
-    ]
+    "new_game": ["coui://ui/mods/com.pa.quitch.qaipersonalities/new_game.js"]
   },
   "priority": 100
 }

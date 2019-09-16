@@ -12,61 +12,61 @@ You should download and install this mod via the Planetary Annihilation TITANS i
 
 ### Aggressive
 
- - More willing to attack.
- - Less likely to retreat.
+- More willing to attack.
+- Less likely to retreat.
 
 ### Air
 
- - Focuses almost exclusively on air.
+- Focuses almost exclusively on air.
 
 ### Bot
 
- - Focuses almost exclusively on bots.
+- Focuses almost exclusively on bots.
 
 ### Cautious
 
- - Requires better odds before attacking.
- - More likely to retreat.
+- Requires better odds before attacking.
+- More likely to retreat.
 
 ### Fast Tech
 
- - Techs to T2 as quickly as possible.
+- Techs to T2 as quickly as possible.
 
 ### Galactic War
 
- - Uses the same settings as Absurd difficulty in Galactic War
+- Uses the same settings as Absurd difficulty in Galactic War
 
 ### Land
 
- - Focuses almost exclusively on land units.
+- Focuses almost exclusively on land units.
 
 ### Low Tech
 
- - Remains at T1 for longer.
+- Remains at T1 for longer.
 
 ### Naval
 
- - Focuses more heavily on naval.
+- Focuses more heavily on naval.
 
 ### Orbital
 
- - Puts more emphasis on an orbital presence.
+- Puts more emphasis on an orbital presence.
 
 ### Rush
 
- - Focuses on T1 and bots.
- - More likely to attack.
- - Less likely to retreat.
+- Focuses on T1 and bots.
+- More likely to attack.
+- Less likely to retreat.
 
 ### Tank
 
- - Focuses almost exclusively on vehicles.
+- Focuses almost exclusively on vehicles.
 
 ### Turtle
 
- - Favours a much higher ratio of fabbers to factories.
- - Requires vastly superior numbers before attacking.
- - Far more likely to retreat.
+- Favours a much higher ratio of fabbers to factories.
+- Requires vastly superior numbers before attacking.
+- Far more likely to retreat.
 
 ## Translations
 
@@ -75,21 +75,27 @@ Please help [translate AI Personalities](https://poeditor.com/join/project/3u9vt
 ## FAQ
 
 ### Can I use these personalities with lower difficulties?
+
 No. In game terms all the difficulty levels are in fact personalities. These personalities are modifications of the Absurd personality.
 
 ### Can I use an AI mod like Queller?
+
 Yes, though these personalities will use the vanilla brain rather than Queller. The two mods will not interfere with one another.
 
 ### Does this replace Queller?
+
 No, this is completely separate. It's simply a way for you to better tailor your experience with the vanilla AI. It also works with PA Classic, which Queller does not.
 
 ### Will this work in multiplayer?
+
 Yes.
 
 ### Does this affect Galactic War?
+
 No. Use the Galactic War AI Overhaul mod for that.
 
 ### How can I provide feedback?
+
 Please use the mod's [forum thread](https://forums.uberent.com/threads/rel-server-ai-personalities.72363/). I am especially interested in hearing feedback on the difficulty levels.
 
 ## Incompatible mods
