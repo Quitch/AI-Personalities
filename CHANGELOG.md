@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## DEV
+## v1.2.0 - 2019-09-16
 
 - Tidied up personality injection script
 - Added Russian (ru) translation with thanks to something more than human
