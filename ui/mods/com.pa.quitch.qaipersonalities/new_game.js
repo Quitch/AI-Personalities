@@ -131,12 +131,12 @@ function qaipersonalities() {
   var baseline = aiPersonalities.Absurd;
 
   newPersonalities = _.mapValues(newPersonalities, function(personality, name) {
-    var result = _.assign(_.clone(baseline), personality);
+    var result = _.extend(_.clone(baseline), personality);
     result["name"] = name;
     return result;
   });
 
-  _.assign(aiPersonalities, newPersonalities);
+  _.extend(aiPersonalities, newPersonalities);
 
   model.aiPersonalities.valueHasMutated();
 }
