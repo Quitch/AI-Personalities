@@ -1,6 +1,6 @@
 # CHANGELOG
 
-##
+## DEV
 
 - Tidied up personality injection script
 - Added Russian (ru) translation with thanks to something more than human
