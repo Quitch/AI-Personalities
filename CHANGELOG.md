@@ -4,6 +4,7 @@
 
 - Ensure Absurd Naval opens with air
 - Absurd Turtle opens with more fabbers
+- Fix missing air value for Absurd Bot
 
 ## v1.2.0 - 2019-09-16
 

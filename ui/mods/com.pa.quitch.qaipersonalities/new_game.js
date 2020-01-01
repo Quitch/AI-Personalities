@@ -30,6 +30,7 @@ function qaipersonalities() {
       display_name: "!LOC:Absurd Bot",
       percent_vehicle: 0,
       percent_bot: 0.95,
+      percent_air: 0,
       percent_naval: 0,
       percent_orbital: 0.05,
       personality_tags: ["Vanilla", "PreventsWaste"]
