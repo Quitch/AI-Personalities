@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## v1.3.0 - 2020-01-01
+
+- Ensure Absurd Naval opens with air
+  - This doesn't always work in 113953 due to a bug which will hopefully be patched at some point
+- Absurd Turtle opens with more fabbers
+- Fix missing air value for Absurd Bot
+
 ## v1.2.0 - 2019-09-16
 
 - Tidied up personality injection script

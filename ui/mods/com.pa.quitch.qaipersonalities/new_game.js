@@ -30,6 +30,7 @@ function qaipersonalities() {
       display_name: "!LOC:Absurd Bot",
       percent_vehicle: 0,
       percent_bot: 0.95,
+      percent_air: 0,
       percent_naval: 0,
       percent_orbital: 0.05,
       personality_tags: ["Vanilla", "PreventsWaste"]
@@ -77,6 +78,11 @@ function qaipersonalities() {
     },
     "AIP-Absurd Naval": {
       display_name: "!LOC:Absurd Naval",
+      percent_open_vehicle: 0,
+      percent_open_bot: 0,
+      percent_open_air: 1,
+      percent_open_naval: 0,
+      percent_open_orbital: 0,
       percent_vehicle: 0,
       percent_bot: 0,
       percent_air: 0.2,
@@ -121,7 +127,7 @@ function qaipersonalities() {
       fabber_to_factory_ratio_basic: 5,
       fabber_to_factory_ratio_advanced: 5,
       fabber_alone_on_planet_mod: 3,
-      min_basic_fabbers: 4,
+      min_basic_fabbers: 5,
       max_basic_fabbers: 60,
       max_advanced_fabbers: 60,
       personality_tags: ["Vanilla", "PreventsWaste"]
