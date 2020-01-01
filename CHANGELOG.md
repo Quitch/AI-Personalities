@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## DEV
+## v1.3.0 - 2020-01-01
 
 - Ensure Absurd Naval opens with air
   - This doesn't always work in 113953 due to a bug which will hopefully be patched at some point
