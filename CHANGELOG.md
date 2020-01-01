@@ -3,6 +3,7 @@
 ## DEV
 
 - Ensure Absurd Naval opens with air
+- Absurd Turtle opens with more fabbers
 
 ## v1.2.0 - 2019-09-16
 

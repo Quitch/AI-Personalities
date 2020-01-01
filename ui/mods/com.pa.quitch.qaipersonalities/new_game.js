@@ -126,7 +126,7 @@ function qaipersonalities() {
       fabber_to_factory_ratio_basic: 5,
       fabber_to_factory_ratio_advanced: 5,
       fabber_alone_on_planet_mod: 3,
-      min_basic_fabbers: 4,
+      min_basic_fabbers: 5,
       max_basic_fabbers: 60,
       max_advanced_fabbers: 60,
       personality_tags: ["Vanilla", "PreventsWaste"]
