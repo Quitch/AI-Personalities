@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## DEV
+
+- Ensure Absurd Naval opens with air
+
 ## v1.2.0 - 2019-09-16
 
 - Tidied up personality injection script

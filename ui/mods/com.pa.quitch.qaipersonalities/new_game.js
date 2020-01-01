@@ -77,6 +77,11 @@ function qaipersonalities() {
     },
     "AIP-Absurd Naval": {
       display_name: "!LOC:Absurd Naval",
+      percent_open_vehicle: 0,
+      percent_open_bot: 0,
+      percent_open_air: 1,
+      percent_open_naval: 0,
+      percent_open_orbital: 0,
       percent_vehicle: 0,
       percent_bot: 0,
       percent_air: 0.2,
