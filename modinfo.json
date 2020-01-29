@@ -9,7 +9,17 @@
   "date": "2020/01/01",
   "signature": " ",
   "forum": "https://forums.planetaryannihilation.com/threads/rel-server-ai-personalities.72363/",
-  "category": ["ai", "classic", "titans"],
+  "category": [
+    "ai",
+    "ki",
+    "ia",
+    "si",
+    "ИИ",
+    "电脑",
+    "電腦",
+    "classic",
+    "titans"
+  ],
   "icon": "https://i.imgur.com/fFDcAFj.png",
   "scenes": {
     "new_game": ["coui://ui/mods/com.pa.quitch.qaipersonalities/new_game.js"]
