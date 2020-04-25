@@ -121,6 +121,8 @@ function qaipersonalities() {
     },
     "AIP-Absurd Turtle": {
       display_name: "!LOC:Absurd Turtle",
+      metal_demand_check: 0.54,
+      energy_demand_check: 0.65,
       neural_data_mod: 0.25,
       adv_eco_mod: 0,
       adv_eco_mod_alone: 0,

@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## DEV
+
+- Absurd Turtle is more of a turtle
+
 ## v1.3.0 - 2020-01-01
 
 - Ensure Absurd Naval opens with air
