@@ -8,6 +8,7 @@
 - Added Defender
 - Added Economist
 - Prefixed all personalities with AIP and removed Absurd from the name
+- Reduced the total number of fabbers that Turtle will use
 
 ## v1.3.0 - 2020-01-01
 
