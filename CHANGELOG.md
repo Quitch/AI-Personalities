@@ -2,11 +2,12 @@
 
 ## DEV
 
-- Absurd Turtle is more of a turtle
+- Turtle is more of a turtle
 - Split Galactic War into four distinct personalities: Legonis Machina, Foundation, Synchronos, and Revenants
 - Added Swarm
 - Added Defender
 - Added Economist
+- Prefixed all personalities with AIP and removed Absurd from the name
 
 ## v1.3.0 - 2020-01-01
 

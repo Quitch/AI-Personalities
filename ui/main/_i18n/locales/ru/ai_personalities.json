@@ -1,44 +1,44 @@
 {
-  "Absurd Land": {
+  "AIP-Land": {
     "message": "Абсурд Земля"
   },
-  "Absurd Tank": {
+  "AIP-Tank": {
     "message": "Абсурд Танки"
   },
-  "Absurd Bot": {
+  "AIP-Bot": {
     "message": "Абсурд Боты"
   },
-  "Absurd Air": {
+  "AIP-Air": {
     "message": "Абсурд Воздух"
   },
-  "Absurd Balanced": {
+  "AIP-Balanced": {
     "message": "Абсурд Баланс"
   },
-  "Absurd Naval": {
+  "AIP-Naval": {
     "message": "Абсурд Море"
   },
-  "Absurd Orbital": {
+  "AIP-Orbital": {
     "message": "Абсурд Орбитал"
   },
-  "Absurd Low Tech": {
+  "AIP-Low Tech": {
     "message": "Абсурд Низкие Технологии"
   },
-  "Absurd Fast Tech": {
+  "AIP-Fast Tech": {
     "message": "Абсурд Быстрые Технологии"
   },
-  "Absurd Cautious": {
+  "AIP-Cautious": {
     "message": "Абсурд Осторожный"
   },
-  "Absurd Aggressive": {
+  "AIP-Aggressive": {
     "message": "Абсурд Агрессивный"
   },
-  "Absurd Rush": {
+  "AIP-Rush": {
     "message": "Абсурд Раш"
   },
-  "Absurd Turtle": {
+  "AIP-Turtle": {
     "message": "Абсурд Медленный"
   },
-  "Absurd Galactic War": {
+  "AIP-Galactic War": {
     "message": "Абсурд Галактическая Война"
   }
 }

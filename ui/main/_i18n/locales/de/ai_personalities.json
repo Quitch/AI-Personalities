@@ -1,44 +1,44 @@
 {
-  "Absurd Land": {
-    "message": "Absurd Land"
+  "AIP-Land": {
+    "message": "AIP-Land"
   },
-  "Absurd Tank": {
-    "message": "Absurd Panzer"
+  "AIP-Tank": {
+    "message": "AIP-Panzer"
   },
-  "Absurd Bot": {
-    "message": "Absurd Roboter"
+  "AIP-Bot": {
+    "message": "AIP-Roboter"
   },
-  "Absurd Air": {
-    "message": "Absurd Luft"
+  "AIP-Air": {
+    "message": "AIP-Luft"
   },
-  "Absurd Balanced": {
-    "message": "Absurd Ausgewogen"
+  "AIP-Balanced": {
+    "message": "AIP-Ausgewogen"
   },
-  "Absurd Naval": {
-    "message": "Absurd Marine"
+  "AIP-Naval": {
+    "message": "AIP-Marine"
   },
-  "Absurd Orbital": {
-    "message": "Absurd Orbital"
+  "AIP-Orbital": {
+    "message": "AIP-Orbital"
   },
-  "Absurd Low Tech": {
-    "message": "Absurd Niedrige Tech"
+  "AIP-Low Tech": {
+    "message": "AIP-Niedrige Tech"
   },
-  "Absurd Fast Tech": {
-    "message": "Absurd Schnelle Tech"
+  "AIP-Fast Tech": {
+    "message": "AIP-Schnelle Tech"
   },
-  "Absurd Cautious": {
-    "message": "Absurd Vorsichtig"
+  "AIP-Cautious": {
+    "message": "AIP-Vorsichtig"
   },
-  "Absurd Aggressive": {
-    "message": "Absurd Aggressiv"
+  "AIP-Aggressive": {
+    "message": "AIP-Aggressiv"
   },
-  "Absurd Rush": {
-    "message": "Absurd Eilen"
+  "AIP-Rush": {
+    "message": "AIP-Eilen"
   },
-  "Absurd Turtle": {
-    "message": "Absurd Schildkröte"
+  "AIP-Turtle": {
+    "message": "AIP-Schildkröte"
   },
-  "Absurd Galactic War": {
-    "message": "Absurd Galaktischer Krieg"
+  "AIP-Galactic War": {
+    "message": "AIP-Galaktischer Krieg"
   }
 }
