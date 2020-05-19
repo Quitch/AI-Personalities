@@ -100,27 +100,27 @@ Please help [translate AI Personalities](https://poeditor.com/join/project/3u9vt
 
 ## FAQ
 
-### Can I use these personalities with lower difficulties?
+**Can I use these personalities with lower difficulties?**
 
 No. In game terms all the difficulty levels are in fact personalities. These personalities are modifications of the Absurd personality.
 
-### Can I use an AI mod like Queller?
+**Can I use an AI mod like Queller?**
 
 Yes, though these personalities will use the vanilla brain rather than Queller. The two mods will not interfere with one another.
 
-### Does this replace Queller?
+**Does this replace Queller?**
 
 No, this is completely separate. It's simply a way for you to better tailor your experience with the vanilla AI. It also works with PA Classic, which Queller does not.
 
-### Will this work in multiplayer?
+**Will this work in multiplayer?**
 
 Yes.
 
-### Does this affect Galactic War?
+**Does this affect Galactic War?**
 
 No. Use the Galactic War AI Overhaul mod for that.
 
-### How can I provide feedback?
+**How can I provide feedback?**
 
 Please use the mod's [forum thread](https://forums.uberent.com/threads/rel-server-ai-personalities.72363/). I am especially interested in hearing feedback on the difficulty levels.
 
