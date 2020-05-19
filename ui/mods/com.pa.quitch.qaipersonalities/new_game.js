@@ -48,7 +48,7 @@ function qaipersonalities() {
       metal_demand_check: 0.54,
       energy_demand_check: 0.65,
       adv_eco_mod: 1,
-      min_basic_fabbers: 3,
+      min_basic_fabbers: 4,
       personality_tags: ["Vanilla", "PreventsWaste"],
     },
     "AIP-Economist": {
