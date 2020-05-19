@@ -185,6 +185,31 @@ function qaipersonalities() {
       max_advanced_fabbers: 60,
       personality_tags: ["Vanilla", "PreventsWaste"],
     },
+    "AIP-Absurd Defender": {
+      display_name: "!LOC:Absurd Defender",
+      metal_drain_check: 0.71,
+      energy_drain_check: 0.8,
+      metal_demand_check: 0.54,
+      energy_demand_check: 0.65,
+      adv_eco_mod: 1,
+      min_basic_fabbers: 3,
+      personality_tags: ["Vanilla", "PreventsWaste"],
+    },
+    "AIP-Absurd Swarm": {
+      display_name: "!LOC:Absurd Swarm",
+      metal_demand_check: 0.99,
+      energy_demand_check: 0.99,
+      min_advanced_fabbers: 1,
+      personality_tags: ["Vanilla", "PreventsWaste"],
+    },
+    "AIP-Absurd Economist": {
+      display_name: "!LOC:Absurd Economist",
+      metal_drain_check: 0.71,
+      energy_drain_check: 0.8,
+      adv_eco_mod: 1,
+      min_basic_fabbers: 3,
+      personality_tags: ["Vanilla", "PreventsWaste"],
+    },
   };
 
   var baseline = aiPersonalities.Absurd;
