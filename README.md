@@ -10,6 +10,8 @@ You should download and install this mod via the Planetary Annihilation TITANS i
 
 ## Personalities
 
+All personalities are based on Absurd difficulty.
+
 ### Aggressive
 
 - More willing to attack.
@@ -28,17 +30,29 @@ You should download and install this mod via the Planetary Annihilation TITANS i
 - Requires better odds before attacking.
 - More likely to retreat.
 
+### Defender
+
+- Prefers non-factory structures
+
+### Economist
+
+- Tries to ensure a smooth running economy
+
+### Foundation
+
+- Uses the Galactic War Foundation boss personality
+
 ### Fast Tech
 
 - Techs to T2 as quickly as possible.
 
-### Galactic War
-
-- Uses the same settings as Absurd difficulty in Galactic War
-
 ### Land
 
 - Focuses almost exclusively on land units.
+
+### Legonis Machina
+
+- Uses the Galactic War Legonis Machina boss personality
 
 ### Low Tech
 
@@ -52,11 +66,23 @@ You should download and install this mod via the Planetary Annihilation TITANS i
 
 - Puts more emphasis on an orbital presence.
 
+### Revenants
+
+- Uses the Galactic War Revenants boss personality
+
 ### Rush
 
 - Focuses on T1 and bots.
 - More likely to attack.
 - Less likely to retreat.
+
+### Swarm
+
+- Prefers factories over other structures
+
+### Synchronous
+
+- Uses the Galactic War Synchronous boss personality
 
 ### Tank
 
