@@ -7,7 +7,7 @@ function qaipersonalities() {
 
   qaipersonalitiesLoaded = true;
 
-  api.debug.log("Adding Quitch AI Personalities");
+  api.debug.log("Adding AI Personalities for Skirmish and Multiplayer");
 
   var aiPersonalities = model.aiPersonalities();
 
