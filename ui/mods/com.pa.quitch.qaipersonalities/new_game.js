@@ -56,7 +56,7 @@ function qaipersonalities() {
       metal_drain_check: 0.71,
       energy_drain_check: 0.8,
       adv_eco_mod: 1,
-      min_basic_fabbers: 3,
+      min_basic_fabbers: 4,
       personality_tags: ["Vanilla", "PreventsWaste"],
     },
     "AIP-Fast Tech": {
