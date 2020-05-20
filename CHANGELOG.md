@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v1.4.0 - 2020-05-20
+
+- Turtle is more of a turtle
+- Split Galactic War into four distinct personalities: Legonis Machina, Foundation, Synchronos, and Revenants
+- Added Swarm
+- Added Defender
+- Added Economist
+- Prefixed all personalities with AIP and removed Absurd from the name
+- Reduced the total number of fabbers that Turtle will use
+
 ## v1.3.0 - 2020-01-01
 
 - Ensure Absurd Naval opens with air

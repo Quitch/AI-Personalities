@@ -1,44 +1,44 @@
 {
-  "Absurd Land": {
+  "AIP-Land": {
     "message": "Dément Terrestre"
   },
-  "Absurd Tank": {
+  "AIP-Tank": {
     "message": "Dément Tank"
   },
-  "Absurd Bot": {
+  "AIP-Bot": {
     "message": "Dément Robot"
   },
-  "Absurd Air": {
+  "AIP-Air": {
     "message": "Dément Aérienne"
   },
-  "Absurd Balanced": {
+  "AIP-Balanced": {
     "message": "Dément Équilibré"
   },
-  "Absurd Naval": {
+  "AIP-Naval": {
     "message": "Dément Navale"
   },
-  "Absurd Orbital": {
+  "AIP-Orbital": {
     "message": "Dément Orbitale"
   },
-  "Absurd Low Tech": {
+  "AIP-Low Tech": {
     "message": "Dément Basse Technologie"
   },
-  "Absurd Fast Tech": {
+  "AIP-Fast Tech": {
     "message": "Dément Technologie Rapide"
   },
-  "Absurd Cautious": {
+  "AIP-Cautious": {
     "message": "Dément Prudente"
   },
-  "Absurd Aggressive": {
+  "AIP-Aggressive": {
     "message": "Dément Agressive"
   },
-  "Absurd Rush": {
+  "AIP-Rush": {
     "message": "Dément Rush"
   },
-  "Absurd Turtle": {
+  "AIP-Turtle": {
     "message": "Dément Tortue"
   },
-  "Absurd Galactic War": {
+  "AIP-Galactic War": {
     "message": "Dément Guerre galactique"
   }
 }
