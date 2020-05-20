@@ -3,7 +3,7 @@
 ## v1.4.0 - 2020-05-20
 
 - Turtle is more of a turtle
-- Split Galactic War into four distinct personalities: Legonis Machina, Foundation, Synchronos, and Revenants
+- Split Galactic War into four distinct personalities: Legonis Machina, Foundation, Synchronous, and Revenants
 - Added Swarm
 - Added Defender
 - Added Economist
