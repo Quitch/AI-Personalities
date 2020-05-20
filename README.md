@@ -32,15 +32,15 @@ All personalities are based on Absurd difficulty.
 
 ### Defender
 
-- Prefers non-factory structures
+- Prefers non-factory structures.
 
 ### Economist
 
-- Tries to ensure a smooth running economy
+- Tries to ensure a smooth running economy.
 
 ### Foundation
 
-- Uses the Galactic War Foundation boss personality
+- Uses the Galactic War Foundation boss personality.
 
 ### Fast Tech
 
@@ -52,7 +52,7 @@ All personalities are based on Absurd difficulty.
 
 ### Legonis Machina
 
-- Uses the Galactic War Legonis Machina boss personality
+- Uses the Galactic War Legonis Machina boss personality.
 
 ### Low Tech
 
@@ -68,7 +68,7 @@ All personalities are based on Absurd difficulty.
 
 ### Revenants
 
-- Uses the Galactic War Revenants boss personality
+- Uses the Galactic War Revenants boss personality.
 
 ### Rush
 
@@ -78,11 +78,11 @@ All personalities are based on Absurd difficulty.
 
 ### Swarm
 
-- Prefers factories over other structures
+- Prefers factories over other structures.
 
 ### Synchronous
 
-- Uses the Galactic War Synchronous boss personality
+- Uses the Galactic War Synchronous boss personality.
 
 ### Tank
 
