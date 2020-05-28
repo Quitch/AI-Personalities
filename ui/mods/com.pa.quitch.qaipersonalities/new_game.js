@@ -62,7 +62,7 @@ function qaipersonalities() {
     "AIP-Fast Tech": {
       display_name: "!LOC:AIP-Fast Tech",
       adv_eco_mod: 0.5,
-      adv_eco_mod_alone: 0,
+      adv_eco_mod_alone: 0.5,
       min_basic_fabbers: 4,
       personality_tags: ["Vanilla", "PreventsWaste"],
     },
@@ -204,7 +204,7 @@ function qaipersonalities() {
       energy_demand_check: 0.65,
       neural_data_mod: 0.25,
       adv_eco_mod: 0.5,
-      adv_eco_mod_alone: 0,
+      adv_eco_mod_alone: 0.5,
       fabber_to_factory_ratio_basic: 3,
       fabber_to_factory_ratio_advanced: 3,
       fabber_alone_on_planet_mod: 2,
