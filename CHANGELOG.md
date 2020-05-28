@@ -5,6 +5,7 @@
 - Attempted to make Turtle slightly more viable
 - Turtle has a higher focus on non-factory structures
 - Fast Tech spends a little more time building a T1 presence before teching
+- All personalities given a small requirement for orbital to ensure proper operation in multi-planet
 
 ## v1.4.0 - 2020-05-20
 
