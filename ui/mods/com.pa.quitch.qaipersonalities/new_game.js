@@ -84,8 +84,7 @@ function qaipersonalities() {
     },
     "AIP-Land": {
       display_name: "!LOC:AIP-Land",
-      percent_vehicle: 0.55,
-      percent_bot: 0.4,
+      percent_land: 0.95,
       percent_air: 0,
       percent_naval: 0,
       percent_orbital: 0.05,

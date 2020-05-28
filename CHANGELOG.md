@@ -8,6 +8,7 @@
 - All personalities given a small requirement for orbital to ensure proper operation on multi-planet systems
 - Swarm starts with more fabbers
 - Bot and Tank will use some air
+- Land more evenly splits between bots and tanks
 
 ## v1.4.0 - 2020-05-20
 
