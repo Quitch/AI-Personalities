@@ -7,6 +7,7 @@
 - Fast Tech spends a little more time building a T1 presence before teching
 - All personalities given a small requirement for orbital to ensure proper operation on multi-planet systems
 - Swarm starts with more fabbers
+- Bot and Tank will use some air
 
 ## v1.4.0 - 2020-05-20
 
