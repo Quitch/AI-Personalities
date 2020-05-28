@@ -167,6 +167,7 @@ function qaipersonalities() {
       display_name: "!LOC:AIP-Swarm",
       metal_demand_check: 0.99,
       energy_demand_check: 0.99,
+      min_basic_fabbers: 3,
       min_advanced_fabbers: 1,
       personality_tags: ["Vanilla", "PreventsWaste"],
     },
