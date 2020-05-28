@@ -9,6 +9,7 @@
 - Swarm starts with more fabbers
 - Bot and Tank will use some air
 - Land more evenly splits between bots and tanks
+- Some personalities now have first factory preferences
 
 ## v1.4.0 - 2020-05-20
 
