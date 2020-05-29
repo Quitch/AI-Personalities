@@ -1,18 +1,24 @@
 {
-  "AIP-Land": {
-    "message": "Assurda Terrestri"
-  },
-  "AIP-Tank": {
-    "message": "Assurda Carro"
-  },
-  "AIP-Bot": {
-    "message": "Assurda Bot"
+  "AIP-Aggressive": {
+    "message": "Assurda Aggressivo"
   },
   "AIP-Air": {
     "message": "Assurda Aereo"
   },
-  "AIP-Balanced": {
-    "message": "Assurda Equilibrato"
+  "AIP-Bot": {
+    "message": "Assurda Bot"
+  },
+  "AIP-Cautious": {
+    "message": "Assurda Cauto"
+  },
+  "AIP-Fast Tech": {
+    "message": "Assurda Tech Veloce"
+  },
+  "AIP-Land": {
+    "message": "Assurda Terrestri"
+  },
+  "AIP-Low Tech": {
+    "message": "Assurda Low Tech"
   },
   "AIP-Naval": {
     "message": "Assurda Navale"
@@ -20,25 +26,13 @@
   "AIP-Orbital": {
     "message": "Assurda Orbitali"
   },
-  "AIP-Low Tech": {
-    "message": "Assurda Low Tech"
-  },
-  "AIP-Fast Tech": {
-    "message": "Assurda Tech Veloce"
-  },
-  "AIP-Cautious": {
-    "message": "Assurda Cauto"
-  },
-  "AIP-Aggressive": {
-    "message": "Assurda Aggressivo"
-  },
   "AIP-Rush": {
     "message": "Assurda Rush"
   },
+  "AIP-Tank": {
+    "message": "Assurda Carro"
+  },
   "AIP-Turtle": {
     "message": "Assurda Tartaruga"
-  },
-  "AIP-Galactic War": {
-    "message": "Assurda Guerra galattica"
   }
 }

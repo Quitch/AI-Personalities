@@ -1,18 +1,24 @@
 {
-  "AIP-Land": {
-    "message": "Dément Terrestre"
-  },
-  "AIP-Tank": {
-    "message": "Dément Tank"
-  },
-  "AIP-Bot": {
-    "message": "Dément Robot"
+  "AIP-Aggressive": {
+    "message": "Dément Agressive"
   },
   "AIP-Air": {
     "message": "Dément Aérienne"
   },
-  "AIP-Balanced": {
-    "message": "Dément Équilibré"
+  "AIP-Bot": {
+    "message": "Dément Robot"
+  },
+  "AIP-Cautious": {
+    "message": "Dément Prudente"
+  },
+  "AIP-Fast Tech": {
+    "message": "Dément Technologie Rapide"
+  },
+  "AIP-Land": {
+    "message": "Dément Terrestre"
+  },
+  "AIP-Low Tech": {
+    "message": "Dément Basse Technologie"
   },
   "AIP-Naval": {
     "message": "Dément Navale"
@@ -20,25 +26,13 @@
   "AIP-Orbital": {
     "message": "Dément Orbitale"
   },
-  "AIP-Low Tech": {
-    "message": "Dément Basse Technologie"
-  },
-  "AIP-Fast Tech": {
-    "message": "Dément Technologie Rapide"
-  },
-  "AIP-Cautious": {
-    "message": "Dément Prudente"
-  },
-  "AIP-Aggressive": {
-    "message": "Dément Agressive"
-  },
   "AIP-Rush": {
     "message": "Dément Rush"
   },
+  "AIP-Tank": {
+    "message": "Dément Tank"
+  },
   "AIP-Turtle": {
     "message": "Dément Tortue"
-  },
-  "AIP-Galactic War": {
-    "message": "Dément Guerre galactique"
   }
 }

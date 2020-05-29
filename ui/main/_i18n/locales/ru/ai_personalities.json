@@ -1,18 +1,24 @@
 {
-  "AIP-Land": {
-    "message": "Абсурд Земля"
-  },
-  "AIP-Tank": {
-    "message": "Абсурд Танки"
-  },
-  "AIP-Bot": {
-    "message": "Абсурд Боты"
+  "AIP-Aggressive": {
+    "message": "Абсурд Агрессивный"
   },
   "AIP-Air": {
     "message": "Абсурд Воздух"
   },
-  "AIP-Balanced": {
-    "message": "Абсурд Баланс"
+  "AIP-Bot": {
+    "message": "Абсурд Боты"
+  },
+  "AIP-Cautious": {
+    "message": "Абсурд Осторожный"
+  },
+  "AIP-Fast Tech": {
+    "message": "Абсурд Быстрые Технологии"
+  },
+  "AIP-Land": {
+    "message": "Абсурд Земля"
+  },
+  "AIP-Low Tech": {
+    "message": "Абсурд Низкие Технологии"
   },
   "AIP-Naval": {
     "message": "Абсурд Море"
@@ -20,25 +26,13 @@
   "AIP-Orbital": {
     "message": "Абсурд Орбитал"
   },
-  "AIP-Low Tech": {
-    "message": "Абсурд Низкие Технологии"
-  },
-  "AIP-Fast Tech": {
-    "message": "Абсурд Быстрые Технологии"
-  },
-  "AIP-Cautious": {
-    "message": "Абсурд Осторожный"
-  },
-  "AIP-Aggressive": {
-    "message": "Абсурд Агрессивный"
-  },
   "AIP-Rush": {
     "message": "Абсурд Раш"
   },
+  "AIP-Tank": {
+    "message": "Абсурд Танки"
+  },
   "AIP-Turtle": {
     "message": "Абсурд Медленный"
-  },
-  "AIP-Galactic War": {
-    "message": "Абсурд Галактическая Война"
   }
 }
