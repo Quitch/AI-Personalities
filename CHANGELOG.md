@@ -1,9 +1,22 @@
 # CHANGELOG
 
+## v1.5.0 - 2020-05-29
+
+- Attempted to make Turtle slightly more viable
+- Turtle has a higher focus on non-factory structures
+- Fast Tech spends a little more time building a T1 presence before teching
+- All personalities given a small requirement for orbital to ensure proper operation on multi-planet systems
+- Swarm starts with more fabbers
+- Bot and Tank will use some air
+- Land more evenly splits between bots and tanks
+- Some personalities now have first factory preferences
+- Updated pt-BR translation with thanks to CmdrEdem
+- Added partial pl-PL translation with thanks to Craeox
+
 ## v1.4.0 - 2020-05-20
 
 - Turtle is more of a turtle
-- Split Galactic War into four distinct personalities: Legonis Machina, Foundation, Synchronos, and Revenants
+- Split Galactic War into four distinct personalities: Legonis Machina, Foundation, Synchronous, and Revenants
 - Added Swarm
 - Added Defender
 - Added Economist
