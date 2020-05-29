@@ -11,6 +11,7 @@
 - Land more evenly splits between bots and tanks
 - Some personalities now have first factory preferences
 - Updated pt-BR translation with thanks to CmdrEdem
+- Added partial pl-PL translation with thanks to Craeox
 
 ## v1.4.0 - 2020-05-20
 

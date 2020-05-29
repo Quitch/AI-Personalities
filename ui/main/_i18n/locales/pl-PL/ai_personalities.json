@@ -1,0 +1,50 @@
+{
+  "AIP-Aggressive": {
+    "message": "AIP-Agresywny"
+  },
+  "AIP-Air": {
+    "message": "AIP-Powietrze"
+  },
+  "AIP-Bot": {
+    "message": "AIP-Boty"
+  },
+  "AIP-Cautious": {
+    "message": "AIP-Ostrożny"
+  },
+  "AIP-Fast Tech": {
+    "message": "AIP-Szybka Technologia"
+  },
+  "AIP-Foundation": {
+    "message": "AIP-Foundation"
+  },
+  "AIP-Land": {
+    "message": "AIP-Ląd"
+  },
+  "AIP-Legonis Machina": {
+    "message": "AIP-Legonis Machina"
+  },
+  "AIP-Low Tech": {
+    "message": "AIP-Niska Technologia"
+  },
+  "AIP-Naval": {
+    "message": "AIP-Morski"
+  },
+  "AIP-Orbital": {
+    "message": "AIP-Orbitalny"
+  },
+  "AIP-Revenants": {
+    "message": "AIP-Revenants"
+  },
+  "AIP-Rush": {
+    "message": "AIP-Szturm"
+  },
+  "AIP-Synchronous": {
+    "message": "AIP-Synchronous"
+  },
+  "AIP-Tank": {
+    "message": "AIP-Czołgi"
+  },
+  "AIP-Turtle": {
+    "message": "AIP-Żółw"
+  }
+}
