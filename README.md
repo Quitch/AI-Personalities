@@ -120,10 +120,6 @@ Yes.
 
 No. Use the Galactic War AI Overhaul mod for that.
 
-**How can I provide feedback?**
-
-Please use the mod's [forum thread](https://forums.uberent.com/threads/rel-server-ai-personalities.72363/). I am especially interested in hearing feedback on the difficulty levels.
-
 ## Incompatible mods
 
 I'm not aware of any.
