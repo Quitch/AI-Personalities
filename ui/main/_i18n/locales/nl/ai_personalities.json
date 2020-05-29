@@ -1,18 +1,24 @@
 {
-  "AIP-Land": {
-    "message": "AIP-Land"
-  },
-  "AIP-Tank": {
-    "message": "AIP-Tank"
-  },
-  "AIP-Bot": {
-    "message": "AIP-Bot"
+  "AIP-Aggressive": {
+    "message": "AIP-Agressief"
   },
   "AIP-Air": {
     "message": "AIP-Lucht"
   },
-  "AIP-Balanced": {
-    "message": "AIP-Evenwichtige"
+  "AIP-Bot": {
+    "message": "AIP-Bot"
+  },
+  "AIP-Cautious": {
+    "message": "AIP-Voorzichtig"
+  },
+  "AIP-Fast Tech": {
+    "message": "AIP-Fast Tech"
+  },
+  "AIP-Land": {
+    "message": "AIP-Land"
+  },
+  "AIP-Low Tech": {
+    "message": "AIP-Low Tech"
   },
   "AIP-Naval": {
     "message": "AIP-Zee"
@@ -20,25 +26,13 @@
   "AIP-Orbital": {
     "message": "AIP-Orbital"
   },
-  "AIP-Low Tech": {
-    "message": "AIP-Low Tech"
-  },
-  "AIP-Fast Tech": {
-    "message": "AIP-Fast Tech"
-  },
-  "AIP-Cautious": {
-    "message": "AIP-Voorzichtig"
-  },
-  "AIP-Aggressive": {
-    "message": "AIP-Agressief"
-  },
   "AIP-Rush": {
     "message": "AIP-Rush"
   },
+  "AIP-Tank": {
+    "message": "AIP-Tank"
+  },
   "AIP-Turtle": {
     "message": "AIP-Schildpad"
-  },
-  "AIP-Galactic War": {
-    "message": "Assurda Galactische oorlog"
   }
 }

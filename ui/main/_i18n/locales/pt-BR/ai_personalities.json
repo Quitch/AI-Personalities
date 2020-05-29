@@ -1,15 +1,33 @@
 {
-  "AIP-Land": {
-    "message": "AIP-Terrestre"
+  "AIP-Aggressive": {
+    "message": "AIP-Agressiva"
   },
-  "AIP-Tank": {
-    "message": "AIP-Tanque"
+  "AIP-Air": {
+    "message": "AIP-Aérea"
   },
   "AIP-Bot": {
     "message": "AIP-Robô"
   },
-  "AIP-Air": {
-    "message": "AIP-Aérea"
+  "AIP-Cautious": {
+    "message": "AIP-Cuidadosa"
+  },
+  "AIP-Defender": {
+    "message": "AIP-Defensor"
+  },
+  "AIP-Defensiva": {
+    "message": "AIP-Defensiva"
+  },
+  "AIP-Economist": {
+    "message": "AIP-Economista"
+  },
+  "AIP-Fast Tech": {
+    "message": "AIP-Tec. Rápida"
+  },
+  "AIP-Land": {
+    "message": "AIP-Terrestre"
+  },
+  "AIP-Low Tech": {
+    "message": "AIP-Baixa Tec."
   },
   "AIP-Naval": {
     "message": "AIP-Naval"
@@ -17,31 +35,13 @@
   "AIP-Orbital": {
     "message": "AIP-Orbital"
   },
-  "AIP-Low Tech": {
-    "message": "AIP-Baixa Tec."
-  },
-  "AIP-Fast Tech": {
-    "message": "AIP-Tec. Rápida"
-  },
-  "AIP-Cautious": {
-    "message": "AIP-Cuidadosa"
-  },
-  "AIP-Aggressive": {
-    "message": "AIP-Agressiva"
-  },
   "AIP-Rush": {
     "message": "AIP-Rush"
-  },
-  "AIP-Defensiva": {
-    "message": "AIP-Defensiva"
   },
   "AIP-Swarm": {
     "message": "AIP-Enxame"
   },
-  "AIP-Economist": {
-    "message": "AIP-Economista"
-  },
-  "AIP-Defender": {
-    "message": "AIP-Defensor"
+  "AIP-Tank": {
+    "message": "AIP-Tanque"
   }
 }

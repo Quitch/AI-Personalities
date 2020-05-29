@@ -1,12 +1,6 @@
 {
-  "AIP-Land": {
-    "message": "Absurda Terrestre"
-  },
-  "AIP-Tank": {
-    "message": "Absurda Tanque"
-  },
-  "AIP-Bot": {
-    "message": "Absurda Robot"
+  "AIP-Aggressive": {
+    "message": "Absurda Agresivo"
   },
   "AIP-Air": {
     "message": "Absurda Aéreo"
@@ -14,31 +8,34 @@
   "AIP-Balanced": {
     "message": "Absurda Equilibrado"
   },
+  "AIP-Bot": {
+    "message": "Absurda Robot"
+  },
+  "AIP-Cautious": {
+    "message": "Absurda Prudente"
+  },
+  "AIP-Fast Tech": {
+    "message": "Absurda Tecnología Rápida"
+  },
+  "AIP-Land": {
+    "message": "Absurda Terrestre"
+  },
+  "AIP-Low Tech": {
+    "message": "Absurda Baja Tecnología"
+  },
   "AIP-Naval": {
     "message": "Absurda Naval"
   },
   "AIP-Orbital": {
     "message": "Absurda Orbital"
   },
-  "AIP-Low Tech": {
-    "message": "Absurda Baja Tecnología"
-  },
-  "AIP-Fast Tech": {
-    "message": "Absurda Tecnología Rápida"
-  },
-  "AIP-Cautious": {
-    "message": "Absurda Prudente"
-  },
-  "AIP-Aggressive": {
-    "message": "Absurda Agresivo"
-  },
   "AIP-Rush": {
     "message": "Absurda Rush"
   },
+  "AIP-Tank": {
+    "message": "Absurda Tanque"
+  },
   "AIP-Turtle": {
     "message": "Absurda Tortuga"
-  },
-  "AIP-Galactic War": {
-    "message": "Absurda Guerra galáctica"
   }
 }

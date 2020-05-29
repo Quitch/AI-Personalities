@@ -1,18 +1,36 @@
 {
-  "AIP-Land": {
-    "message": "AIP-Land"
-  },
-  "AIP-Tank": {
-    "message": "AIP-Tank"
-  },
-  "AIP-Bot": {
-    "message": "AIP-Bot"
+  "AIP-Aggressive": {
+    "message": "AIP-Aggressive"
   },
   "AIP-Air": {
     "message": "AIP-Air"
   },
-  "AIP-Balanced": {
-    "message": "AIP-Balanced"
+  "AIP-Bot": {
+    "message": "AIP-Bot"
+  },
+  "AIP-Cautious": {
+    "message": "AIP-Cautious"
+  },
+  "AIP-Defender": {
+    "message": "AIP-Turtle"
+  },
+  "AIP-Economist": {
+    "message": "AIP-Turtle"
+  },
+  "AIP-Fast Tech": {
+    "message": "AIP-Fast Tech"
+  },
+  "AIP-Foundation": {
+    "message": "AIP-Foundation"
+  },
+  "AIP-Land": {
+    "message": "AIP-Land"
+  },
+  "AIP-Legonis Machina": {
+    "message": "AIP-Legonis Machina"
+  },
+  "AIP-Low Tech": {
+    "message": "AIP-Low Tech"
   },
   "AIP-Naval": {
     "message": "AIP-Naval"
@@ -20,25 +38,22 @@
   "AIP-Orbital": {
     "message": "AIP-Orbital"
   },
-  "AIP-Low Tech": {
-    "message": "AIP-Low Tech"
-  },
-  "AIP-Fast Tech": {
-    "message": "AIP-Fast Tech"
-  },
-  "AIP-Cautious": {
-    "message": "AIP-Cautious"
-  },
-  "AIP-Aggressive": {
-    "message": "AIP-Aggressive"
+  "AIP-Revenants": {
+    "message": "AIP-Revenants"
   },
   "AIP-Rush": {
     "message": "AIP-Rush"
   },
-  "AIP-Turtle": {
+  "AIP-Swarm": {
     "message": "AIP-Turtle"
   },
-  "AIP-Galactic War": {
-    "message": "AIP-Galactic War"
+  "AIP-Synchronous": {
+    "message": "AIP-Synchronous"
+  },
+  "AIP-Tank": {
+    "message": "AIP-Tank"
+  },
+  "AIP-Turtle": {
+    "message": "AIP-Turtle"
   }
 }
