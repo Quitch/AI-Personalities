@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## DEV
+
+- All translations now use the AIP prefix for difficulty levels
+
 ## v1.5.0 - 2020-05-29
 
 - Attempted to make Turtle slightly more viable

@@ -1,38 +1,38 @@
 {
   "AIP-Aggressive": {
-    "message": "Assurda Aggressivo"
+    "message": "AIP-Aggressivo"
   },
   "AIP-Air": {
-    "message": "Assurda Aereo"
+    "message": "AIP-Aereo"
   },
   "AIP-Bot": {
-    "message": "Assurda Bot"
+    "message": "AIP-Bot"
   },
   "AIP-Cautious": {
-    "message": "Assurda Cauto"
+    "message": "AIP-Cauto"
   },
   "AIP-Fast Tech": {
-    "message": "Assurda Tech Veloce"
+    "message": "AIP-Tech Veloce"
   },
   "AIP-Land": {
-    "message": "Assurda Terrestri"
+    "message": "AIP-Terrestri"
   },
   "AIP-Low Tech": {
-    "message": "Assurda Low Tech"
+    "message": "AIP-Low Tech"
   },
   "AIP-Naval": {
-    "message": "Assurda Navale"
+    "message": "AIP-Navale"
   },
   "AIP-Orbital": {
-    "message": "Assurda Orbitali"
+    "message": "AIP-Orbitali"
   },
   "AIP-Rush": {
-    "message": "Assurda Rush"
+    "message": "AIP-Rush"
   },
   "AIP-Tank": {
-    "message": "Assurda Carro"
+    "message": "AIP-Carro"
   },
   "AIP-Turtle": {
-    "message": "Assurda Tartaruga"
+    "message": "AIP-Tartaruga"
   }
 }

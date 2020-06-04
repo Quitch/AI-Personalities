@@ -1,38 +1,38 @@
 {
   "AIP-Aggressive": {
-    "message": "Абсурд Агрессивный"
+    "message": "AIP-Агрессивный"
   },
   "AIP-Air": {
-    "message": "Абсурд Воздух"
+    "message": "AIP-Воздух"
   },
   "AIP-Bot": {
-    "message": "Абсурд Боты"
+    "message": "AIP-Боты"
   },
   "AIP-Cautious": {
-    "message": "Абсурд Осторожный"
+    "message": "AIP-Осторожный"
   },
   "AIP-Fast Tech": {
-    "message": "Абсурд Быстрые Технологии"
+    "message": "AIP-Быстрые Технологии"
   },
   "AIP-Land": {
-    "message": "Абсурд Земля"
+    "message": "AIP-Земля"
   },
   "AIP-Low Tech": {
-    "message": "Абсурд Низкие Технологии"
+    "message": "AIP-Низкие Технологии"
   },
   "AIP-Naval": {
-    "message": "Абсурд Море"
+    "message": "AIP-Море"
   },
   "AIP-Orbital": {
-    "message": "Абсурд Орбитал"
+    "message": "AIP-Орбитал"
   },
   "AIP-Rush": {
-    "message": "Абсурд Раш"
+    "message": "AIP-Раш"
   },
   "AIP-Tank": {
-    "message": "Абсурд Танки"
+    "message": "AIP-Танки"
   },
   "AIP-Turtle": {
-    "message": "Абсурд Медленный"
+    "message": "AIP-Медленный"
   }
 }
