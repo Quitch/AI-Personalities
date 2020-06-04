@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## DEV
+## v1.5.1 - 2020-06-04
 
 - All translations now use the AIP prefix for difficulty levels
 
