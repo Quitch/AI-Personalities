@@ -1,41 +1,41 @@
 {
   "AIP-Aggressive": {
-    "message": "Absurda Agresivo"
+    "message": "AIP-Agresivo"
   },
   "AIP-Air": {
-    "message": "Absurda Aéreo"
+    "message": "AIP-Aéreo"
   },
   "AIP-Balanced": {
-    "message": "Absurda Equilibrado"
+    "message": "AIP-Equilibrado"
   },
   "AIP-Bot": {
-    "message": "Absurda Robot"
+    "message": "AIP-Robot"
   },
   "AIP-Cautious": {
-    "message": "Absurda Prudente"
+    "message": "AIP-Prudente"
   },
   "AIP-Fast Tech": {
-    "message": "Absurda Tecnología Rápida"
+    "message": "AIP-Tecnología Rápida"
   },
   "AIP-Land": {
-    "message": "Absurda Terrestre"
+    "message": "AIP-Terrestre"
   },
   "AIP-Low Tech": {
-    "message": "Absurda Baja Tecnología"
+    "message": "AIP-Baja Tecnología"
   },
   "AIP-Naval": {
-    "message": "Absurda Naval"
+    "message": "AIP-Naval"
   },
   "AIP-Orbital": {
-    "message": "Absurda Orbital"
+    "message": "AIP-Orbital"
   },
   "AIP-Rush": {
-    "message": "Absurda Rush"
+    "message": "AIP-Rush"
   },
   "AIP-Tank": {
-    "message": "Absurda Tanque"
+    "message": "AIP-Tanque"
   },
   "AIP-Turtle": {
-    "message": "Absurda Tortuga"
+    "message": "AIP-Tortuga"
   }
 }

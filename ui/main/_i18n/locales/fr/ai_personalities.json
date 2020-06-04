@@ -1,38 +1,38 @@
 {
   "AIP-Aggressive": {
-    "message": "Dément Agressive"
+    "message": "AIP-Agressive"
   },
   "AIP-Air": {
-    "message": "Dément Aérienne"
+    "message": "AIP-Aérienne"
   },
   "AIP-Bot": {
-    "message": "Dément Robot"
+    "message": "AIP-Robot"
   },
   "AIP-Cautious": {
-    "message": "Dément Prudente"
+    "message": "AIP-Prudente"
   },
   "AIP-Fast Tech": {
-    "message": "Dément Technologie Rapide"
+    "message": "AIP-Technologie Rapide"
   },
   "AIP-Land": {
-    "message": "Dément Terrestre"
+    "message": "AIP-Terrestre"
   },
   "AIP-Low Tech": {
-    "message": "Dément Basse Technologie"
+    "message": "AIP-Basse Technologie"
   },
   "AIP-Naval": {
-    "message": "Dément Navale"
+    "message": "AIP-Navale"
   },
   "AIP-Orbital": {
-    "message": "Dément Orbitale"
+    "message": "AIP-Orbitale"
   },
   "AIP-Rush": {
-    "message": "Dément Rush"
+    "message": "AIP-Rush"
   },
   "AIP-Tank": {
-    "message": "Dément Tank"
+    "message": "AIP-Tank"
   },
   "AIP-Turtle": {
-    "message": "Dément Tortue"
+    "message": "AIP-Tortue"
   }
 }
