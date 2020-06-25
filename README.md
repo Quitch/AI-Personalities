@@ -94,10 +94,6 @@ All personalities are based on Absurd difficulty.
 - Requires vastly superior numbers before attacking.
 - Far more likely to retreat.
 
-## Translations
-
-Please help [translate AI Personalities](https://poeditor.com/join/project/3u9vtw8xUf) to your local language.
-
 ## FAQ
 
 **Can I use these personalities with lower difficulties?**
