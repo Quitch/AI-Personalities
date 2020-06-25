@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## DEV
+## v1.5.2 - 2020-06-26
 
 - Updated for changes to Absurd personality
 
