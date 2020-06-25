@@ -15,7 +15,6 @@ function qaipersonalities() {
     "AIP-Aggressive": {
       display_name: "!LOC:AIP-Aggressive",
       neural_data_mod: 1.33,
-      personality_tags: ["Vanilla", "PreventsWaste"],
     },
     "AIP-Air": {
       display_name: "!LOC:AIP-Air",
@@ -24,7 +23,6 @@ function qaipersonalities() {
       percent_air: 0.95,
       percent_naval: 0,
       percent_orbital: 0.05,
-      personality_tags: ["Vanilla", "PreventsWaste"],
     },
     "AIP-Bot": {
       display_name: "!LOC:AIP-Bot",
@@ -33,13 +31,11 @@ function qaipersonalities() {
       percent_air: 0.2,
       percent_naval: 0,
       percent_orbital: 0.05,
-      personality_tags: ["Vanilla", "PreventsWaste"],
     },
     "AIP-Cautious": {
       display_name: "!LOC:AIP-Cautious",
       neural_data_mod: 0.75,
       min_basic_fabbers: 4,
-      personality_tags: ["Vanilla", "PreventsWaste"],
     },
     "AIP-Defender": {
       display_name: "!LOC:AIP-Defender",
@@ -49,7 +45,6 @@ function qaipersonalities() {
       energy_demand_check: 0.65,
       adv_eco_mod: 1,
       min_basic_fabbers: 4,
-      personality_tags: ["Vanilla", "PreventsWaste"],
     },
     "AIP-Economist": {
       display_name: "!LOC:AIP-Economist",
@@ -62,7 +57,6 @@ function qaipersonalities() {
       energy_drain_check: 0.8,
       adv_eco_mod: 1,
       min_basic_fabbers: 4,
-      personality_tags: ["Vanilla", "PreventsWaste"],
     },
     "AIP-Fast Tech": {
       display_name: "!LOC:AIP-Fast Tech",
@@ -74,7 +68,6 @@ function qaipersonalities() {
       adv_eco_mod: 0.5,
       adv_eco_mod_alone: 0.5,
       min_basic_fabbers: 4,
-      personality_tags: ["Vanilla", "PreventsWaste"],
     },
     "AIP-Foundation": {
       display_name: "!LOC:AIP-Foundation",
@@ -82,7 +75,6 @@ function qaipersonalities() {
       min_basic_fabbers: 1,
       max_basic_fabbers: 15,
       max_advanced_fabbers: 50,
-      personality_tags: ["Vanilla", "PreventsWaste"],
       percent_land: 0.05,
       percent_orbital: 0.05,
       percent_air: 0.55,
@@ -103,7 +95,6 @@ function qaipersonalities() {
       percent_air: 0,
       percent_naval: 0,
       percent_orbital: 0.05,
-      personality_tags: ["Vanilla", "PreventsWaste"],
     },
     "AIP-Legonis Machina": {
       display_name: "!LOC:AIP-Legonis Machina",
@@ -111,7 +102,6 @@ function qaipersonalities() {
       min_basic_fabbers: 1,
       max_basic_fabbers: 15,
       max_advanced_fabbers: 50,
-      personality_tags: ["Vanilla", "PreventsWaste"],
       percent_land: 0.55,
       percent_air: 0.35,
       percent_naval: 0.05,
@@ -125,7 +115,6 @@ function qaipersonalities() {
       display_name: "!LOC:AIP-Low Tech",
       adv_eco_mod: 3,
       adv_eco_mod_alone: 2,
-      personality_tags: ["Vanilla", "PreventsWaste"],
     },
     "AIP-Naval": {
       display_name: "!LOC:AIP-Naval",
@@ -139,7 +128,6 @@ function qaipersonalities() {
       percent_air: 0.2,
       percent_naval: 0.75,
       percent_orbital: 0.05,
-      personality_tags: ["Vanilla", "PreventsWaste"],
     },
     "AIP-Orbital": {
       display_name: "!LOC:AIP-Orbital",
@@ -148,7 +136,6 @@ function qaipersonalities() {
       percent_air: 0.05,
       percent_naval: 0,
       percent_orbital: 0.775,
-      personality_tags: ["Vanilla", "PreventsWaste"],
     },
     "AIP-Revenants": {
       display_name: "!LOC:AIP-Revenants",
@@ -156,7 +143,6 @@ function qaipersonalities() {
       min_basic_fabbers: 1,
       max_basic_fabbers: 15,
       max_advanced_fabbers: 50,
-      personality_tags: ["Vanilla", "PreventsWaste"],
       percent_land: 0.15,
       percent_air: 0.15,
       percent_naval: 0.1,
@@ -175,7 +161,6 @@ function qaipersonalities() {
       percent_orbital: 0.05,
       neural_data_mod: 1.33,
       adv_eco_mod: 3,
-      personality_tags: ["Vanilla", "PreventsWaste"],
     },
     "AIP-Swarm": {
       display_name: "!LOC:AIP-Swarm",
@@ -188,7 +173,6 @@ function qaipersonalities() {
       energy_demand_check: 0.99,
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1,
-      personality_tags: ["Vanilla", "PreventsWaste"],
     },
     "AIP-Synchronous": {
       display_name: "!LOC:AIP-Synchronous",
@@ -196,7 +180,6 @@ function qaipersonalities() {
       min_basic_fabbers: 1,
       max_basic_fabbers: 15,
       max_advanced_fabbers: 50,
-      personality_tags: ["Vanilla", "PreventsWaste"],
       percent_land: 0.3,
       percent_air: 0.3,
       percent_naval: 0.05,
@@ -213,7 +196,6 @@ function qaipersonalities() {
       percent_air: 0.2,
       percent_naval: 0,
       percent_orbital: 0.05,
-      personality_tags: ["Vanilla", "PreventsWaste"],
     },
     "AIP-Turtle": {
       display_name: "!LOC:AIP-Turtle",
@@ -227,7 +209,6 @@ function qaipersonalities() {
       fabber_to_factory_ratio_basic: 2,
       fabber_to_factory_ratio_advanced: 2,
       min_basic_fabbers: 4,
-      personality_tags: ["Vanilla", "PreventsWaste"],
     },
   };
 

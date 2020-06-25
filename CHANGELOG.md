@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.5.2 - 2020-06-26
+
+- Updated for changes to Absurd personality
+
 ## v1.5.1 - 2020-06-04
 
 - All translations now use the AIP prefix for difficulty levels
