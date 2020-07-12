@@ -1,38 +1,38 @@
 {
-  "AIP-Aggressive": {
-    "message": "AIP-Агрессивный"
+  "AIP Aggressive": {
+    "message": "AIP Агрессивный"
   },
-  "AIP-Air": {
-    "message": "AIP-Воздух"
+  "AIP Air": {
+    "message": "AIP Воздух"
   },
-  "AIP-Bot": {
-    "message": "AIP-Боты"
+  "AIP Bot": {
+    "message": "AIP Боты"
   },
-  "AIP-Cautious": {
-    "message": "AIP-Осторожный"
+  "AIP Cautious": {
+    "message": "AIP Осторожный"
   },
-  "AIP-Fast Tech": {
-    "message": "AIP-Быстрые Технологии"
+  "AIP Fast Tech": {
+    "message": "AIP Быстрые Технологии"
   },
-  "AIP-Land": {
-    "message": "AIP-Земля"
+  "AIP Land": {
+    "message": "AIP Земля"
   },
-  "AIP-Low Tech": {
-    "message": "AIP-Низкие Технологии"
+  "AIP Low Tech": {
+    "message": "AIP Низкие Технологии"
   },
-  "AIP-Naval": {
-    "message": "AIP-Море"
+  "AIP Naval": {
+    "message": "AIP Море"
   },
-  "AIP-Orbital": {
-    "message": "AIP-Орбитал"
+  "AIP Orbital": {
+    "message": "AIP Орбитал"
   },
-  "AIP-Rush": {
-    "message": "AIP-Раш"
+  "AIP Rush": {
+    "message": "AIP Раш"
   },
-  "AIP-Tank": {
-    "message": "AIP-Танки"
+  "AIP Tank": {
+    "message": "AIP Танки"
   },
-  "AIP-Turtle": {
-    "message": "AIP-Медленный"
+  "AIP Turtle": {
+    "message": "AIP Медленный"
   }
 }

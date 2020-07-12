@@ -1,50 +1,59 @@
 {
   "AIP Aggressive": {
-    "message": "AIP Agresywny"
+    "message": "AIP Aggressive"
   },
   "AIP Air": {
-    "message": "AIP Powietrze"
+    "message": "AIP Air"
   },
   "AIP Bot": {
-    "message": "AIP Boty"
+    "message": "AIP Bot"
   },
   "AIP Cautious": {
-    "message": "AIP Ostrożny"
+    "message": "AIP Cautious"
+  },
+  "AIP Defender": {
+    "message": "AIP Defender"
+  },
+  "AIP Economist": {
+    "message": "AIP Economist"
   },
   "AIP Fast Tech": {
-    "message": "AIP Szybka Technologia"
+    "message": "AIP Fast Tech"
   },
   "AIP Foundation": {
     "message": "AIP Foundation"
   },
   "AIP Land": {
-    "message": "AIP Ląd"
+    "message": "AIP Land"
   },
   "AIP Legonis Machina": {
     "message": "AIP Legonis Machina"
   },
   "AIP Low Tech": {
-    "message": "AIP Niska Technologia"
+    "message": "AIP Low Tech"
   },
   "AIP Naval": {
-    "message": "AIP Morski"
+    "message": "AIP Naval"
   },
   "AIP Orbital": {
-    "message": "AIP Orbitalny"
+    "message": "AIP Orbital"
   },
   "AIP Revenants": {
     "message": "AIP Revenants"
   },
   "AIP Rush": {
-    "message": "AIP Szturm"
+    "message": "AIP Rush"
+  },
+  "AIP Swarm": {
+    "message": "AIP Swarm"
   },
   "AIP Synchronous": {
     "message": "AIP Synchronous"
   },
   "AIP Tank": {
-    "message": "AIP Czołgi"
+    "message": "AIP Tank"
   },
   "AIP Turtle": {
-    "message": "AIP Żółw"
+    "message": "AIP Turtle"
   }
 }

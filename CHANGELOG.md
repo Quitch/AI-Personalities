@@ -2,7 +2,7 @@
 
 ## v1.5.3 - 2020-07-12
 
-- Temporarily removed en-US translation file until PA Inc are able to resolve a crash issue traced to server mod translations
+- All AIP- prefixes have had the hyphen removed to resolve a crash issue
 
 ## v1.5.2 - 2020-06-26
 

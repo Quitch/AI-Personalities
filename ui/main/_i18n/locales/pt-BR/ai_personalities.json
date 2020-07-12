@@ -1,47 +1,47 @@
 {
-  "AIP-Aggressive": {
-    "message": "AIP-Agressiva"
+  "AIP Aggressive": {
+    "message": "AIP Agressiva"
   },
-  "AIP-Air": {
-    "message": "AIP-Aérea"
+  "AIP Air": {
+    "message": "AIP Aérea"
   },
-  "AIP-Bot": {
-    "message": "AIP-Robô"
+  "AIP Bot": {
+    "message": "AIP Robô"
   },
-  "AIP-Cautious": {
-    "message": "AIP-Cuidadosa"
+  "AIP Cautious": {
+    "message": "AIP Cuidadosa"
   },
-  "AIP-Defender": {
-    "message": "AIP-Defensor"
+  "AIP Defender": {
+    "message": "AIP Defensor"
   },
-  "AIP-Defensiva": {
-    "message": "AIP-Defensiva"
+  "AIP Defensiva": {
+    "message": "AIP Defensiva"
   },
-  "AIP-Economist": {
-    "message": "AIP-Economista"
+  "AIP Economist": {
+    "message": "AIP Economista"
   },
-  "AIP-Fast Tech": {
-    "message": "AIP-Tec. Rápida"
+  "AIP Fast Tech": {
+    "message": "AIP Tec. Rápida"
   },
-  "AIP-Land": {
-    "message": "AIP-Terrestre"
+  "AIP Land": {
+    "message": "AIP Terrestre"
   },
-  "AIP-Low Tech": {
-    "message": "AIP-Baixa Tec."
+  "AIP Low Tech": {
+    "message": "AIP Baixa Tec."
   },
-  "AIP-Naval": {
-    "message": "AIP-Naval"
+  "AIP Naval": {
+    "message": "AIP Naval"
   },
-  "AIP-Orbital": {
-    "message": "AIP-Orbital"
+  "AIP Orbital": {
+    "message": "AIP Orbital"
   },
-  "AIP-Rush": {
-    "message": "AIP-Rush"
+  "AIP Rush": {
+    "message": "AIP Rush"
   },
-  "AIP-Swarm": {
-    "message": "AIP-Enxame"
+  "AIP Swarm": {
+    "message": "AIP Enxame"
   },
-  "AIP-Tank": {
-    "message": "AIP-Tanque"
+  "AIP Tank": {
+    "message": "AIP Tanque"
   }
 }
