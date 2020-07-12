@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v1.5.3 - 2020-07-12
+
+- All AIP- prefixes have had the hyphen removed to resolve a crash issue
+
 ## v1.5.2 - 2020-06-26
 
 - Updated for changes to Absurd personality

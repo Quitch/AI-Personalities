@@ -1,59 +1,59 @@
 {
-  "AIP-Aggressive": {
-    "message": "AIP-Aggressive"
+  "AIP Aggressive": {
+    "message": "AIP Aggressive"
   },
-  "AIP-Air": {
-    "message": "AIP-Air"
+  "AIP Air": {
+    "message": "AIP Air"
   },
-  "AIP-Bot": {
-    "message": "AIP-Bot"
+  "AIP Bot": {
+    "message": "AIP Bot"
   },
-  "AIP-Cautious": {
-    "message": "AIP-Cautious"
+  "AIP Cautious": {
+    "message": "AIP Cautious"
   },
-  "AIP-Defender": {
-    "message": "AIP-Defender"
+  "AIP Defender": {
+    "message": "AIP Defender"
   },
-  "AIP-Economist": {
-    "message": "AIP-Economist"
+  "AIP Economist": {
+    "message": "AIP Economist"
   },
-  "AIP-Fast Tech": {
-    "message": "AIP-Fast Tech"
+  "AIP Fast Tech": {
+    "message": "AIP Fast Tech"
   },
-  "AIP-Foundation": {
-    "message": "AIP-Foundation"
+  "AIP Foundation": {
+    "message": "AIP Foundation"
   },
-  "AIP-Land": {
-    "message": "AIP-Land"
+  "AIP Land": {
+    "message": "AIP Land"
   },
-  "AIP-Legonis Machina": {
-    "message": "AIP-Legonis Machina"
+  "AIP Legonis Machina": {
+    "message": "AIP Legonis Machina"
   },
-  "AIP-Low Tech": {
-    "message": "AIP-Low Tech"
+  "AIP Low Tech": {
+    "message": "AIP Low Tech"
   },
-  "AIP-Naval": {
-    "message": "AIP-Naval"
+  "AIP Naval": {
+    "message": "AIP Naval"
   },
-  "AIP-Orbital": {
-    "message": "AIP-Orbital"
+  "AIP Orbital": {
+    "message": "AIP Orbital"
   },
-  "AIP-Revenants": {
-    "message": "AIP-Revenants"
+  "AIP Revenants": {
+    "message": "AIP Revenants"
   },
-  "AIP-Rush": {
-    "message": "AIP-Rush"
+  "AIP Rush": {
+    "message": "AIP Rush"
   },
-  "AIP-Swarm": {
-    "message": "AIP-Swarm"
+  "AIP Swarm": {
+    "message": "AIP Swarm"
   },
-  "AIP-Synchronous": {
-    "message": "AIP-Synchronous"
+  "AIP Synchronous": {
+    "message": "AIP Synchronous"
   },
-  "AIP-Tank": {
-    "message": "AIP-Tank"
+  "AIP Tank": {
+    "message": "AIP Tank"
   },
-  "AIP-Turtle": {
-    "message": "AIP-Turtle"
+  "AIP Turtle": {
+    "message": "AIP Turtle"
   }
 }

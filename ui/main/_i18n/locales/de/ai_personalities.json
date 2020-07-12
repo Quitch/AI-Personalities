@@ -1,38 +1,38 @@
 {
-  "AIP-Aggressive": {
-    "message": "AIP-Aggressiv"
+  "AIP Aggressive": {
+    "message": "AIP Aggressiv"
   },
-  "AIP-Air": {
-    "message": "AIP-Luft"
+  "AIP Air": {
+    "message": "AIP Luft"
   },
-  "AIP-Bot": {
-    "message": "AIP-Roboter"
+  "AIP Bot": {
+    "message": "AIP Roboter"
   },
-  "AIP-Cautious": {
-    "message": "AIP-Vorsichtig"
+  "AIP Cautious": {
+    "message": "AIP Vorsichtig"
   },
-  "AIP-Fast Tech": {
-    "message": "AIP-Schnelle Tech"
+  "AIP Fast Tech": {
+    "message": "AIP Schnelle Tech"
   },
-  "AIP-Land": {
-    "message": "AIP-Land"
+  "AIP Land": {
+    "message": "AIP Land"
   },
-  "AIP-Low Tech": {
-    "message": "AIP-Niedrige Tech"
+  "AIP Low Tech": {
+    "message": "AIP Niedrige Tech"
   },
-  "AIP-Naval": {
-    "message": "AIP-Marine"
+  "AIP Naval": {
+    "message": "AIP Marine"
   },
-  "AIP-Orbital": {
-    "message": "AIP-Orbital"
+  "AIP Orbital": {
+    "message": "AIP Orbital"
   },
-  "AIP-Rush": {
-    "message": "AIP-Eilen"
+  "AIP Rush": {
+    "message": "AIP Eilen"
   },
-  "AIP-Tank": {
-    "message": "AIP-Panzer"
+  "AIP Tank": {
+    "message": "AIP Panzer"
   },
-  "AIP-Turtle": {
-    "message": "AIP-Schildkröte"
+  "AIP Turtle": {
+    "message": "AIP Schildkröte"
   }
 }
