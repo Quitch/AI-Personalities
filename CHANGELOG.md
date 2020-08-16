@@ -1,20 +1,18 @@
 # CHANGELOG
 
-## [Unreleased]
-
-## [1.5.3] - 2020-07-12
+## v1.5.3 - 2020-07-12
 
 - All AIP- prefixes have had the hyphen removed to resolve a crash issue
 
-## [1.5.2] - 2020-06-26
+## v1.5.2 - 2020-06-26
 
 - Updated for changes to Absurd personality
 
-## [1.5.1] - 2020-06-04
+## v1.5.1 - 2020-06-04
 
 - All translations now use the AIP prefix for difficulty levels
 
-## [1.5.0] - 2020-05-29
+## v1.5.0 - 2020-05-29
 
 - Attempted to make Turtle slightly more viable
 - Turtle has a higher focus on non-factory structures
@@ -27,7 +25,7 @@
 - Updated pt-BR translation with thanks to CmdrEdem
 - Added partial pl-PL translation with thanks to Craeox
 
-## [1.4.0] - 2020-05-20
+## v1.4.0 - 2020-05-20
 
 - Turtle is more of a turtle
 - Split Galactic War into four distinct personalities: Legonis Machina, Foundation, Synchronous, and Revenants
@@ -37,23 +35,23 @@
 - Prefixed all personalities with AIP and removed Absurd from the name
 - Reduced the total number of fabbers that Turtle will use
 
-## [1.3.0] - 2020-01-01
+## v1.3.0 - 2020-01-01
 
 - Ensure Absurd Naval opens with air
   - This doesn't always work in 113953 due to a bug which will hopefully be patched at some point
 - Absurd Turtle opens with more fabbers
 - Fix missing air value for Absurd Bot
 
-## [1.2.0] - 2019-09-16
+## v1.2.0 - 2019-09-16
 
 - Tidied up personality injection script
 - Added Russian (ru) translation with thanks to something more than human
 
-## [1.1.1] - 2019-01-04
+## v1.1.1 - 2019-01-04
 
 - Put Absurd Galactic War into alphabetical position on the list
 
-## [1.1.0] - 2019-01-03
+## v1.1.0 - 2019-01-03
 
 Please help [translate AI Personalities](https://poeditor.com/join/project/3u9vtw8xUf) to your local language.
 
@@ -68,16 +66,16 @@ Please help [translate AI Personalities](https://poeditor.com/join/project/3u9vt
 - Added the default amount of orbital back to Absurd Bot and Tank
 - Added some land weightings to Absurd Orbital
 
-## [1.0.2] - 2018-03-03
+## v1.0.2 - 2018-03-03
 
 - Made an adjustment to ensure land personality settings were respected
 - Sorted personality order alphabetically
 
-## [1.0.1] - 2017-11-17
+## v1.0.1 - 2017-11-17
 
 - Updated for changes to Absurd personality in 108271
 
-## [1.0] - 2017-04-02
+## v1.0 - 2017-04-02
 
 - Absurd Balanced now correctly named
 - Added language support:
@@ -90,7 +88,7 @@ Please help [translate AI Personalities](https://poeditor.com/join/project/3u9vt
   - Nederlands (België) (nl-BE)
 - Better mod description
 
-## [0.2] - 2017-03-24
+## v0.2 - 2017-03-24
 
 The AI Personalities **Client** is no longer required and should be uninstalled.
 
@@ -99,6 +97,6 @@ The AI Personalities **Client** is no longer required and should be uninstalled.
 - Dropped unnecessary client mod
 - mikeyh updated personality script to account for changes in 99377
 
-## [0.1] - 2017-03-17
+## v0.1 - 2017-03-17
 
 - Implemented 13 personalities
