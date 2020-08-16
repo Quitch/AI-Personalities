@@ -1,98 +1,98 @@
-# [AI Personalities for Skirmish and Multiplayer]
+# AI Personalities for Skirmish and Multiplayer Readme
 
 This mod works with both Planetary Annihilation and Planetary Annihilation Titans. It introduces a number of new personalities for the vanilla AI, based off the Absurd difficulty level. These personalities will work with faction mods such as Legion. Installing the Queller AI will not interfere with this mod.
 
-## [Installation]
+## Installation
 
 You should download and install this mod via the Planetary Annihilation TITANS in-game [Community Mods](https://steamcommunity.com/sharedfiles/filedetails/?id=1417396826).
 
-## [Personalities]
+## Personalities
 
 All personalities are based on Absurd difficulty.
 
-### [Aggressive]
+### Aggressive
 
 - More willing to attack.
 - Less likely to retreat.
 
-### [Air]
+### Air
 
 - Focuses almost exclusively on air.
 
-### [Bot]
+### Bot
 
 - Focuses almost exclusively on bots.
 
-### [Cautious]
+### Cautious
 
 - Requires better odds before attacking.
 - More likely to retreat.
 
-### [Defender]
+### Defender
 
 - Prefers non-factory structures.
 
-### [Economist]
+### Economist
 
 - Tries to ensure a smooth running economy.
 
-### [Foundation]
+### Foundation
 
 - Uses the Galactic War Foundation boss personality.
 
-### [Fast Tech]
+### Fast Tech
 
 - Techs to T2 as quickly as possible.
 
-### [Land]
+### Land
 
 - Focuses almost exclusively on land units.
 
-### [Legonis Machina]
+### Legonis Machina
 
 - Uses the Galactic War Legonis Machina boss personality.
 
-### [Low Tech]
+### Low Tech
 
 - Remains at T1 for longer.
 
-### [Naval]
+### Naval
 
 - Focuses more heavily on naval.
 
-### [Orbital]
+### Orbital
 
 - Puts more emphasis on an orbital presence.
 
-### [Revenants]
+### Revenants
 
 - Uses the Galactic War Revenants boss personality.
 
-### [Rush]
+### Rush
 
 - Focuses on T1 and bots.
 - More likely to attack.
 - Less likely to retreat.
 
-### [Swarm]
+### Swarm
 
 - Prefers factories over other structures.
 
-### [Synchronous]
+### Synchronous
 
 - Uses the Galactic War Synchronous boss personality.
 
-### [Tank]
+### Tank
 
 - Focuses almost exclusively on vehicles.
 
-### [Turtle]
+### Turtle
 
 - Favours a much higher ratio of fabbers to factories.
 - Requires vastly superior numbers before attacking.
 - Far more likely to retreat.
 
-## [FAQ]
+## FAQ
 
 **Can I use these personalities with lower difficulties?**
 
@@ -114,6 +114,6 @@ Yes.
 
 No. Use the Galactic War AI Overhaul mod for that.
 
-## [Incompatible mods]
+## Incompatible mods
 
 I'm not aware of any.
