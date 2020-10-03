@@ -218,12 +218,12 @@ function qaipersonalities() {
     personality,
     name
   ) {
-    var result = _.extend(_.clone(baseline), personality);
+    var result = _.assign(_.clone(baseline), personality);
     result["name"] = name;
     return result;
   });
 
-  _.extend(aiPersonalities, newPersonalities);
+  _.assign(aiPersonalities, newPersonalities);
 
   model.aiPersonalities.valueHasMutated();
 }
