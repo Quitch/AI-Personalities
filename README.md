@@ -66,7 +66,7 @@ All personalities are based on Absurd difficulty.
 
 ### Random
 
-- Picks a random Absurd or AIP personality
+- Picks a random personality
 
 ### Revenants
 

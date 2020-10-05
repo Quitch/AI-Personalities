@@ -2,7 +2,7 @@
 
 ## v1.6.0 - 2020-10-05
 
-- Added AIP Random which will assign a random Absurd or AIP personality
+- Added AIP Random which will assign a random personality
 - Rush techs earlier
 
 ## v1.5.3 - 2020-07-12
