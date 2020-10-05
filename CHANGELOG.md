@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Removed translations for languages where PA includes an official translation
+
 ## v1.6.0 - 2020-10-05
 
 - Added AIP Random which will assign a random personality
