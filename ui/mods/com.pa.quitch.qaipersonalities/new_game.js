@@ -1,11 +1,11 @@
-var qaipersonalitiesLoaded;
+var aipPersonalitiesLoaded;
 
-function qaipersonalities() {
-  if (qaipersonalitiesLoaded) {
+function aipPersonalities() {
+  if (aipPersonalitiesLoaded) {
     return;
   }
 
-  qaipersonalitiesLoaded = true;
+  aipPersonalitiesLoaded = true;
 
   api.debug.log("Adding AI Personalities for Skirmish and Multiplayer");
 
@@ -257,7 +257,7 @@ function qaipersonalities() {
 }
 
 try {
-  qaipersonalities();
+  aipPersonalities();
 } catch (e) {
   console.error(e);
 }
