@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased - 2020-10-05
+## v1.6.0 - 2020-10-05
 
 - Added AIP Random which will assign a random Absurd or AIP personality
 - Rush techs earlier
