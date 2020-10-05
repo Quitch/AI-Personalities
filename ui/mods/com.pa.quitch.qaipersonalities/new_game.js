@@ -11,7 +11,7 @@ function qaipersonalities() {
 
   var aiPersonalities = model.aiPersonalities();
 
-  var aipPersonalities = {
+  var newPersonalities = {
     aipAggressive: {
       display_name: "!LOC:AIP Aggressive",
       neural_data_mod: 1.33,
@@ -217,7 +217,7 @@ function qaipersonalities() {
 
   var baseline = aiPersonalities.Absurd;
 
-  aipPersonalities = _.mapValues(aipPersonalities, function (
+  newPersonalities = _.mapValues(newPersonalities, function (
     personality,
     name
   ) {
@@ -226,42 +226,34 @@ function qaipersonalities() {
     return result;
   });
 
-  _.assign(aiPersonalities, aipPersonalities);
+  _.assign(aiPersonalities, newPersonalities);
   model.aiPersonalities.valueHasMutated();
 
-  model.startGame = function () {
-    if (!model.startEnabled()) return;
+  model.startGame = (function () {
+    var cached_function = model.startGame;
 
-    if (model.gameIsNotOk()) return;
+    return function () {
+      var absurdPersonalities = _.assign(
+        newPersonalities,
+        _.pick(ai_types(), "Absurd")
+      );
 
-    if (!model.allPlayersAreReady()) return;
-
-    var absurdPersonalities = _.assign(
-      aipPersonalities,
-      _.pick(ai_types(), "Absurd")
-    );
-
-    _.forEach(model.armies(), function (army) {
-      _.forEach(army.slots(), function (slot) {
-        if (slot.ai() === true && slot.aiPersonality() === "aipRandom")
-          slot.aiPersonality(
-            _.sample(_.keys(_.omit(absurdPersonalities, "aipRandom")))
-          );
+      _.forEach(model.armies(), function (army, i) {
+        console.debug("army", i);
+        _.forEach(army.slots(), function (slot, i) {
+          console.debug("slot", i);
+          if (slot.ai() === true && slot.aiPersonality() === "aipRandom")
+            slot.aiPersonality(
+              _.sample(_.keys(_.omit(absurdPersonalities, "aipRandom")))
+            );
+        });
       });
-    });
 
-    // update invite if spectator slots available otherise reset to cancel invites
-    if (model.emptySpectatorSlots() > 0) {
-      model.sendLobbyStatus(loc("Started") + " " + model.lobbyFormat());
-    } else {
-      model.resetLobbyInfo();
-    }
+      var result = cached_function.apply(this, arguments);
 
-    api.audio.playSound("/SE/UI/UI_lobby_start_button");
-    model.send_message("start_game", {
-      countdown: 5,
-    });
-  };
+      return result;
+    };
+  })();
 }
 
 try {
