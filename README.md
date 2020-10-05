@@ -1,7 +1,5 @@
 # AI Personalities for Skirmish and Multiplayer Readme
 
-## Description
-
 This mod works with both Planetary Annihilation and Planetary Annihilation Titans. It introduces a number of new personalities for the vanilla AI, based off the Absurd difficulty level. These personalities will work with faction mods such as Legion. Installing the Queller AI will not interfere with this mod.
 
 ## Installation
@@ -65,6 +63,10 @@ All personalities are based on Absurd difficulty.
 ### Orbital
 
 - Puts more emphasis on an orbital presence.
+
+### Random
+
+- Picks a random personality
 
 ### Revenants
 
