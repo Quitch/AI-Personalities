@@ -238,10 +238,8 @@ function aipPersonalities() {
         _.pick(ai_types(), "Absurd")
       );
 
-      _.forEach(model.armies(), function (army, i) {
-        console.debug("army", i);
-        _.forEach(army.slots(), function (slot, i) {
-          console.debug("slot", i);
+      _.forEach(model.armies(), function (army) {
+        _.forEach(army.slots(), function (slot) {
           if (slot.ai() === true && slot.aiPersonality() === "aipRandom")
             slot.aiPersonality(
               _.sample(_.keys(_.omit(absurdPersonalities, "aipRandom")))
