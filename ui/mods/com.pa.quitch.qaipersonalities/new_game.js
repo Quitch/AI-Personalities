@@ -163,7 +163,7 @@ function aipPersonalities() {
       percent_naval: 0,
       percent_orbital: 0.05,
       neural_data_mod: 1.33,
-      adv_eco_mod: 3,
+      adv_eco_mod: 2,
     },
     aipSwarm: {
       display_name: "!LOC:AIP Swarm",
