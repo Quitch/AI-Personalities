@@ -11,12 +11,12 @@ function qaipersonalities() {
 
   var aiPersonalities = model.aiPersonalities();
 
-  var newPersonalities = {
-    "AIP Aggressive": {
+  var aipPersonalities = {
+    aipAggressive: {
       display_name: "!LOC:AIP Aggressive",
       neural_data_mod: 1.33,
     },
-    "AIP Air": {
+    aipAir: {
       display_name: "!LOC:AIP Air",
       percent_vehicle: 0,
       percent_bot: 0,
@@ -24,7 +24,7 @@ function qaipersonalities() {
       percent_naval: 0,
       percent_orbital: 0.05,
     },
-    "AIP Bot": {
+    aipBot: {
       display_name: "!LOC:AIP Bot",
       percent_vehicle: 0,
       percent_bot: 0.75,
@@ -32,12 +32,12 @@ function qaipersonalities() {
       percent_naval: 0,
       percent_orbital: 0.05,
     },
-    "AIP Cautious": {
+    aipCautious: {
       display_name: "!LOC:AIP Cautious",
       neural_data_mod: 0.75,
       min_basic_fabbers: 4,
     },
-    "AIP Defender": {
+    aipDefender: {
       display_name: "!LOC:AIP Defender",
       metal_drain_check: 0.71,
       energy_drain_check: 0.8,
@@ -46,7 +46,7 @@ function qaipersonalities() {
       adv_eco_mod: 1,
       min_basic_fabbers: 4,
     },
-    "AIP Economist": {
+    aipEconomist: {
       display_name: "!LOC:AIP Economist",
       percent_open_vehicle: 0,
       percent_open_bot: 1,
@@ -58,7 +58,7 @@ function qaipersonalities() {
       adv_eco_mod: 1,
       min_basic_fabbers: 4,
     },
-    "AIP Fast Tech": {
+    aipFastTech: {
       display_name: "!LOC:AIP Fast Tech",
       percent_open_vehicle: 0.5,
       percent_open_bot: 0.5,
@@ -69,7 +69,7 @@ function qaipersonalities() {
       adv_eco_mod_alone: 0.5,
       min_basic_fabbers: 4,
     },
-    "AIP Foundation": {
+    aipFoundation: {
       display_name: "!LOC:AIP Foundation",
       fabber_to_factory_ratio_basic: 1.5,
       min_basic_fabbers: 1,
@@ -84,7 +84,7 @@ function qaipersonalities() {
       metal_demand_check: 0.75,
       energy_demand_check: 0.85,
     },
-    "AIP Land": {
+    aipLand: {
       display_name: "!LOC:AIP Land",
       percent_open_vehicle: 0.5,
       percent_open_bot: 0.5,
@@ -96,7 +96,7 @@ function qaipersonalities() {
       percent_naval: 0,
       percent_orbital: 0.05,
     },
-    "AIP Legonis Machina": {
+    aipLegonisMachina: {
       display_name: "!LOC:AIP Legonis Machina",
       fabber_to_factory_ratio_basic: 1.5,
       min_basic_fabbers: 1,
@@ -111,12 +111,12 @@ function qaipersonalities() {
       metal_demand_check: 0.75,
       energy_demand_check: 0.85,
     },
-    "AIP Low Tech": {
+    aipLowTech: {
       display_name: "!LOC:AIP Low Tech",
       adv_eco_mod: 3,
       adv_eco_mod_alone: 2,
     },
-    "AIP Naval": {
+    aipNaval: {
       display_name: "!LOC:AIP Naval",
       percent_open_vehicle: 0,
       percent_open_bot: 0,
@@ -129,7 +129,7 @@ function qaipersonalities() {
       percent_naval: 0.75,
       percent_orbital: 0.05,
     },
-    "AIP Orbital": {
+    aipOrbital: {
       display_name: "!LOC:AIP Orbital",
       percent_vehicle: 0.1125,
       percent_bot: 0.0625,
@@ -137,7 +137,10 @@ function qaipersonalities() {
       percent_naval: 0,
       percent_orbital: 0.775,
     },
-    "AIP Revenants": {
+    aipRandom: {
+      display_name: "!LOC:AIP Random",
+    },
+    aipRevenants: {
       display_name: "!LOC:AIP Revenants",
       fabber_to_factory_ratio_basic: 1.5,
       min_basic_fabbers: 1,
@@ -152,7 +155,7 @@ function qaipersonalities() {
       metal_demand_check: 0.75,
       energy_demand_check: 0.85,
     },
-    "AIP Rush": {
+    aipRush: {
       display_name: "!LOC:AIP Rush",
       percent_bot: 0.95,
       percent_vehicle: 0,
@@ -162,7 +165,7 @@ function qaipersonalities() {
       neural_data_mod: 1.33,
       adv_eco_mod: 3,
     },
-    "AIP Swarm": {
+    aipSwarm: {
       display_name: "!LOC:AIP Swarm",
       percent_open_vehicle: 0,
       percent_open_bot: 1,
@@ -174,7 +177,7 @@ function qaipersonalities() {
       min_basic_fabbers: 3,
       min_advanced_fabbers: 1,
     },
-    "AIP Synchronous": {
+    aipSynchronous: {
       display_name: "!LOC:AIP Synchronous",
       fabber_to_factory_ratio_basic: 1.5,
       min_basic_fabbers: 1,
@@ -189,7 +192,7 @@ function qaipersonalities() {
       metal_demand_check: 0.75,
       energy_demand_check: 0.85,
     },
-    "AIP Tank": {
+    aipTank: {
       display_name: "!LOC:AIP Tank",
       percent_vehicle: 0.75,
       percent_bot: 0,
@@ -197,7 +200,7 @@ function qaipersonalities() {
       percent_naval: 0,
       percent_orbital: 0.05,
     },
-    "AIP Turtle": {
+    aipTurtle: {
       display_name: "!LOC:AIP Turtle",
       metal_drain_check: 0.71,
       energy_drain_check: 0.8,
@@ -214,7 +217,7 @@ function qaipersonalities() {
 
   var baseline = aiPersonalities.Absurd;
 
-  newPersonalities = _.mapValues(newPersonalities, function (
+  aipPersonalities = _.mapValues(aipPersonalities, function (
     personality,
     name
   ) {
@@ -223,9 +226,42 @@ function qaipersonalities() {
     return result;
   });
 
-  _.assign(aiPersonalities, newPersonalities);
-
+  _.assign(aiPersonalities, aipPersonalities);
   model.aiPersonalities.valueHasMutated();
+
+  model.startGame = function () {
+    if (!model.startEnabled()) return;
+
+    if (model.gameIsNotOk()) return;
+
+    if (!model.allPlayersAreReady()) return;
+
+    var absurdPersonalities = _.assign(
+      aipPersonalities,
+      _.pick(ai_types(), "Absurd")
+    );
+
+    _.forEach(model.armies(), function (army) {
+      _.forEach(army.slots(), function (slot) {
+        if (slot.ai() === true && slot.aiPersonality() === "aipRandom")
+          slot.aiPersonality(
+            _.sample(_.keys(_.omit(absurdPersonalities, "aipRandom")))
+          );
+      });
+    });
+
+    // update invite if spectator slots available otherise reset to cancel invites
+    if (model.emptySpectatorSlots() > 0) {
+      model.sendLobbyStatus(loc("Started") + " " + model.lobbyFormat());
+    } else {
+      model.resetLobbyInfo();
+    }
+
+    api.audio.playSound("/SE/UI/UI_lobby_start_button");
+    model.send_message("start_game", {
+      countdown: 5,
+    });
+  };
 }
 
 try {

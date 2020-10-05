@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased - 2020-10-05
+
+- Added AIP Random which will assign a random Absurd or AIP personality
+
 ## v1.5.3 - 2020-07-12
 
 - All AIP- prefixes have had the hyphen removed to resolve a crash issue

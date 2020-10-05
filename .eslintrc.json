@@ -13,7 +13,9 @@
   "globals": {
     "api": "readonly",
     "model": "readonly",
-    "_": "readonly"
+    "_": "readonly",
+    "loc": "readonly",
+    "ai_types": "readonly"
   },
   "plugins": ["lodash"],
   "rules": {

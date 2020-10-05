@@ -64,6 +64,10 @@ All personalities are based on Absurd difficulty.
 
 - Puts more emphasis on an orbital presence.
 
+### Random
+
+- Picks a random Absurd or AIP personality
+
 ### Revenants
 
 - Uses the Galactic War Revenants boss personality.
