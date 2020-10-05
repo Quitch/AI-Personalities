@@ -7,7 +7,7 @@ function aipPersonalities() {
 
   aipPersonalitiesLoaded = true;
 
-  api.debug.log("Adding AI Personalities for Skirmish and Multiplayer");
+  api.debug.log("Adding AI Personalities for Skirmish and Multiplayer loaded");
 
   var aiPersonalities = model.aiPersonalities();
 
