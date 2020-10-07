@@ -40,13 +40,13 @@ All personalities are based on Absurd difficulty.
 
 - More fabbers and less factories
 
-### Foundation
-
-- Uses the Galactic War Foundation boss personality.
-
 ### Fast Tech
 
 - Techs to T2 as quickly as possible.
+
+### Foundation
+
+- Uses the Galactic War Foundation boss personality.
 
 ### Land
 
