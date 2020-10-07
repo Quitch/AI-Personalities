@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v1.7.0 - 2020-10-07
 
 - Added AIP Fabber which likes to use more basic fabbers
 - Turtle uses less factories when alone on a planet
