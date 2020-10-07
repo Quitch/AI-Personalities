@@ -36,6 +36,10 @@ All personalities are based on Absurd difficulty.
 
 - Tries to ensure a smooth running economy.
 
+### Fabber
+
+- More fabbers and less factories
+
 ### Foundation
 
 - Uses the Galactic War Foundation boss personality.

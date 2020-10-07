@@ -58,6 +58,13 @@ function aipPersonalities() {
       adv_eco_mod: 1,
       min_basic_fabbers: 4,
     },
+    aipFabber: {
+      display_name: "!LOC:AIP Fabber",
+      fabber_to_factory_ratio_basic: 2.0,
+      fabber_to_factory_ratio_advanced: 2.0,
+      fabber_alone_on_planet_mod: 4.0,
+      factory_alone_on_planet_mod: 0.25,
+    },
     aipFastTech: {
       display_name: "!LOC:AIP Fast Tech",
       percent_open_vehicle: 0.5,
