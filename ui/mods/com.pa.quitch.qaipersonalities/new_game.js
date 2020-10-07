@@ -61,7 +61,6 @@ function aipPersonalities() {
     aipFabber: {
       display_name: "!LOC:AIP Fabber",
       fabber_to_factory_ratio_basic: 2,
-      fabber_to_factory_ratio_advanced: 2,
       fabber_alone_on_planet_mod: 4,
       factory_alone_on_planet_mod: 0.25,
     },
