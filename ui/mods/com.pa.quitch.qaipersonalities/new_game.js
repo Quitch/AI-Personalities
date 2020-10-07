@@ -218,6 +218,8 @@ function aipPersonalities() {
       adv_eco_mod_alone: 0.5,
       fabber_to_factory_ratio_basic: 2,
       fabber_to_factory_ratio_advanced: 2,
+      fabber_alone_on_planet_mod: 4.0,
+      factory_alone_on_planet_mod: 0.25,
       min_basic_fabbers: 4,
     },
   };
