@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Added AIP Fabber which likes to use more fabbers
+
 ## v1.6.1 - 2020-10-05
 
 - Removed translations for languages where PA includes an official translation
