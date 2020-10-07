@@ -38,7 +38,7 @@ All personalities are based on Absurd difficulty.
 
 ### Fabber
 
-- More fabbers and less factories
+- Uses more fabbers
 
 ### Fast Tech
 
