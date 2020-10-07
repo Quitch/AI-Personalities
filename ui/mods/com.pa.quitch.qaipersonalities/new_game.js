@@ -58,6 +58,12 @@ function aipPersonalities() {
       adv_eco_mod: 1,
       min_basic_fabbers: 4,
     },
+    aipFabber: {
+      display_name: "!LOC:AIP Fabber",
+      fabber_to_factory_ratio_basic: 2,
+      fabber_alone_on_planet_mod: 4,
+      factory_alone_on_planet_mod: 0.25,
+    },
     aipFastTech: {
       display_name: "!LOC:AIP Fast Tech",
       percent_open_vehicle: 0.5,
@@ -211,6 +217,8 @@ function aipPersonalities() {
       adv_eco_mod_alone: 0.5,
       fabber_to_factory_ratio_basic: 2,
       fabber_to_factory_ratio_advanced: 2,
+      fabber_alone_on_planet_mod: 4,
+      factory_alone_on_planet_mod: 0.25,
       min_basic_fabbers: 4,
     },
   };
