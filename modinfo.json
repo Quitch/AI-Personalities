@@ -25,5 +25,6 @@
   "scenes": {
     "new_game": ["coui://ui/mods/com.pa.quitch.qaipersonalities/new_game.js"]
   },
-  "priority": 100
+  "priority": 100,
+  "github": "https://github.com/Quitch/AI-Personalities"
 }
