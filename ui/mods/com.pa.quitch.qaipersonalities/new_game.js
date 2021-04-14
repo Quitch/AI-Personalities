@@ -245,7 +245,7 @@ if (!aiPersonalitiesLoaded) {
           _.forEach(army.slots(), function (slot) {
             if (slot.ai() === true && slot.aiPersonality() === "aipRandom")
               slot.aiPersonality(
-                _.sample(_.keys(_.omit(absurdPersonalities, "aipRandom")))
+                _(absurdPersonalities).omit("aipRandom").keys().sample()
               );
           });
         });
