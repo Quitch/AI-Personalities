@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v1.7.1 - 2021-04-14
 
 - Ensure AIP-Random doesn't pick a personality from any other AI mod
 
