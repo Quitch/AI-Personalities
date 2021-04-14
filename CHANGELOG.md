@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Ensure AIP-Random doesn't pick a personality from any other AI mod
+
 ## v1.7.0 - 2020-10-07
 
 - Added AIP Fabber which likes to use more basic fabbers
