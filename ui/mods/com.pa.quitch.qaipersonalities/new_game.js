@@ -6,7 +6,7 @@ if (!aiPersonalitiesLoaded) {
   try {
     var aiPersonalities = model.aiPersonalities();
 
-    var newPersonalities = {
+    var aipPersonalities = {
       aipAggressive: {
         display_name: "!LOC:AIP Aggressive",
         neural_data_mod: 1.33,
@@ -220,8 +220,8 @@ if (!aiPersonalitiesLoaded) {
 
     var baseline = aiPersonalities.Absurd;
 
-    newPersonalities = _.mapValues(
-      newPersonalities,
+    aipPersonalities = _.mapValues(
+      aipPersonalities,
       function (personality, name) {
         var result = _.assign(_.clone(baseline), personality);
         result["name"] = name;
@@ -229,7 +229,7 @@ if (!aiPersonalitiesLoaded) {
       }
     );
 
-    _.assign(aiPersonalities, newPersonalities);
+    _.assign(aiPersonalities, aipPersonalities);
     model.aiPersonalities.valueHasMutated();
 
     model.startGame = (function () {
@@ -237,7 +237,7 @@ if (!aiPersonalitiesLoaded) {
 
       return function () {
         var absurdPersonalities = _.assign(
-          newPersonalities,
+          aipPersonalities,
           _.pick(ai_types(), "Absurd")
         );
 
