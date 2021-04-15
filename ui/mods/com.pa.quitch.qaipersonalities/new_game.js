@@ -237,16 +237,14 @@ if (!aiPersonalitiesLoaded) {
 
       return function () {
         var absurdPersonalities = _.assign(
-          aipPersonalities,
+          _.omit(aipPersonalities, "aipRandom"),
           _.pick(ai_types(), "Absurd")
         );
 
         _.forEach(model.armies(), function (army) {
           _.forEach(army.slots(), function (slot) {
             if (slot.ai() === true && slot.aiPersonality() === "aipRandom")
-              slot.aiPersonality(
-                _(absurdPersonalities).omit("aipRandom").keys().sample()
-              );
+              slot.aiPersonality(_(absurdPersonalities).keys().sample());
           });
         });
 
