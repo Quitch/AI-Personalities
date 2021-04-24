@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v1.8.0 - 2021-04-25
+
+- AIP-Bot and AIP-Tank use less air
+- AIP-Turtle is more likely to attack
+- Reverted to default opening factory for AIP-Economist, AIP-Fast Tech, AIP-Land, and AIP-Swarm
+- Added opening factory requirements to unit type specialised personalities to future proof against Absurd personality changes
+- Removed changes to minimum fabber numbers from AIP-Swarm
+- AIP-Fast Tech and AIP-Turtle take slightly longer to tech
+- Increased orbital focus of AIP-Orbital
+
 ## v1.7.1 - 2021-04-14
 
 - Ensure AIP-Random doesn't pick a personality from any other AI mod
