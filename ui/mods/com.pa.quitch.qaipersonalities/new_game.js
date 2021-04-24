@@ -208,7 +208,7 @@ if (!aiPersonalitiesLoaded) {
           energy_drain_check: 0.8,
           metal_demand_check: 0.54,
           energy_demand_check: 0.65,
-          neural_data_mod: 0.25,
+          neural_data_mod: 0.5,
           adv_eco_mod: 0.5,
           adv_eco_mod_alone: 0.5,
           fabber_to_factory_ratio_basic: 2,
