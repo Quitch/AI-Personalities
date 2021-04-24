@@ -7,6 +7,7 @@
 - AIP-Turtle is more likely to attack
 - AIP-Random won't select AIP-Naval
 - Reverted to default opening factory for AIP-Economist, AIP-Fast Tech, AIP-Land, and AIP-Swarm
+- Add opening factory requirements to unit type specialised personalities to future proof against Absurd personality changes
 
 ## v1.7.1 - 2021-04-14
 
