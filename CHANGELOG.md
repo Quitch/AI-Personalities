@@ -9,6 +9,7 @@
 - Reverted to default opening factory for AIP-Economist, AIP-Fast Tech, AIP-Land, and AIP-Swarm
 - Add opening factory requirements to unit type specialised personalities to future proof against Absurd personality changes
 - Removed changes to minimum fabber numbers from AIP-Swarm
+- AIP-Fast Tech and AIP-Turtle take slightly longer to tech
 
 ## v1.7.1 - 2021-04-14
 

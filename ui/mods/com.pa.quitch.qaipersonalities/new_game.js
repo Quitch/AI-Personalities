@@ -67,7 +67,7 @@ if (!aiPersonalitiesLoaded) {
         },
         aipFastTech: {
           display_name: "!LOC:AIP Fast Tech",
-          adv_eco_mod: 0.5,
+          adv_eco_mod: 0.85,
           adv_eco_mod_alone: 0.5,
           min_basic_fabbers: 4,
         },
@@ -202,7 +202,7 @@ if (!aiPersonalitiesLoaded) {
           metal_demand_check: 0.54,
           energy_demand_check: 0.65,
           neural_data_mod: 0.5,
-          adv_eco_mod: 0.5,
+          adv_eco_mod: 0.85,
           adv_eco_mod_alone: 0.5,
           fabber_to_factory_ratio_basic: 2,
           fabber_to_factory_ratio_advanced: 2,
