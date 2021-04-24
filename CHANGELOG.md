@@ -2,14 +2,13 @@
 
 ## Unreleased
 
-- AIP-Bot focuses more heavily on bots
-- AIP-Tank focuses more heavily on tanks
+- AIP-Bot and AIP-Tank use less air
 - AIP-Turtle is more likely to attack
 - Reverted to default opening factory for AIP-Economist, AIP-Fast Tech, AIP-Land, and AIP-Swarm
-- Add opening factory requirements to unit type specialised personalities to future proof against Absurd personality changes
+- Added opening factory requirements to unit type specialised personalities to future proof against Absurd personality changes
 - Removed changes to minimum fabber numbers from AIP-Swarm
 - AIP-Fast Tech and AIP-Turtle take slightly longer to tech
-- Increase orbital focus of AIP-Orbital
+- Increased orbital focus of AIP-Orbital
 
 ## v1.7.1 - 2021-04-14
 
