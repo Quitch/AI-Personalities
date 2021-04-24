@@ -6,6 +6,7 @@
 - AIP-Tank focuses more heavily on tanks
 - AIP-Turtle is more likely to attack
 - AIP-Random won't select AIP-Naval
+- Reverted to default opening factory for AIP-Economist, AIP-Fast Tech, AIP-Land, and AIP-Swarm
 
 ## v1.7.1 - 2021-04-14
 
