@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v1.8.0 - 2021-04-25
 
 - AIP-Bot and AIP-Tank use less air
 - AIP-Turtle is more likely to attack
