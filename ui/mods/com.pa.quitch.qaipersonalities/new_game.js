@@ -128,11 +128,10 @@ if (!aiPersonalitiesLoaded) {
         },
         aipOrbital: {
           display_name: "!LOC:AIP Orbital",
-          percent_vehicle: 0.1125,
-          percent_bot: 0.0625,
-          percent_air: 0.05,
+          percent_land: 0.05,
+          percent_air: 0,
           percent_naval: 0,
-          percent_orbital: 0.775,
+          percent_orbital: 0.95,
         },
         aipRandom: {
           display_name: "!LOC:AIP Random",
