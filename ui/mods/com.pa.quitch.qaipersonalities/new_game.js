@@ -238,7 +238,7 @@ if (!aiPersonalitiesLoaded) {
 
         return function () {
           var absurdPersonalities = _.assign(
-            _.omit(newPersonalities, "aipRandom"),
+            _.omit(newPersonalities, ["aipRandom", "aipNaval"]),
             _.pick(ai_types(), "Absurd")
           );
 

@@ -5,6 +5,7 @@
 - AIP-Bot focuses more heavily on bots
 - AIP-Tank focuses more heavily on tanks
 - AIP-Turtle is more likely to attack
+- AIP-Random won't select AIP-Naval
 
 ## v1.7.1 - 2021-04-14
 
