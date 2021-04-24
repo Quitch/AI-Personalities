@@ -196,9 +196,9 @@ if (!aiPersonalitiesLoaded) {
         },
         aipTank: {
           display_name: "!LOC:AIP Tank",
-          percent_vehicle: 0.75,
+          percent_vehicle: 0.95,
           percent_bot: 0,
-          percent_air: 0.2,
+          percent_air: 0,
           percent_naval: 0,
           percent_orbital: 0.05,
         },
