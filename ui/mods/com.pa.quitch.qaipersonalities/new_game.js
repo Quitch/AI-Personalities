@@ -25,6 +25,18 @@ if (!aiPersonalitiesLoaded) {
           percent_naval: 0,
           percent_orbital: 0.05,
         },
+        aipAmphibious: {
+          display_name: "!LOC:AIP Amphibious",
+          percent_open_vehicle: 0.45,
+          percent_open_bot: 0.45,
+          percent_open_air: 0.1,
+          percent_open_naval: 0,
+          percent_open_orbital: 0,
+          percent_land: 0.4,
+          percent_air: 0.1,
+          percent_naval: 0.45,
+          percent_orbital: 0.05,
+        },
         aipBot: {
           display_name: "!LOC:AIP Bot",
           percent_open_vehicle: 0,
