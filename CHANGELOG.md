@@ -2,7 +2,7 @@
 
 ## v1.9.0 - 2021-04-25
 
-- Add AIP-Amphibious which uses a mix of land and naval forces
+- Added AIP-Amphibious which uses a mix of land and naval forces
 
 ## v1.8.0 - 2021-04-25
 
