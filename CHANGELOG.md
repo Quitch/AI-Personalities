@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v1.9.0 - 2021-04-25
 
 - Add AIP-Amphibious which uses a mix of land and naval forces
 
