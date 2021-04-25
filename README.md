@@ -19,6 +19,10 @@ All personalities are based on Absurd difficulty.
 
 - Focuses almost exclusively on air.
 
+### Amphibious
+
+- Mix of land and naval.
+
 ### Bot
 
 - Focuses almost exclusively on bots.
