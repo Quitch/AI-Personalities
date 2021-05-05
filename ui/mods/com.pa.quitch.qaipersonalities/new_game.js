@@ -121,8 +121,7 @@ if (!aiPersonalitiesLoaded) {
           },
           aipLowTech: {
             display_name: "!LOC:AIP Low Tech",
-            adv_eco_mod: 3,
-            adv_eco_mod_alone: 2,
+            basic_to_advanced_factory_ratio: 10,
           },
           aipNaval: {
             display_name: "!LOC:AIP Naval",
@@ -164,12 +163,6 @@ if (!aiPersonalitiesLoaded) {
           },
           aipRush: {
             display_name: "!LOC:AIP Rush",
-            percent_bot: 0.95,
-            percent_vehicle: 0,
-            percent_air: 0,
-            percent_naval: 0,
-            percent_orbital: 0.05,
-            neural_data_mod: 1.33,
             adv_eco_mod: 2,
           },
           aipSwarm: {
