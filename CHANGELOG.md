@@ -1,10 +1,5 @@
 # CHANGELOG
 
-## Unreleased
-
-- Rush no longer focuses bots
-- Low Tech no longer techs late
-
 ## v1.9.0 - 2021-04-25
 
 - Added AIP-Amphibious which uses a mix of land and naval forces

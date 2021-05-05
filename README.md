@@ -62,7 +62,7 @@ All personalities are based on Absurd difficulty.
 
 ### Low Tech
 
-- Greater focus on T1 units.
+- Remains at T1 for longer.
 
 ### Naval
 
@@ -82,7 +82,9 @@ All personalities are based on Absurd difficulty.
 
 ### Rush
 
-- Remains at T1 for longer.
+- Focuses on T1 and bots.
+- More likely to attack.
+- Less likely to retreat.
 
 ### Swarm
 
