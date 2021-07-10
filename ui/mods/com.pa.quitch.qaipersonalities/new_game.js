@@ -101,6 +101,10 @@ if (!aiPersonalitiesLoaded) {
             display_name: "!LOC:AIP Heavy",
             personality_tags: ["PreventsWaste", "Heavy"],
           },
+          aipInfernodier: {
+            display_name: "!LOC:AIP Infernodier",
+            personality_tags: ["PreventsWaste", "Infernodier"],
+          },
           aipLand: {
             display_name: "!LOC:AIP Land",
             percent_land: 0.95,

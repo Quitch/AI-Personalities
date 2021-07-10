@@ -56,6 +56,11 @@ All personalities are based on Absurd difficulty.
 
 - Focuses on tough units
 
+### Infernodier
+
+- Focuses on tough units on land
+- Focuses on long-range units on land
+
 ### Land
 
 - Focuses almost exclusively on land units.
