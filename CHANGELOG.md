@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Added AIP-Raider which focuses on the use of fast units
+
 ## v1.9.0 - 2021-04-25
 
 - Added AIP-Amphibious which uses a mix of land and naval forces
