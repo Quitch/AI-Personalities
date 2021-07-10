@@ -167,6 +167,10 @@ if (!aiPersonalitiesLoaded) {
           aipRandom: {
             display_name: "!LOC:AIP Random",
           },
+          aipRanked: {
+            display_name: "!LOC:AIP Ranked",
+            personality_tags: ["PreventsWaste", "Ranked"],
+          },
           aipRevenants: {
             display_name: "!LOC:AIP Revenants",
             fabber_to_factory_ratio_basic: 1.5,

@@ -8,6 +8,7 @@
 - Added AIP Infernodier which prefers to use long-range and tough units
 - Added AIP Micro which expands more cautiously
 - Added AIP All Terrain which prefers to use hover and amphibious units
+- Added AIP Ranked which prefers units used at the top of the ladder
 
 ## v1.9.0 - 2021-04-25
 

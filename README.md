@@ -98,6 +98,10 @@ All personalities are based on Absurd difficulty.
 
 - Picks a random personality.
 
+### Ranked
+
+- Prefers units used at the top of the ladder
+
 ### Revenants
 
 - Uses the Galactic War Revenants boss personality.
