@@ -176,6 +176,10 @@ if (!aiPersonalitiesLoaded) {
             neural_data_mod: 1.33,
             adv_eco_mod: 2,
           },
+          aipSniper: {
+            display_name: "!LOC:AIP Sniper",
+            personality_tags: ["PreventsWaste", "Sniper"],
+          },
           aipSwarm: {
             display_name: "!LOC:AIP Swarm",
             metal_demand_check: 0.99,

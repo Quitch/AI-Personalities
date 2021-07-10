@@ -90,6 +90,10 @@ All personalities are based on Absurd difficulty.
 - More likely to attack.
 - Less likely to retreat.
 
+### Sniper
+
+- Focuses on long-range units
+
 ### Swarm
 
 - Prefers factories over other structures.

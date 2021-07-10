@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Added AIP-Raider which focuses on the use of fast units
+- Added AIP-Sniper which focuses on long-range units
 
 ## v1.9.0 - 2021-04-25
 
