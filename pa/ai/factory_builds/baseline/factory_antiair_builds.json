@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Basic Air Fighter",
+      "name": "Baseline - Basic Air Fighter",
       "to_build": "BasicFighter",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -106,7 +106,7 @@
       ]
     },
     {
-      "name": "Advanced Air Fighter",
+      "name": "Baseline - Advanced Air Fighter",
       "to_build": "AdvancedFighter",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -211,7 +211,7 @@
       ]
     },
     {
-      "name": "Basic AA Vehicle",
+      "name": "Baseline - Basic AA Vehicle",
       "to_build": "BasicAAVehicle",
       "instance_count": 1,
       "priority": 98,
@@ -348,7 +348,7 @@
       ]
     },
     {
-      "name": "Basic AA Bot",
+      "name": "Baseline - Basic AA Bot",
       "to_build": "BasicAABot",
       "instance_count": 1,
       "priority": 98,
@@ -465,7 +465,7 @@
       ]
     },
     {
-      "name": "Advanced AA Vehicle",
+      "name": "Baseline - Advanced AA Vehicle",
       "to_build": "FlakTank",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -583,7 +583,7 @@
       ]
     },
     {
-      "name": "Frigate",
+      "name": "Baseline - Frigate",
       "to_build": "Frigate",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -670,7 +670,7 @@
       ]
     },
     {
-      "name": "MissleShip",
+      "name": "Baseline - MissleShip",
       "to_build": "MissleShip",
       "instance_count": -1,
       "max_num_assisters": 15,
