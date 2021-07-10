@@ -42,7 +42,7 @@ if (!aiPersonalitiesLoaded) {
           },
           aipBoomer: {
             display_name: "!LOC:AIP Boomer",
-            personality_tags: ["PreventsWaste", "Boomer"],
+            personality_tags: ["Default", "PreventsWaste", "Boomer"],
           },
           aipBot: {
             display_name: "!LOC:AIP Bot",
