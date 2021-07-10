@@ -17,7 +17,12 @@ All personalities are based on Absurd difficulty.
 
 ### Air
 
-- Focuses almost exclusively on air.
+- Prefers air.
+
+### All Terrain
+
+- Prefers to use amphibious units.
+- Prefers to use hover units.
 
 ### Amphibious
 
@@ -25,7 +30,7 @@ All personalities are based on Absurd difficulty.
 
 ### Bot
 
-- Focuses almost exclusively on bots.
+- Prefers bots.
 
 ### Cautious
 
@@ -54,16 +59,16 @@ All personalities are based on Absurd difficulty.
 
 ### Heavy
 
-- Focuses on tough units.
+- Prefers to use tough units.
 
 ### Infernodier
 
-- Focuses on tough units on land.
-- Focuses on long-range units on land.
+- Prefers to use tough units on land.
+- Prefers to use long-range units on land.
 
 ### Land
 
-- Focuses almost exclusively on land units.
+- Prefers land units.
 
 ### Legonis Machina
 
@@ -79,7 +84,7 @@ All personalities are based on Absurd difficulty.
 
 ### Naval
 
-- Focuses more heavily on naval.
+- Prefers naval.
 
 ### Orbital
 
@@ -87,7 +92,7 @@ All personalities are based on Absurd difficulty.
 
 ### Raider
 
-- Focuses on fast units.
+- Prefers to use fast units.
 
 ### Random
 
@@ -99,13 +104,13 @@ All personalities are based on Absurd difficulty.
 
 ### Rush
 
-- Focuses on T1 and bots.
+- Prefers T1 and bots.
 - More likely to attack.
 - Less likely to retreat.
 
 ### Sniper
 
-- Focuses on long-range units.
+- Prefers to use long-range units.
 
 ### Swarm
 
@@ -117,7 +122,7 @@ All personalities are based on Absurd difficulty.
 
 ### Tank
 
-- Focuses almost exclusively on vehicles.
+- Prefers vehicles.
 
 ### Turtle
 
