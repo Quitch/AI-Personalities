@@ -72,6 +72,10 @@ All personalities are based on Absurd difficulty.
 
 - Puts more emphasis on an orbital presence.
 
+### Raider
+
+- Focuses on fast units
+
 ### Random
 
 - Picks a random personality

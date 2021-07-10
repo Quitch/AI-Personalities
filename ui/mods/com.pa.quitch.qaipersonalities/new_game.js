@@ -144,6 +144,10 @@ if (!aiPersonalitiesLoaded) {
             percent_naval: 0,
             percent_orbital: 0.95,
           },
+          aipRaider: {
+            display_name: "!LOC:AIP Raider",
+            personality_tags: ["PreventsWaste", "Raider"],
+          },
           aipRandom: {
             display_name: "!LOC:AIP Random",
           },
