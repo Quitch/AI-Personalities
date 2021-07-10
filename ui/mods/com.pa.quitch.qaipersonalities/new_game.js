@@ -97,6 +97,10 @@ if (!aiPersonalitiesLoaded) {
             metal_demand_check: 0.75,
             energy_demand_check: 0.85,
           },
+          aipHeavy: {
+            display_name: "!LOC:AIP Heavy",
+            personality_tags: ["PreventsWaste", "Heavy"],
+          },
           aipLand: {
             display_name: "!LOC:AIP Land",
             percent_land: 0.95,

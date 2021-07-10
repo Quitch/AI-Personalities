@@ -52,6 +52,10 @@ All personalities are based on Absurd difficulty.
 
 - Uses the Galactic War Foundation boss personality.
 
+### Heavy
+
+- Focuses on tough units
+
 ### Land
 
 - Focuses almost exclusively on land units.

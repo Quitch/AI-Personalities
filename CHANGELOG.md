@@ -4,6 +4,7 @@
 
 - Added AIP-Raider which focuses on the use of fast units
 - Added AIP-Sniper which focuses on long-range units
+- Added AIP-Heavy which focuses on tough units
 
 ## v1.9.0 - 2021-04-25
 
