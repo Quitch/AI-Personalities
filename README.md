@@ -42,7 +42,7 @@ All personalities are based on Absurd difficulty.
 
 ### Fabber
 
-- Uses more basic fabbers
+- Uses more basic fabbers.
 
 ### Fast Tech
 
@@ -54,12 +54,12 @@ All personalities are based on Absurd difficulty.
 
 ### Heavy
 
-- Focuses on tough units
+- Focuses on tough units.
 
 ### Infernodier
 
-- Focuses on tough units on land
-- Focuses on long-range units on land
+- Focuses on tough units on land.
+- Focuses on long-range units on land.
 
 ### Land
 
@@ -87,11 +87,11 @@ All personalities are based on Absurd difficulty.
 
 ### Raider
 
-- Focuses on fast units
+- Focuses on fast units.
 
 ### Random
 
-- Picks a random personality
+- Picks a random personality.
 
 ### Revenants
 
@@ -105,7 +105,7 @@ All personalities are based on Absurd difficulty.
 
 ### Sniper
 
-- Focuses on long-range units
+- Focuses on long-range units.
 
 ### Swarm
 
