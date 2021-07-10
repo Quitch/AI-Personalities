@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Advanced Air Bomber",
+      "name": "Heavy - Advanced Air Bomber",
       "to_build": "HeavyBomber",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "name": "Support Platform",
+      "name": "Heavy - Support Platform",
       "to_build": "SupportPlatform",
       "instance_count": 1,
       "max_num_assisters": 10,
@@ -76,7 +76,7 @@
       ]
     },
     {
-      "name": "Heavy - Advanced Strafer",
+      "name": "Heavy - Heavy - Advanced Strafer",
       "to_build": "Strafer",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -120,7 +120,7 @@
       ]
     },
     {
-      "name": "Basic Combat Fabber Bot",
+      "name": "Heavy - Basic Combat Fabber Bot",
       "to_build": "BasicBotCombatFabber",
       "instance_count": 1,
       "priority": 98,
@@ -195,7 +195,7 @@
       ]
     },
     {
-      "name": "Tesla Bot",
+      "name": "Heavy - Tesla Bot",
       "to_build": "TeslaBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -257,7 +257,7 @@
       ]
     },
     {
-      "name": "Basic Armor Tank",
+      "name": "Heavy - Basic Armor Tank",
       "to_build": "BasicArmorTank",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -314,7 +314,7 @@
       ]
     },
     {
-      "name": "Advanced Assault Bot",
+      "name": "Heavy - Advanced Assault Bot",
       "to_build": "AdvancedAssaultBot",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -362,7 +362,7 @@
       ]
     },
     {
-      "name": "Advanced Combat Fabber Bot",
+      "name": "Heavy - Advanced Combat Fabber Bot",
       "to_build": "AdvancedBotCombatFabber",
       "instance_count": 1,
       "priority": 205,
@@ -427,7 +427,7 @@
       ]
     },
     {
-      "name": "Advanced Armor Tank",
+      "name": "Heavy - Advanced Armor Tank",
       "to_build": "AdvancedArmorTank",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -479,7 +479,7 @@
       ]
     },
     {
-      "name": "Destroyer",
+      "name": "Heavy - Destroyer",
       "to_build": "Destroyer",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -507,7 +507,7 @@
       ]
     },
     {
-      "name": "Fabrication Barge",
+      "name": "Heavy - Fabrication Barge",
       "to_build": "SupportBarge",
       "instance_count": 1,
       "priority": 98,
@@ -541,7 +541,7 @@
       ]
     },
     {
-      "name": "Battleship",
+      "name": "Heavy - Battleship",
       "to_build": "Battleship",
       "instance_count": -1,
       "max_num_assisters": 15,
