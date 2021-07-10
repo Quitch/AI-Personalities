@@ -7,6 +7,7 @@
 - Added AIP Heavy which prefers to use tough units
 - Added AIP Infernodier which prefers to use long-range and tough units
 - Added AIP Micro which expands more cautiously
+- Added AIP All Terrain which prefers to use hover and amphibious units
 
 ## v1.9.0 - 2021-04-25
 

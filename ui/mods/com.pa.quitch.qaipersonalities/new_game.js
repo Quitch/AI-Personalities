@@ -24,6 +24,10 @@ if (!aiPersonalitiesLoaded) {
             percent_naval: 0,
             percent_orbital: 0.05,
           },
+          aipAllTerrain: {
+            display_name: "!LOC:AIP All Terrain",
+            personality_tags: ["Default", "PreventsWaste", "AllTerrain"],
+          },
           aipAmphibious: {
             display_name: "!LOC:AIP Amphibious",
             percent_open_vehicle: 0.45,
