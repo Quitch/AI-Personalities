@@ -40,6 +40,10 @@ if (!aiPersonalitiesLoaded) {
             percent_naval: 0.45,
             percent_orbital: 0.05,
           },
+          aipArtillery: {
+            display_name: "!LOC:AIP Artillery",
+            personality_tags: ["Default", "PreventsWaste", "Artillery"],
+          },
           aipBoomer: {
             display_name: "!LOC:AIP Boomer",
             personality_tags: ["Default", "PreventsWaste", "Boomer"],

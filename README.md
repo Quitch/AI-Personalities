@@ -28,6 +28,11 @@ All personalities are based on Absurd difficulty.
 
 - Mix of land and naval.
 
+### Artillery
+
+- Likes to use static artillery.
+- Likes to use Catapults.
+
 ### Boomer
 
 - Likes to use a lot of Booms.
