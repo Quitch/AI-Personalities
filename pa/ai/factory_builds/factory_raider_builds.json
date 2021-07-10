@@ -321,6 +321,35 @@
           }
         ]
       ]
+    },
+    {
+      "name": "Raider - Gunboat",
+      "to_build": "Gunboat",
+      "instance_count": -1,
+      "shared_instance_count": "NavalScout",
+      "max_num_assisters": 10,
+      "priority": 98,
+      "builders": ["BasicNavalFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Raider",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
     }
   ]
 }
