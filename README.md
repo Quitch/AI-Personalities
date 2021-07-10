@@ -73,6 +73,10 @@ All personalities are based on Absurd difficulty.
 
 - Remains at T1 for longer.
 
+### Micro
+
+- More cautious expansion.
+
 ### Naval
 
 - Focuses more heavily on naval.

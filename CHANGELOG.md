@@ -6,6 +6,7 @@
 - Added AIP-Sniper which focuses on long-range units
 - Added AIP-Heavy which focuses on tough units
 - Added AIP-Infernodier which focuses on a mix of long-range and tough units
+- Added AIP-Micro which expands more cautiously
 
 ## v1.9.0 - 2021-04-25
 

@@ -132,6 +132,10 @@ if (!aiPersonalitiesLoaded) {
             adv_eco_mod: 3,
             adv_eco_mod_alone: 2,
           },
+          aipMicro: {
+            display_name: "!LOC:AIP Micro",
+            personality_tags: ["Default", "PreventsWaste", "SlowerExpansion"],
+          },
           aipNaval: {
             display_name: "!LOC:AIP Naval",
             percent_open_vehicle: 0,
