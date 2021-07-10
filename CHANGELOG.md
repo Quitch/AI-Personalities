@@ -9,6 +9,7 @@
 - Added AIP Micro which expands more cautiously
 - Added AIP All Terrain which prefers to use hover and amphibious units
 - Added AIP Ranked which prefers units used at the top of the ladder
+- Added AIP Boomer which likes to use a lot of Booms
 
 ## v1.9.0 - 2021-04-25
 

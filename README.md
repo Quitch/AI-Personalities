@@ -28,6 +28,10 @@ All personalities are based on Absurd difficulty.
 
 - Mix of land and naval.
 
+### Boomer
+
+- Likes to use a lot of Booms.
+
 ### Bot
 
 - Prefers bots.

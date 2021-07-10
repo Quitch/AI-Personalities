@@ -40,6 +40,10 @@ if (!aiPersonalitiesLoaded) {
             percent_naval: 0.45,
             percent_orbital: 0.05,
           },
+          aipBoomer: {
+            display_name: "!LOC:AIP Boomer",
+            personality_tags: ["PreventsWaste", "Boomer"],
+          },
           aipBot: {
             display_name: "!LOC:AIP Bot",
             percent_open_vehicle: 0,
