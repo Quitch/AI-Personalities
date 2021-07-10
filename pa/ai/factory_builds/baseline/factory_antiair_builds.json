@@ -479,6 +479,11 @@
             "boolean": false
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Raider",
+            "boolean": false
+          },
+          {
             "test_type": "AloneOnPlanet",
             "boolean": false
           },
@@ -507,6 +512,11 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "Default",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Raider",
             "boolean": false
           },
           {
@@ -542,6 +552,11 @@
             "boolean": false
           },
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "Raider",
+            "boolean": false
+          },
+          {
             "test_type": "BaseThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
@@ -553,6 +568,11 @@
           {
             "test_type": "HasPersonalityTag",
             "string0": "Default",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Raider",
             "boolean": false
           },
           {
