@@ -26,7 +26,7 @@ if (!aiPersonalitiesLoaded) {
           },
           aipAllTerrain: {
             display_name: "!LOC:AIP All Terrain",
-            personality_tags: ["Default", "PreventsWaste", "AllTerrain"],
+            personality_tags: ["PreventsWaste", "AllTerrain"],
           },
           aipAmphibious: {
             display_name: "!LOC:AIP Amphibious",
