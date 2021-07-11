@@ -62,6 +62,10 @@ All personalities are based on Absurd difficulty.
 
 - Techs to T2 as quickly as possible.
 
+### Fortress
+
+- Likes to build defences
+
 ### Foundation
 
 - Uses the Galactic War Foundation boss personality.

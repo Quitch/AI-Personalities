@@ -94,6 +94,10 @@ if (!aiPersonalitiesLoaded) {
             adv_eco_mod_alone: 0.5,
             min_basic_fabbers: 4,
           },
+          aipFortress: {
+            display_name: "!LOC:AIP Fortress",
+            personality_tags: ["Default", "PreventsWaste", "Fortress"],
+          },
           aipFoundation: {
             display_name: "!LOC:AIP Foundation",
             fabber_to_factory_ratio_basic: 1.5,

@@ -12,6 +12,7 @@
 - Added AIP Boomer which likes to use a lot of Booms
 - Added AIP Artillery which likes to use static artillery and Catapults
 - Added AIP Nuker which likes to build nukes
+- Added AIP Fortress which likes to build defences
 
 ## v1.9.0 - 2021-04-25
 
