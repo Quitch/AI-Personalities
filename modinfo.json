@@ -26,5 +26,6 @@
     "new_game": ["coui://ui/mods/com.pa.quitch.qaipersonalities/new_game.js"]
   },
   "priority": 100,
+  "titansOnly": true,
   "github": "https://github.com/Quitch/AI-Personalities"
 }

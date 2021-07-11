@@ -1,5 +1,7 @@
 # AI Personalities for Skirmish and Multiplayer Readme
 
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/Quitch/AI-Personalities)
+
 This mod works with both Planetary Annihilation and Planetary Annihilation Titans. It introduces a number of new personalities for the vanilla AI, based off the Absurd difficulty level. These personalities will work with faction mods such as Legion. Installing the Queller AI will not interfere with this mod.
 
 ## Installation
