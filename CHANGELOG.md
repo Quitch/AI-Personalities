@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## v2.0.0 - 2021-07-11
+
+- Added AIP Raider which prefers to use fast units
+- Added AIP Sniper which prefers to use long-range units
+- Added AIP Heavy which prefers to use armoured units
+- Added AIP Infernodier which prefers to use long-range and armoured units
+- Added AIP Micro which expands more cautiously
+- Added AIP All Terrain which prefers to use hover and amphibious units
+- Added AIP Ranked which prefers units used at the top of the ladder
+- Added AIP Boomer which likes to use a lot of Booms
+- Added AIP Artillery which likes to use static artillery and Catapults
+- Added AIP Nuker which likes to build nukes
+- Added AIP Fortress which likes to build defences
+- Added AIP Assault which prefers to use assault units
+
 ## v1.9.0 - 2021-04-25
 
 - Added AIP-Amphibious which uses a mix of land and naval forces

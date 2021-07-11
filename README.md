@@ -17,15 +17,33 @@ All personalities are based on Absurd difficulty.
 
 ### Air
 
-- Focuses almost exclusively on air.
+- Prefers air.
+
+### All Terrain
+
+- Prefers to use amphibious units.
+- Prefers to use hover units.
 
 ### Amphibious
 
 - Mix of land and naval.
 
+### Artillery
+
+- Likes to use static artillery.
+- Likes to use Catapults.
+
+### Assault
+
+- Prefers to use assault units.
+
+### Boomer
+
+- Likes to use a lot of Booms.
+
 ### Bot
 
-- Focuses almost exclusively on bots.
+- Prefers bots.
 
 ### Cautious
 
@@ -42,19 +60,32 @@ All personalities are based on Absurd difficulty.
 
 ### Fabber
 
-- Uses more basic fabbers
+- Uses more basic fabbers.
 
 ### Fast Tech
 
 - Techs to T2 as quickly as possible.
 
+### Fortress
+
+- Likes to build defences
+
 ### Foundation
 
 - Uses the Galactic War Foundation boss personality.
 
+### Heavy
+
+- Prefers to use armoured units.
+
+### Infernodier
+
+- Prefers to use armoured units on land.
+- Prefers to use long-range units on land.
+
 ### Land
 
-- Focuses almost exclusively on land units.
+- Prefers land units.
 
 ### Legonis Machina
 
@@ -64,17 +95,33 @@ All personalities are based on Absurd difficulty.
 
 - Remains at T1 for longer.
 
+### Micro
+
+- More cautious expansion.
+
 ### Naval
 
-- Focuses more heavily on naval.
+- Prefers naval.
+
+### Nuker
+
+- Likes to builds nukes
 
 ### Orbital
 
 - Puts more emphasis on an orbital presence.
 
+### Raider
+
+- Prefers to use fast units.
+
 ### Random
 
-- Picks a random personality
+- Picks a random personality.
+
+### Ranked
+
+- Prefers units used at the top of the ladder
 
 ### Revenants
 
@@ -82,9 +129,13 @@ All personalities are based on Absurd difficulty.
 
 ### Rush
 
-- Focuses on T1 and bots.
+- Prefers T1 and bots.
 - More likely to attack.
 - Less likely to retreat.
+
+### Sniper
+
+- Prefers to use long-range units.
 
 ### Swarm
 
@@ -96,7 +147,7 @@ All personalities are based on Absurd difficulty.
 
 ### Tank
 
-- Focuses almost exclusively on vehicles.
+- Prefers vehicles.
 
 ### Turtle
 
