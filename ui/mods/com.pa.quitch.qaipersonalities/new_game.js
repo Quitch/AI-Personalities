@@ -163,6 +163,7 @@ if (!aiPersonalitiesLoaded) {
           },
           aipNuker: {
             display_name: "!LOC:AIP Nuker",
+            adv_eco_mod: 1,
             personality_tags: ["Default", "PreventsWaste", "Nuker"],
           },
           aipOrbital: {
