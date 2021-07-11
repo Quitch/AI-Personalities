@@ -48,7 +48,7 @@
       ],
       "placement_rules": {
         "buffer": 2,
-        "placement_type": "FromBaseCenter",
+        "placement_type": "FromMainBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
@@ -234,7 +234,7 @@
       ],
       "placement_rules": {
         "buffer": 2,
-        "placement_type": "FromMainBaseCenter",
+        "placement_type": "FromMainBasePerimeter",
         "unit_count_rules": [
           {
             "unit_type_string": "Structure & (EnergyProduction | Factory | Tactical | Artillery)",
