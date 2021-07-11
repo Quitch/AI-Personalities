@@ -95,6 +95,10 @@ All personalities are based on Absurd difficulty.
 
 - Prefers naval.
 
+### Nuker
+
+- Likes to builds nukes
+
 ### Orbital
 
 - Puts more emphasis on an orbital presence.

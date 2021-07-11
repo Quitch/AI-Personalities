@@ -161,6 +161,10 @@ if (!aiPersonalitiesLoaded) {
             percent_naval: 0.75,
             percent_orbital: 0.05,
           },
+          aipNuker: {
+            display_name: "!LOC:AIP Nuker",
+            personality_tags: ["Default", "PreventsWaste", "Nuker"],
+          },
           aipOrbital: {
             display_name: "!LOC:AIP Orbital",
             percent_land: 0.05,

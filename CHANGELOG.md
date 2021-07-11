@@ -11,6 +11,7 @@
 - Added AIP Ranked which prefers units used at the top of the ladder
 - Added AIP Boomer which likes to use a lot of Booms
 - Added AIP Artillery which likes to use static artillery and Catapults
+- Added AIP Nuker which likes to build nukes
 
 ## v1.9.0 - 2021-04-25
 
