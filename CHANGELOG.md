@@ -4,8 +4,8 @@
 
 - Added AIP Raider which prefers to use fast units
 - Added AIP Sniper which prefers to use long-range units
-- Added AIP Heavy which prefers to use tough units
-- Added AIP Infernodier which prefers to use long-range and tough units
+- Added AIP Heavy which prefers to use armoured units
+- Added AIP Infernodier which prefers to use long-range and armoured units
 - Added AIP Micro which expands more cautiously
 - Added AIP All Terrain which prefers to use hover and amphibious units
 - Added AIP Ranked which prefers units used at the top of the ladder

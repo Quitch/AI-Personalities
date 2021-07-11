@@ -76,11 +76,11 @@ All personalities are based on Absurd difficulty.
 
 ### Heavy
 
-- Prefers to use tough units.
+- Prefers to use armoured units.
 
 ### Infernodier
 
-- Prefers to use tough units on land.
+- Prefers to use armoured units on land.
 - Prefers to use long-range units on land.
 
 ### Land
