@@ -35,7 +35,7 @@ All personalities are based on Absurd difficulty.
 
 ### Assault
 
-- Prefers to use standard assault units.
+- Prefers to use assault units.
 
 ### Boomer
 
