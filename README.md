@@ -2,7 +2,7 @@
 
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/Quitch/AI-Personalities)
 
-This mod works with both Planetary Annihilation and Planetary Annihilation Titans. It introduces a number of new personalities for the vanilla AI, based off the Absurd difficulty level. These personalities will work with faction mods such as Legion. Installing the Queller AI will not interfere with this mod.
+This mod works with both Planetary Annihilation and Planetary Annihilation Titans. It introduces a number of new personalities for the vanilla AI, based off the Absurd difficulty level. Many of the personalities will work with faction mods such as Legion. Installing the Queller AI will not interfere with this mod.
 
 ## Installation
 
@@ -25,6 +25,7 @@ All personalities are based on Absurd difficulty.
 
 - Prefers to use amphibious units.
 - Prefers to use hover units.
+- Does not support Legion.
 
 ### Amphibious
 
@@ -34,14 +35,17 @@ All personalities are based on Absurd difficulty.
 
 - Likes to use static artillery.
 - Likes to use Catapults.
+- Does not support Legion.
 
 ### Assault
 
 - Prefers to use assault units.
+- Does not support Legion.
 
 ### Boomer
 
 - Likes to use a lot of Booms.
+- Does not support Legion.
 
 ### Bot
 
@@ -70,7 +74,8 @@ All personalities are based on Absurd difficulty.
 
 ### Fortress
 
-- Likes to build defences
+- Likes to build defences.
+- Does not support Legion.
 
 ### Foundation
 
@@ -79,11 +84,13 @@ All personalities are based on Absurd difficulty.
 ### Heavy
 
 - Prefers to use armoured units.
+- Does not support Legion.
 
 ### Infernodier
 
 - Prefers to use armoured units on land.
 - Prefers to use long-range units on land.
+- Does not support Legion.
 
 ### Land
 
@@ -107,7 +114,8 @@ All personalities are based on Absurd difficulty.
 
 ### Nuker
 
-- Likes to build nukes
+- Likes to build nukes.
+- Does not support Legion.
 
 ### Orbital
 
@@ -116,6 +124,7 @@ All personalities are based on Absurd difficulty.
 ### Raider
 
 - Prefers to use fast units.
+- Does not support Legion.
 
 ### Random
 
@@ -123,7 +132,8 @@ All personalities are based on Absurd difficulty.
 
 ### Ranked
 
-- Prefers units used at the top of the ladder
+- Prefers units used at the top of the ladder.
+- Does not support Legion.
 
 ### Revenants
 
@@ -138,6 +148,7 @@ All personalities are based on Absurd difficulty.
 ### Sniper
 
 - Prefers to use long-range units.
+- Does not support Legion.
 
 ### Swarm
 
