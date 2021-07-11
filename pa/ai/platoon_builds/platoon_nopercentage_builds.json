@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "No PercentageLand Transfer To Planet - Alone",
+      "name": "No Percentage - Land Transfer To Planet - Alone",
       "to_build": "NoPercentage_Land_Attack_Max",
       "instance_count": -1,
       "shared_instance_count": "LandTransferToPlanet",
@@ -36,7 +36,7 @@
       "task_type": "TeleportLandToPlanet"
     },
     {
-      "name": "No PercentageLand Transfer To Planet",
+      "name": "No Percentage - Land Transfer To Planet",
       "to_build": "NoPercentage_Land_Attack_XLarge",
       "instance_count": 1,
       "shared_instance_count": "LandTransferToPlanet",
@@ -71,7 +71,7 @@
       "task_type": "TeleportLandToPlanet"
     },
     {
-      "name": "No PercentageLand Attack Platoon Small",
+      "name": "No Percentage - Land Attack Platoon Small",
       "to_build": "NoPercentage_Land_Attack_Small",
       "instance_count": -1,
       "priority": 154,
@@ -103,7 +103,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "No PercentageLand Attack Platoon Medium",
+      "name": "No Percentage - Land Attack Platoon Medium",
       "to_build": "NoPercentage_Land_Attack_Medium",
       "instance_count": -1,
       "priority": 153,
@@ -135,7 +135,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "No PercentageLand Attack Platoon Large",
+      "name": "No Percentage - Land Attack Platoon Large",
       "to_build": "NoPercentage_Land_Attack_Large",
       "instance_count": -1,
       "priority": 152,
@@ -167,7 +167,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "No PercentageLand Attack Platoon XLarge",
+      "name": "No Percentage - Land Attack Platoon XLarge",
       "to_build": "NoPercentage_Land_Attack_XLarge",
       "instance_count": -1,
       "priority": 151,
@@ -199,7 +199,7 @@
       "task_type": "LandAttack"
     },
     {
-      "name": "No PercentageLand Attack Platoon Max",
+      "name": "No Percentage - Land Attack Platoon Max",
       "to_build": "NoPercentage_Land_Attack_Max",
       "instance_count": -1,
       "priority": 150,
