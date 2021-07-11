@@ -33,6 +33,10 @@ All personalities are based on Absurd difficulty.
 - Likes to use static artillery.
 - Likes to use Catapults.
 
+### Assault
+
+- Prefers to use standard assault units.
+
 ### Boomer
 
 - Likes to use a lot of Booms.

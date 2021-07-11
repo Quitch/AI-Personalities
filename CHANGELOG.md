@@ -13,6 +13,7 @@
 - Added AIP Artillery which likes to use static artillery and Catapults
 - Added AIP Nuker which likes to build nukes
 - Added AIP Fortress which likes to build defences
+- Added AIP Assault which prefers to use standard assault units
 
 ## v1.9.0 - 2021-04-25
 

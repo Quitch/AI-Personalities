@@ -44,6 +44,10 @@ if (!aiPersonalitiesLoaded) {
             display_name: "!LOC:AIP Artillery",
             personality_tags: ["Default", "PreventsWaste", "Artillery"],
           },
+          aipAssault: {
+            display_name: "!LOC:AIP Assault",
+            personality_tags: ["PreventsWaste", "Assault"],
+          },
           aipBoomer: {
             display_name: "!LOC:AIP Boomer",
             personality_tags: ["Default", "PreventsWaste", "Boomer"],
