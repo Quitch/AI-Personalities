@@ -14,6 +14,7 @@
 - Added AIP Nuker which likes to build nukes
 - Added AIP Fortress which likes to build defences
 - Added AIP Assault which prefers to use assault units
+- Mod is now TITANS only due to dependency on TITANS units
 
 ## v1.9.0 - 2021-04-25
 
