@@ -107,7 +107,7 @@ All personalities are based on Absurd difficulty.
 
 ### Nuker
 
-- Likes to builds nukes
+- Likes to build nukes
 
 ### Orbital
 
