@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v2.0.0 - 2021-07-11
 
 - Added AIP Raider which prefers to use fast units
 - Added AIP Sniper which prefers to use long-range units
