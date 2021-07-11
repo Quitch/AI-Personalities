@@ -23,7 +23,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Basic & Artillery",
+            "unit_type_string0": "Structure & (Artillery | Tactical)",
             "compare0": "<",
             "value0": 2
           },
@@ -58,7 +58,7 @@
             "count": 1
           },
           {
-            "unit_type_string": "Structure & Basic & Artillery",
+            "unit_type_string": "Structure & (Artillery | Tactical)",
             "alliance": "Ally",
             "compare_type": "<",
             "range": 75,
@@ -204,7 +204,7 @@
           },
           {
             "test_type": "UnitCountInBase",
-            "unit_type_string0": "Structure & Advanced & Tactical",
+            "unit_type_string0": "Structure & (Artillery | Tactical)",
             "compare0": "<",
             "value0": 1
           },
@@ -244,7 +244,7 @@
             "count": 1
           },
           {
-            "unit_type_string": "Structure & Advanced & Tactical",
+            "unit_type_string": "Structure & (Artillery | Tactical)",
             "alliance": "Ally",
             "compare_type": "<",
             "range": 75,
