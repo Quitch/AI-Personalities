@@ -25,7 +25,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & Artillery",
             "compare0": "<",
-            "value0": 1
+            "value0": 2
           },
           {
             "test_type": "PlanetHighestEnemyArmyThreatRatio",
@@ -62,7 +62,7 @@
             "alliance": "Ally",
             "compare_type": "<",
             "range": 75,
-            "count": 1
+            "count": 2
           }
         ]
       }
@@ -279,7 +279,7 @@
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Artillery & Advanced",
             "compare0": "<",
-            "value0": 1
+            "value0": 2
           },
           {
             "test_type": "UnitCountAroundBase",
