@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Added Torpedo Launchers to Fortress's builds
+
 ## v2.0.0 - 2021-07-11
 
 - Added AIP Raider which prefers to use fast units
