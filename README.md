@@ -21,7 +21,7 @@ All personalities are based on Absurd difficulty.
 
 - Prefers air.
 
-### All Terrain
+### All-terrain
 
 - Prefers to use amphibious units.
 - Prefers to use hover units.

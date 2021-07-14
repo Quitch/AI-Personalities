@@ -25,7 +25,7 @@ if (!aiPersonalitiesLoaded) {
             percent_orbital: 0,
           },
           aipAllTerrain: {
-            display_name: "!LOC:AIP All Terrain",
+            display_name: "!LOC:AIP All-terrain",
             personality_tags: ["Default", "PreventsWaste", "AllTerrain"],
           },
           aipAmphibious: {
