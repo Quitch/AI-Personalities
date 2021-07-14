@@ -73,7 +73,7 @@
       "instance_count": 1,
       "min_num_assisters": 2,
       "max_num_assisters": 5,
-      "priority": 351,
+      "priority": 451,
       "base_sort": "FromBuilder",
       "builders": ["AnyBasicFabber"],
       "build_conditions": [
@@ -259,7 +259,7 @@
       "instance_count": 1,
       "min_num_assisters": 3,
       "max_num_assisters": 6,
-      "priority": 479,
+      "priority": 530,
       "base_sort": "FromMainBase",
       "builders": ["AnyAdvancedFabber", "SupportCommander"],
       "build_conditions": [
