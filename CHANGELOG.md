@@ -5,6 +5,7 @@
 - Added Torpedo Launchers to Fortress's builds
 - Artillery gives a higher priority to artillery
 - Nuker gives a higher priority to nukes
+- Boomer likes Locusts too
 
 ## v2.0.0 - 2021-07-11
 
