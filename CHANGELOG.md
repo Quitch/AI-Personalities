@@ -6,6 +6,7 @@
 - Artillery gives a higher priority to artillery
 - Nuker gives a higher priority to nukes
 - Boomer likes Locusts too
+- Commanders will always open with their favourite factory type due to flaws uncovered in the percent*open* implementation
 
 ## v2.0.0 - 2021-07-11
 
