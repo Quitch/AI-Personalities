@@ -270,8 +270,9 @@ if (!aiPersonalitiesLoaded) {
 
           _.forEach(model.armies(), function (army) {
             _.forEach(army.slots(), function (slot) {
-              if (slot.ai() === true && slot.aiPersonality() === "aipRandom")
+              if (slot.ai() === true && slot.aiPersonality() === "aipRandom") {
                 slot.aiPersonality(_(absurdPersonalities).keys().sample());
+              }
             });
           });
 
