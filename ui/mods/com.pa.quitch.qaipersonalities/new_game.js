@@ -264,6 +264,7 @@ if (!aiPersonalitiesLoaded) {
         return function () {
           var absurdPersonalities = _.assign(
             _.omit(newPersonalities, "aipRandom"),
+            // eslint-disable-next-line no-undef
             _.pick(ai_types(), "Absurd")
           );
 
