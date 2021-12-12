@@ -274,9 +274,7 @@ if (!aiPersonalitiesLoaded) {
             });
           });
 
-          var result = cached_function.apply(this, arguments);
-
-          return result;
+          return cached_function.apply(this, arguments);
         };
       })();
     } catch (e) {
