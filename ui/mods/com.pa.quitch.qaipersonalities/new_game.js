@@ -259,7 +259,7 @@ if (!aiPersonalitiesLoaded) {
       model.aiPersonalities.valueHasMutated();
 
       model.startGame = (function () {
-        var cached_function = model.startGame;
+        var cachedFunction = model.startGame;
 
         return function () {
           var absurdPersonalities = _.assign(
@@ -275,7 +275,7 @@ if (!aiPersonalitiesLoaded) {
             });
           });
 
-          return cached_function.apply(this, arguments);
+          return cachedFunction.apply(this, arguments);
         };
       })();
     } catch (e) {
