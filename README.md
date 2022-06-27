@@ -1,7 +1,5 @@
 # Penchant AI Readme
 
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/Quitch/AI-Personalities)
-
 This mod works with Planetary Annihilation: TITANS. It introduces a number of new personalities for the vanilla AI, based off the Absurd difficulty level. Many of the personalities will work with faction mods such as Legion. Installing the Queller AI will not interfere with this mod.
 
 ## Installation
