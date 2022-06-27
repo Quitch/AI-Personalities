@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## v2.1.0 = 2022-06-27
+
+- Added Torpedo Launchers to Fortress's builds
+- Artillery gives a higher priority to artillery
+- Nuker gives a higher priority to nukes
+- Boomer likes Locusts too
+- Commanders will always open with their favourite factory type due to flaws uncovered in the percent*open* implementation
+- Updated AIP Ranked's builds
+- Renamed mod to Penchant AI
+- Renamed AIP Ranked to AIP Meta
+
 ## v2.0.0 - 2021-07-11
 
 - Added AIP Raider which prefers to use fast units

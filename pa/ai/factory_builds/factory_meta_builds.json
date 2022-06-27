@@ -1,51 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Ranked - Basic Air Bomber",
-      "to_build": "BasicBomber",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 98,
-      "builders": ["BasicAirFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "Bomber",
-            "compare0": "<",
-            "value0": 20
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Ranked - Advanced Gunship",
+      "name": "Meta - Advanced Gunship",
       "to_build": "AdvancedGunship",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -55,7 +11,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -69,7 +25,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -89,8 +45,8 @@
       ]
     },
     {
-      "name": "Ranked - Basic Artillery Bot",
-      "to_build": "BasicArtilleryBot",
+      "name": "Meta - Basic Assault Bot",
+      "to_build": "BasicAssaultBot",
       "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 98,
@@ -99,7 +55,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -108,16 +64,12 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
           }
         ],
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -137,11 +89,65 @@
             "compare0": ">",
             "value0": 0
           }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Meta",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Tank | Air) & Factory",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountPerPlanetRadius",
+            "unit_type_string0": "((Bot | Vehicle) & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - SelfDestruct",
+            "compare0": "<",
+            "value0": 200
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Meta",
+            "boolean": true
+          },
+          {
+            "test_type": "BaseThreatened",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "(Tank | Air) & Factory",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "((Bot | Vehicle) & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - SelfDestruct",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "HaveFullPlanetIntel",
+            "boolean": false
+          }
         ]
       ]
     },
     {
-      "name": "Ranked - Tesla Bot",
+      "name": "Meta - Tesla Bot",
       "to_build": "TeslaBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -151,7 +157,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -169,7 +175,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -193,7 +199,130 @@
       ]
     },
     {
-      "name": "Ranked - Hover Tank",
+      "name": "Meta - Light Laser Tank",
+      "to_build": "LightLaserTank",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 98,
+      "builders": ["BasicVehicleFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PenchantT1Vehicle",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PenchantT1Vehicle",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Meta - Basic Armor Tank",
+      "to_build": "BasicArmorTank",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 98,
+      "builders": ["BasicVehicleFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PenchantT1Vehicle",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tutorial",
+            "boolean": false
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Tank & Heavy",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.5
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PenchantT1Vehicle",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Tank & Heavy",
+            "unit_type_string1": "((Tank | Bot) & Offense) - Fabber",
+            "compare0": "<",
+            "value0": 0.5
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Meta - Hover Tank",
       "to_build": "HoverTank",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -203,7 +332,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -211,99 +340,8 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          }
-        ],
-        [
-          {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "compare0": ">",
-            "value0": 0
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Ranked - Advanced Assault Bot",
-      "to_build": "AdvancedAssaultBot",
-      "instance_count": -1,
-      "max_num_assisters": 15,
-      "priority": 205,
-      "builders": ["AdvancedBotFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "compare0": ">",
-            "value0": 0
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Ranked - Advanced Artillery Bot",
-      "to_build": "AdvancedArtilleryBot",
-      "instance_count": -1,
-      "max_num_assisters": 15,
-      "priority": 205,
-      "builders": ["AdvancedBotFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
+            "string0": "Tutorial",
             "boolean": false
           },
           {
@@ -311,117 +349,13 @@
           },
           {
             "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Artillery",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
-            "compare0": "<",
-            "value0": 0.35
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Artillery",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
-            "compare0": "<",
-            "value0": 0.35
-          },
-          {
-            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "compare0": ">",
-            "value0": 0
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Ranked - Advanced Tactical Bot",
-      "to_build": "TMLBot",
-      "instance_count": -1,
-      "max_num_assisters": 15,
-      "priority": 205,
-      "builders": ["AdvancedBotFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
             "boolean": false
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Tactical",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
-            "compare0": "<",
-            "value0": 0.35
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": true
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "(Tank | Bot) & Tactical",
-            "unit_type_string1": "(Tank | Bot) - Fabber",
-            "compare0": "<",
-            "value0": 0.35
-          },
-          {
-            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "compare0": ">",
-            "value0": 0
           }
         ]
       ]
     },
     {
-      "name": "Ranked - Advanced Laser Tank",
+      "name": "Meta - Advanced Laser Tank",
       "to_build": "AdvancedLaserTank",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -431,7 +365,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -449,7 +383,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -473,7 +407,7 @@
       ]
     },
     {
-      "name": "Ranked - Advanced Artillery Vehicle",
+      "name": "Meta - Advanced Artillery Vehicle",
       "to_build": "AdvancedArtilleryVehicle",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -483,7 +417,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -508,7 +442,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -539,8 +473,8 @@
       ]
     },
     {
-      "name": "Ranked - Destroyer",
-      "to_build": "Destroyer",
+      "name": "Meta - Frigate",
+      "to_build": "Frigate",
       "instance_count": -1,
       "max_num_assisters": 10,
       "priority": 98,
@@ -549,7 +483,35 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "PenchantT1Naval",
+            "boolean": false
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanDeployNavalFromBase",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Meta - Battleship",
+      "to_build": "Battleship",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 205,
+      "builders": ["AdvancedNavalFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -567,25 +529,37 @@
       ]
     },
     {
-      "name": "Ranked - Battleship",
-      "to_build": "Battleship",
+      "name": "Meta - Basic Assault Bot - UC",
+      "to_build": "BasicAssaultBot",
       "instance_count": -1,
-      "max_num_assisters": 15,
-      "priority": 205,
-      "builders": ["AdvancedNavalFactory"],
+      "max_num_assisters": 10,
+      "priority": 105,
+      "builders": ["UnitCannon"],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Meta - Tesla Bot - UC",
+      "to_build": "TeslaBot",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 105,
+      "builders": ["UnitCannon"],
+      "build_conditions": [
+        [
           {
-            "test_type": "CanDeployNavalFromBase",
+            "test_type": "HasPersonalityTag",
+            "string0": "Meta",
             "boolean": true
           },
           {

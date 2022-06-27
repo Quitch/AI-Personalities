@@ -13,11 +13,6 @@ if (!aiPersonalitiesLoaded) {
           },
           aipAir: {
             display_name: "!LOC:AIP Air",
-            percent_open_vehicle: 0,
-            percent_open_bot: 0,
-            percent_open_air: 1,
-            percent_open_naval: 0,
-            percent_open_orbital: 0,
             percent_vehicle: 0,
             percent_bot: 0,
             percent_air: 1,
@@ -25,16 +20,11 @@ if (!aiPersonalitiesLoaded) {
             percent_orbital: 0,
           },
           aipAllTerrain: {
-            display_name: "!LOC:AIP All Terrain",
+            display_name: "!LOC:AIP All-terrain",
             personality_tags: ["Default", "PreventsWaste", "AllTerrain"],
           },
           aipAmphibious: {
             display_name: "!LOC:AIP Amphibious",
-            percent_open_vehicle: 0.45,
-            percent_open_bot: 0.45,
-            percent_open_air: 0.1,
-            percent_open_naval: 0,
-            percent_open_orbital: 0,
             percent_land: 0.4,
             percent_air: 0.1,
             percent_naval: 0.45,
@@ -54,11 +44,6 @@ if (!aiPersonalitiesLoaded) {
           },
           aipBot: {
             display_name: "!LOC:AIP Bot",
-            percent_open_vehicle: 0,
-            percent_open_bot: 1,
-            percent_open_air: 0,
-            percent_open_naval: 0,
-            percent_open_orbital: 0,
             percent_vehicle: 0,
             percent_bot: 1,
             percent_air: 0,
@@ -152,17 +137,16 @@ if (!aiPersonalitiesLoaded) {
             adv_eco_mod: 3,
             adv_eco_mod_alone: 2,
           },
+          aipMeta: {
+            display_name: "!LOC:AIP Meta",
+            personality_tags: ["PreventsWaste", "Meta"],
+          },
           aipMicro: {
             display_name: "!LOC:AIP Micro",
             personality_tags: ["Default", "PreventsWaste", "SlowerExpansion"],
           },
           aipNaval: {
             display_name: "!LOC:AIP Naval",
-            percent_open_vehicle: 0,
-            percent_open_bot: 0,
-            percent_open_air: 1,
-            percent_open_naval: 0,
-            percent_open_orbital: 0,
             percent_vehicle: 0,
             percent_bot: 0,
             percent_air: 0.25,
@@ -187,10 +171,6 @@ if (!aiPersonalitiesLoaded) {
           },
           aipRandom: {
             display_name: "!LOC:AIP Random",
-          },
-          aipRanked: {
-            display_name: "!LOC:AIP Ranked",
-            personality_tags: ["PreventsWaste", "Ranked"],
           },
           aipRevenants: {
             display_name: "!LOC:AIP Revenants",
@@ -243,11 +223,6 @@ if (!aiPersonalitiesLoaded) {
           },
           aipTank: {
             display_name: "!LOC:AIP Tank",
-            percent_open_vehicle: 1,
-            percent_open_bot: 0,
-            percent_open_air: 0,
-            percent_open_naval: 0,
-            percent_open_orbital: 0,
             percent_vehicle: 1,
             percent_bot: 0,
             percent_air: 0,
@@ -284,24 +259,24 @@ if (!aiPersonalitiesLoaded) {
       model.aiPersonalities.valueHasMutated();
 
       model.startGame = (function () {
-        var cached_function = model.startGame;
+        var cachedFunction = model.startGame;
 
         return function () {
           var absurdPersonalities = _.assign(
             _.omit(newPersonalities, "aipRandom"),
+            // eslint-disable-next-line no-undef
             _.pick(ai_types(), "Absurd")
           );
 
           _.forEach(model.armies(), function (army) {
             _.forEach(army.slots(), function (slot) {
-              if (slot.ai() === true && slot.aiPersonality() === "aipRandom")
+              if (slot.ai() === true && slot.aiPersonality() === "aipRandom") {
                 slot.aiPersonality(_(absurdPersonalities).keys().sample());
+              }
             });
           });
 
-          var result = cached_function.apply(this, arguments);
-
-          return result;
+          return cachedFunction.apply(this, arguments);
         };
       })();
     } catch (e) {
