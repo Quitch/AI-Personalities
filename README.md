@@ -104,6 +104,11 @@ All personalities are based on Absurd difficulty.
 
 - Remains at T1 for longer.
 
+### Meta
+
+- Prefers units used at the top of the ladder.
+- Does not support Legion.
+
 ### Micro
 
 - More cautious expansion.
@@ -129,11 +134,6 @@ All personalities are based on Absurd difficulty.
 ### Random
 
 - Picks a random personality.
-
-### Ranked
-
-- Prefers units used at the top of the ladder.
-- Does not support Legion.
 
 ### Revenants
 
