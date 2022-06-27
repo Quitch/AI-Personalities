@@ -1,4 +1,4 @@
-# AI Personalities for Skirmish and Multiplayer Readme
+# Penchant AI Readme
 
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/Quitch/AI-Personalities)
 
