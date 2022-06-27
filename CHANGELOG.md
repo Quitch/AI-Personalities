@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v2.1.0 = 2022-06-27
 
 - Added Torpedo Launchers to Fortress's builds
 - Artillery gives a higher priority to artillery
