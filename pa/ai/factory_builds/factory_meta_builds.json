@@ -1,7 +1,7 @@
 {
   "build_list": [
     {
-      "name": "Ranked - Advanced Gunship",
+      "name": "Meta - Advanced Gunship",
       "to_build": "AdvancedGunship",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -11,7 +11,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -25,7 +25,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "name": "Ranked - Basic Assault Bot",
+      "name": "Meta - Basic Assault Bot",
       "to_build": "BasicAssaultBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -55,7 +55,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -69,7 +69,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -93,7 +93,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -120,7 +120,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "name": "Ranked - Tesla Bot",
+      "name": "Meta - Tesla Bot",
       "to_build": "TeslaBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -157,7 +157,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -175,7 +175,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -199,7 +199,7 @@
       ]
     },
     {
-      "name": "Ranked - Light Laser Tank",
+      "name": "Meta - Light Laser Tank",
       "to_build": "LightLaserTank",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -251,7 +251,7 @@
       ]
     },
     {
-      "name": "Ranked - Basic Armor Tank",
+      "name": "Meta - Basic Armor Tank",
       "to_build": "BasicArmorTank",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -322,7 +322,7 @@
       ]
     },
     {
-      "name": "Ranked - Hover Tank",
+      "name": "Meta - Hover Tank",
       "to_build": "HoverTank",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -332,7 +332,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -355,7 +355,7 @@
       ]
     },
     {
-      "name": "Ranked - Advanced Laser Tank",
+      "name": "Meta - Advanced Laser Tank",
       "to_build": "AdvancedLaserTank",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -365,7 +365,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -383,7 +383,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -407,7 +407,7 @@
       ]
     },
     {
-      "name": "Ranked - Advanced Artillery Vehicle",
+      "name": "Meta - Advanced Artillery Vehicle",
       "to_build": "AdvancedArtilleryVehicle",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -417,7 +417,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -442,7 +442,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -473,7 +473,7 @@
       ]
     },
     {
-      "name": "Ranked - Frigate",
+      "name": "Meta - Frigate",
       "to_build": "Frigate",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -501,7 +501,7 @@
       ]
     },
     {
-      "name": "Ranked - Battleship",
+      "name": "Meta - Battleship",
       "to_build": "Battleship",
       "instance_count": -1,
       "max_num_assisters": 15,
@@ -511,7 +511,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -529,7 +529,7 @@
       ]
     },
     {
-      "name": "Ranked - Basic Assault Bot - UC",
+      "name": "Meta - Basic Assault Bot - UC",
       "to_build": "BasicAssaultBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -539,7 +539,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {
@@ -549,7 +549,7 @@
       ]
     },
     {
-      "name": "Ranked - Tesla Bot - UC",
+      "name": "Meta - Tesla Bot - UC",
       "to_build": "TeslaBot",
       "instance_count": -1,
       "max_num_assisters": 10,
@@ -559,7 +559,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Ranked",
+            "string0": "Meta",
             "boolean": true
           },
           {

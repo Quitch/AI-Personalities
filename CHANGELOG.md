@@ -9,6 +9,7 @@
 - Commanders will always open with their favourite factory type due to flaws uncovered in the percent*open* implementation
 - Updated AIP Ranked's builds
 - Renamed mod to Penchant AI
+- Renamed AIP Ranked to AIP Meta
 
 ## v2.0.0 - 2021-07-11
 

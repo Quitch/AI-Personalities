@@ -137,6 +137,10 @@ if (!aiPersonalitiesLoaded) {
             adv_eco_mod: 3,
             adv_eco_mod_alone: 2,
           },
+          aipMeta: {
+            display_name: "!LOC:AIP Meta",
+            personality_tags: ["PreventsWaste", "Meta"],
+          },
           aipMicro: {
             display_name: "!LOC:AIP Micro",
             personality_tags: ["Default", "PreventsWaste", "SlowerExpansion"],
@@ -167,10 +171,6 @@ if (!aiPersonalitiesLoaded) {
           },
           aipRandom: {
             display_name: "!LOC:AIP Random",
-          },
-          aipRanked: {
-            display_name: "!LOC:AIP Ranked",
-            personality_tags: ["PreventsWaste", "Ranked"],
           },
           aipRevenants: {
             display_name: "!LOC:AIP Revenants",
