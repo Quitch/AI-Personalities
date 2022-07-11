@@ -267,11 +267,30 @@ if (!aiPersonalitiesLoaded) {
             // eslint-disable-next-line no-undef
             _.pick(ai_types(), "Absurd")
           );
+          var mlaPersonalities = _.filter(
+            _.keys(model.aiPersonalities()),
+            function (personality) {
+              return _.endsWith(personality, "Mla");
+            }
+          );
+          var noMlaPersonalities = _.omit(newPersonalities, mlaPersonalities);
+          var factionCommanders = ["l_", "bug_"];
 
           _.forEach(model.armies(), function (army) {
             _.forEach(army.slots(), function (slot) {
               if (slot.ai() === true && slot.aiPersonality() === "aipRandom") {
-                slot.aiPersonality(_(absurdPersonalities).keys().sample());
+                var isFactionCommander = _.some(
+                  factionCommanders,
+                  function (commander) {
+                    return _.includes(slot.commander(), commander);
+                  }
+                );
+
+                if (isFactionCommander) {
+                  slot.aiPersonality(_(noMlaPersonalities).keys().sample());
+                } else {
+                  slot.aiPersonality(_(absurdPersonalities).keys().sample());
+                }
               }
             });
           });
