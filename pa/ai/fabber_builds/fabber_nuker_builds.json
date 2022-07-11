@@ -8,7 +8,7 @@
       "min_num_assisters": 3,
       "max_num_assisters": 12,
       "priority": 630,
-      "builders": ["AnyAdvancedFabber", "SupportCommander"],
+      "builders": ["AnyUberAdvancedFabber", "UberSupportCommander"],
       "build_conditions": [
         [
           {
