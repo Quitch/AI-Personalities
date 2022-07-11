@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v2.2.0 - 2022-07-11
 
 - Fixed certain personalities causing faction AIs to try to build things they could not
 - FIxed Stinger builds not working when AI Bugfixes and Enhancements mod was not present
