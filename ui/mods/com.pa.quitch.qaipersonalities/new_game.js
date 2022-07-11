@@ -273,7 +273,11 @@ if (!aiPersonalitiesLoaded) {
               return _.endsWith(personality, "Mla");
             }
           );
-          var noMlaPersonalities = _.omit(newPersonalities, mlaPersonalities);
+          var noMlaPersonalities = _.assign(
+            _.omit(newPersonalities, mlaPersonalities),
+            // eslint-disable-next-line no-undef
+            _.pick(ai_types(), "Absurd")
+          );
           var factionCommanders = ["l_", "bug_"];
 
           _.forEach(model.armies(), function (army) {
