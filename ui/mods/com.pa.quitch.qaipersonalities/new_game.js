@@ -19,8 +19,8 @@ if (!aiPersonalitiesLoaded) {
             percent_naval: 0,
             percent_orbital: 0,
           },
-          aipAllTerrain: {
-            display_name: "!LOC:AIP All-terrain",
+          aipAllTerrainMla: {
+            display_name: "!LOC:AIP All-terrain" + " (MLA)",
             personality_tags: ["Default", "PreventsWaste", "AllTerrain"],
           },
           aipAmphibious: {
@@ -30,16 +30,16 @@ if (!aiPersonalitiesLoaded) {
             percent_naval: 0.45,
             percent_orbital: 0.05,
           },
-          aipArtillery: {
-            display_name: "!LOC:AIP Artillery",
+          aipArtilleryMla: {
+            display_name: "!LOC:AIP Artillery" + " (MLA)",
             personality_tags: ["Default", "PreventsWaste", "Artillery"],
           },
-          aipAssault: {
-            display_name: "!LOC:AIP Assault",
+          aipAssaultMla: {
+            display_name: "!LOC:AIP Assault" + " (MLA)",
             personality_tags: ["PreventsWaste", "Assault"],
           },
-          aipBoomer: {
-            display_name: "!LOC:AIP Boomer",
+          aipBoomerMla: {
+            display_name: "!LOC:AIP Boomer" + " (MLA)",
             personality_tags: ["Default", "PreventsWaste", "Boomer"],
           },
           aipBot: {
@@ -83,8 +83,8 @@ if (!aiPersonalitiesLoaded) {
             adv_eco_mod_alone: 0.5,
             min_basic_fabbers: 4,
           },
-          aipFortress: {
-            display_name: "!LOC:AIP Fortress",
+          aipFortressMla: {
+            display_name: "!LOC:AIP Fortress" + " (MLA)",
             personality_tags: ["Default", "PreventsWaste", "Fortress"],
           },
           aipFoundation: {
@@ -102,12 +102,12 @@ if (!aiPersonalitiesLoaded) {
             metal_demand_check: 0.75,
             energy_demand_check: 0.85,
           },
-          aipHeavy: {
-            display_name: "!LOC:AIP Heavy",
+          aipHeavyMla: {
+            display_name: "!LOC:AIP Heavy" + " (MLA)",
             personality_tags: ["PreventsWaste", "Heavy"],
           },
-          aipInfernodier: {
-            display_name: "!LOC:AIP Infernodier",
+          aipInfernodierMla: {
+            display_name: "!LOC:AIP Infernodier" + " (MLA)",
             personality_tags: ["PreventsWaste", "Infernodier"],
           },
           aipLand: {
@@ -137,12 +137,12 @@ if (!aiPersonalitiesLoaded) {
             adv_eco_mod: 3,
             adv_eco_mod_alone: 2,
           },
-          aipMeta: {
-            display_name: "!LOC:AIP Meta",
+          aipMetaMla: {
+            display_name: "!LOC:AIP Meta" + " (MLA)",
             personality_tags: ["PreventsWaste", "Meta"],
           },
-          aipMicro: {
-            display_name: "!LOC:AIP Micro",
+          aipMicroMla: {
+            display_name: "!LOC:AIP Micro" + " (MLA)",
             personality_tags: ["Default", "PreventsWaste", "SlowerExpansion"],
           },
           aipNaval: {
@@ -153,8 +153,8 @@ if (!aiPersonalitiesLoaded) {
             percent_naval: 0.75,
             percent_orbital: 0,
           },
-          aipNuker: {
-            display_name: "!LOC:AIP Nuker",
+          aipNukerMla: {
+            display_name: "!LOC:AIP Nuker" + " (MLA)",
             adv_eco_mod: 1,
             personality_tags: ["Default", "PreventsWaste", "Nuker"],
           },
@@ -165,8 +165,8 @@ if (!aiPersonalitiesLoaded) {
             percent_naval: 0,
             percent_orbital: 0.95,
           },
-          aipRaider: {
-            display_name: "!LOC:AIP Raider",
+          aipRaiderMla: {
+            display_name: "!LOC:AIP Raider" + " (MLA)",
             personality_tags: ["PreventsWaste", "Raider"],
           },
           aipRandom: {
@@ -197,8 +197,8 @@ if (!aiPersonalitiesLoaded) {
             neural_data_mod: 1.33,
             adv_eco_mod: 2,
           },
-          aipSniper: {
-            display_name: "!LOC:AIP Sniper",
+          aipSniperMla: {
+            display_name: "!LOC:AIP Sniper" + " (MLA)",
             personality_tags: ["PreventsWaste", "Sniper"],
           },
           aipSwarm: {
@@ -267,11 +267,30 @@ if (!aiPersonalitiesLoaded) {
             // eslint-disable-next-line no-undef
             _.pick(ai_types(), "Absurd")
           );
+          var mlaPersonalities = _.filter(
+            _.keys(model.aiPersonalities()),
+            function (personality) {
+              return _.endsWith(personality, "Mla");
+            }
+          );
+          var noMlaPersonalities = _.omit(newPersonalities, mlaPersonalities);
+          var factionCommanders = ["l_", "bug_"];
 
           _.forEach(model.armies(), function (army) {
             _.forEach(army.slots(), function (slot) {
               if (slot.ai() === true && slot.aiPersonality() === "aipRandom") {
-                slot.aiPersonality(_(absurdPersonalities).keys().sample());
+                var isFactionCommander = _.some(
+                  factionCommanders,
+                  function (commander) {
+                    return _.includes(slot.commander(), commander);
+                  }
+                );
+
+                if (isFactionCommander) {
+                  slot.aiPersonality(_(noMlaPersonalities).keys().sample());
+                } else {
+                  slot.aiPersonality(_(absurdPersonalities).keys().sample());
+                }
               }
             });
           });
