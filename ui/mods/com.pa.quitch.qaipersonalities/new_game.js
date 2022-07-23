@@ -271,10 +271,6 @@ if (!aiPersonalitiesLoaded) {
             });
           };
 
-          var selectPersonality = function (personalityNames) {
-            return _.sample(personalityNames);
-          };
-
           var aipPersonalityNames = _.keys(aipPersonalities);
           var mlaPersonalities = _.filter(
             model.aiPersonalityNames(),
@@ -295,9 +291,7 @@ if (!aiPersonalitiesLoaded) {
             _.forEach(army.slots(), function (slot) {
               if (slot.ai() === true && slot.aiPersonality() === "aipRandom") {
                 var availablePersonalities = filterValidPersonalities(slot);
-                var chosenPersonality = selectPersonality(
-                  availablePersonalities
-                );
+                var chosenPersonality = _.sample(availablePersonalities);
                 slot.aiPersonality(chosenPersonality);
               }
             });
