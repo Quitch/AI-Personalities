@@ -3,6 +3,7 @@
 ## Unreleased
 
 - AIP Defender doesn't tech early
+- Removed AIP Micro
 
 ## v2.2.0 - 2022-07-11
 

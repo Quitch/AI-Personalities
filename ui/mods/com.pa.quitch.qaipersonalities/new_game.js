@@ -140,10 +140,6 @@ if (!aiPersonalitiesLoaded) {
             display_name: "!LOC:AIP Meta" + " (MLA)",
             personality_tags: ["PreventsWaste", "Meta"],
           },
-          aipMicroMla: {
-            display_name: "!LOC:AIP Micro" + " (MLA)",
-            personality_tags: ["Default", "PreventsWaste", "SlowerExpansion"],
-          },
           aipNaval: {
             display_name: "!LOC:AIP Naval",
             percent_vehicle: 0,
