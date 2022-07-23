@@ -287,9 +287,8 @@ if (!aiPersonalitiesLoaded) {
           var filterValidPersonalities = function (slot) {
             if (isModFaction(slot)) {
               return validPersonalities(noMlaPersonalities);
-            } else {
-              return validPersonalities(aipPersonalityNames);
             }
+            return validPersonalities(aipPersonalityNames);
           };
 
           _.forEach(model.armies(), function (army) {
