@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- AIP Defender doesn't tech early
+
 ## v2.2.0 - 2022-07-11
 
 - Fixed certain personalities causing faction AIs to try to build things they could not
