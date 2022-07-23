@@ -253,6 +253,7 @@ if (!aiPersonalitiesLoaded) {
       _.assign(model.aiPersonalities(), aipPersonalities);
       model.aiPersonalities.valueHasMutated();
 
+      // assign random personalities when Start Game clicked
       model.startGame = (function () {
         var cachedFunction = model.startGame;
 
