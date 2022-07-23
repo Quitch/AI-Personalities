@@ -3,7 +3,7 @@ var aiPersonalitiesLoaded;
 if (!aiPersonalitiesLoaded) {
   aiPersonalitiesLoaded = true;
 
-  function aipPersonalities() {
+  function setupAipPersonalities() {
     try {
       var aipPersonalities = _.mapValues(
         {
@@ -311,5 +311,5 @@ if (!aiPersonalitiesLoaded) {
       console.error(JSON.stringify(e));
     }
   }
-  aipPersonalities();
+  setupAipPersonalities();
 }
