@@ -267,7 +267,7 @@ if (!aiPersonalitiesLoaded) {
 
           var validPersonalities = function (personalityNames) {
             return _.filter(personalityNames, function (name) {
-              return !_.startsWith(name, "Idle") && !_.includes(name, "Random");
+              return !_.startsWith(name, "aipRandom");
             });
           };
 
