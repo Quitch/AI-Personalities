@@ -107,10 +107,6 @@ All personalities are based on Absurd difficulty.
 - Prefers units used at the top of the ladder.
 - Does not support Legion.
 
-### Micro
-
-- More cautious expansion.
-
 ### Naval
 
 - Prefers naval.
