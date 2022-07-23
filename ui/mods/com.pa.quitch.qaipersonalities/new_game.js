@@ -3,9 +3,9 @@ var aiPersonalitiesLoaded;
 if (!aiPersonalitiesLoaded) {
   aiPersonalitiesLoaded = true;
 
-  function aipPersonalities() {
+  function setupAipPersonalities() {
     try {
-      var newPersonalities = _.mapValues(
+      var aipPersonalities = _.mapValues(
         {
           aipAggressive: {
             display_name: "!LOC:AIP Aggressive",
@@ -61,7 +61,6 @@ if (!aiPersonalitiesLoaded) {
             energy_drain_check: 0.8,
             metal_demand_check: 0.54,
             energy_demand_check: 0.65,
-            adv_eco_mod: 1,
             min_basic_fabbers: 4,
           },
           aipEconomist: {
@@ -140,10 +139,6 @@ if (!aiPersonalitiesLoaded) {
           aipMetaMla: {
             display_name: "!LOC:AIP Meta" + " (MLA)",
             personality_tags: ["PreventsWaste", "Meta"],
-          },
-          aipMicroMla: {
-            display_name: "!LOC:AIP Micro" + " (MLA)",
-            personality_tags: ["Default", "PreventsWaste", "SlowerExpansion"],
           },
           aipNaval: {
             display_name: "!LOC:AIP Naval",
@@ -255,46 +250,56 @@ if (!aiPersonalitiesLoaded) {
         }
       );
 
-      _.assign(model.aiPersonalities(), newPersonalities);
+      _.assign(model.aiPersonalities(), aipPersonalities);
       model.aiPersonalities.valueHasMutated();
 
+      // assign random personalities when Start Game clicked
       model.startGame = (function () {
         var cachedFunction = model.startGame;
 
         return function () {
-          var absurdPersonalities = _.assign(
-            _.omit(newPersonalities, "aipRandom"),
-            // eslint-disable-next-line no-undef
-            _.pick(ai_types(), "Absurd")
-          );
+          var isModFaction = function (slot) {
+            var factionCommander = ["l_", "bug_"];
+            return _.some(factionCommander, function (commander) {
+              return _.includes(slot.commander(), commander);
+            });
+          };
+
+          var validPersonalities = function (personalityNames) {
+            return _.filter(personalityNames, function (name) {
+              return !_.startsWith(name, "Idle") && !_.includes(name, "Random");
+            });
+          };
+
+          var selectPersonality = function (personalityNames) {
+            return _.sample(personalityNames);
+          };
+
+          var aipPersonalityNames = _.keys(aipPersonalities);
           var mlaPersonalities = _.filter(
-            _.keys(model.aiPersonalities()),
+            model.aiPersonalityNames(),
             function (personality) {
               return _.endsWith(personality, "Mla");
             }
           );
-          var noMlaPersonalities = _.assign(
-            _.omit(newPersonalities, mlaPersonalities),
-            // eslint-disable-next-line no-undef
-            _.pick(ai_types(), "Absurd")
-          );
-          var factionCommanders = ["l_", "bug_"];
+          var noMlaPersonalities = _.xor(aipPersonalityNames, mlaPersonalities);
+
+          var filterValidPersonalities = function (slot) {
+            if (isModFaction(slot)) {
+              return validPersonalities(noMlaPersonalities);
+            } else {
+              return validPersonalities(aipPersonalityNames);
+            }
+          };
 
           _.forEach(model.armies(), function (army) {
             _.forEach(army.slots(), function (slot) {
               if (slot.ai() === true && slot.aiPersonality() === "aipRandom") {
-                var isFactionCommander = _.some(
-                  factionCommanders,
-                  function (commander) {
-                    return _.includes(slot.commander(), commander);
-                  }
+                var availablePersonalities = filterValidPersonalities(slot);
+                var chosenPersonality = selectPersonality(
+                  availablePersonalities
                 );
-
-                if (isFactionCommander) {
-                  slot.aiPersonality(_(noMlaPersonalities).keys().sample());
-                } else {
-                  slot.aiPersonality(_(absurdPersonalities).keys().sample());
-                }
+                slot.aiPersonality(chosenPersonality);
               }
             });
           });
@@ -307,5 +312,5 @@ if (!aiPersonalitiesLoaded) {
       console.error(JSON.stringify(e));
     }
   }
-  aipPersonalities();
+  setupAipPersonalities();
 }
