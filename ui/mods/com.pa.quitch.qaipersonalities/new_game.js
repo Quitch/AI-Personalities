@@ -216,6 +216,12 @@ if (!aiPersonalitiesLoaded) {
             metal_demand_check: 0.75,
             energy_demand_check: 0.85,
           },
+          aipTacticalMla: {
+            display_name: "!LOC:AIP Tactical (MLA)",
+            percent_vehicle: 0.25,
+            percent_bot: 0.45,
+            personality_tags: ["PreventsWaste", "Tactical"],
+          },
           aipTank: {
             display_name: "!LOC:AIP Tank",
             percent_vehicle: 1,

@@ -152,6 +152,12 @@ All personalities are based on Absurd difficulty.
 
 - Uses the Galactic War Synchronous boss personality.
 
+### Tactical
+
+- Prefers bots.
+- Prefers to use tactical missile units.
+- Does not support Legion.
+
 ### Tank
 
 - Prefers vehicles.
