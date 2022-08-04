@@ -107,10 +107,6 @@ All personalities are based on Absurd difficulty.
 - Prefers units used at the top of the ladder.
 - Does not support Legion.
 
-### Micro
-
-- More cautious expansion.
-
 ### Naval
 
 - Prefers naval.
@@ -155,6 +151,12 @@ All personalities are based on Absurd difficulty.
 ### Synchronous
 
 - Uses the Galactic War Synchronous boss personality.
+
+### Tactical
+
+- Prefers bots.
+- Prefers to use tactical missile units.
+- Does not support Legion.
 
 ### Tank
 

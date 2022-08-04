@@ -216,6 +216,12 @@ if (!aiPersonalitiesLoaded) {
             metal_demand_check: 0.75,
             energy_demand_check: 0.85,
           },
+          aipTacticalMla: {
+            display_name: "!LOC:AIP Tactical (MLA)",
+            percent_vehicle: 0.25,
+            percent_bot: 0.45,
+            personality_tags: ["PreventsWaste", "Tactical"],
+          },
           aipTank: {
             display_name: "!LOC:AIP Tank",
             percent_vehicle: 1,
@@ -267,12 +273,8 @@ if (!aiPersonalitiesLoaded) {
 
           var validPersonalities = function (personalityNames) {
             return _.filter(personalityNames, function (name) {
-              return !_.startsWith(name, "Idle") && !_.includes(name, "Random");
+              return !_.startsWith(name, "aipRandom");
             });
-          };
-
-          var selectPersonality = function (personalityNames) {
-            return _.sample(personalityNames);
           };
 
           var aipPersonalityNames = _.keys(aipPersonalities);
@@ -287,18 +289,15 @@ if (!aiPersonalitiesLoaded) {
           var filterValidPersonalities = function (slot) {
             if (isModFaction(slot)) {
               return validPersonalities(noMlaPersonalities);
-            } else {
-              return validPersonalities(aipPersonalityNames);
             }
+            return validPersonalities(aipPersonalityNames);
           };
 
           _.forEach(model.armies(), function (army) {
             _.forEach(army.slots(), function (slot) {
               if (slot.ai() === true && slot.aiPersonality() === "aipRandom") {
                 var availablePersonalities = filterValidPersonalities(slot);
-                var chosenPersonality = selectPersonality(
-                  availablePersonalities
-                );
+                var chosenPersonality = _.sample(availablePersonalities);
                 slot.aiPersonality(chosenPersonality);
               }
             });

@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.4.0 - 2022-08-04
+
+- Added AIP Tactical
+
 ## v2.3.0 - 2022-07-23
 
 - AIP Defender doesn't tech early
