@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v2.4.0 - 2022-08-04
 
 - Added AIP Tactical
 
