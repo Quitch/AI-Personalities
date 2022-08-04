@@ -23,7 +23,7 @@ All personalities are based on Absurd difficulty.
 
 - Prefers to use amphibious units.
 - Prefers to use hover units.
-- Does not support Legion.
+- Does not support factions.
 
 ### Amphibious
 
@@ -33,17 +33,17 @@ All personalities are based on Absurd difficulty.
 
 - Likes to use static artillery.
 - Likes to use Catapults.
-- Does not support Legion.
+- Does not support factions.
 
 ### Assault
 
 - Prefers to use assault units.
-- Does not support Legion.
+- Does not support factions.
 
 ### Boomer
 
 - Likes to use a lot of Booms.
-- Does not support Legion.
+- Does not support factions.
 
 ### Bot
 
@@ -73,7 +73,7 @@ All personalities are based on Absurd difficulty.
 ### Fortress
 
 - Likes to build defences.
-- Does not support Legion.
+- Does not support factions.
 
 ### Foundation
 
@@ -82,13 +82,13 @@ All personalities are based on Absurd difficulty.
 ### Heavy
 
 - Prefers to use armoured units.
-- Does not support Legion.
+- Does not support factions.
 
 ### Infernodier
 
 - Prefers to use armoured units on land.
 - Prefers to use long-range units on land.
-- Does not support Legion.
+- Does not support factions.
 
 ### Land
 
@@ -105,7 +105,7 @@ All personalities are based on Absurd difficulty.
 ### Meta
 
 - Prefers units used at the top of the ladder.
-- Does not support Legion.
+- Does not support factions.
 
 ### Naval
 
@@ -114,7 +114,7 @@ All personalities are based on Absurd difficulty.
 ### Nuker
 
 - Likes to build nukes.
-- Does not support Legion.
+- Does not support factions.
 
 ### Orbital
 
@@ -123,7 +123,7 @@ All personalities are based on Absurd difficulty.
 ### Raider
 
 - Prefers to use fast units.
-- Does not support Legion.
+- Does not support factions.
 
 ### Random
 
@@ -142,7 +142,7 @@ All personalities are based on Absurd difficulty.
 ### Sniper
 
 - Prefers to use long-range units.
-- Does not support Legion.
+- Does not support factions.
 
 ### Swarm
 
@@ -156,7 +156,7 @@ All personalities are based on Absurd difficulty.
 
 - Prefers bots.
 - Prefers to use tactical missile units.
-- Does not support Legion.
+- Does not support factions.
 
 ### Tank
 
