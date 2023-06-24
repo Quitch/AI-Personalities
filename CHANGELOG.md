@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v2.5.0 - 2023-06-24
+
+- Updated for PA 116982
+
 ## v2.4.1 - 2022-08-08
 
 - Fixed mod icon
