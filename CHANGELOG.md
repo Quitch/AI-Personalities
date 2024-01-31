@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v3.0.0 - 2024-01-31
 
 - Changed how the AI is implemented to make MLA AIs stick to their penchant
 - Added AIP-Platoon which prefers to use a smaller number of larger armies
