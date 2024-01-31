@@ -5,7 +5,7 @@
       "to_build": "BasicArtilleryBot",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 98,
+      "priority": 97,
       "builders": ["BasicBotFactory"],
       "build_conditions": [
         [
@@ -57,7 +57,7 @@
       "to_build": "BasicArmorTank",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 98,
+      "priority": 97,
       "builders": ["BasicVehicleFactory"],
       "build_conditions": [
         [
@@ -109,7 +109,7 @@
       "to_build": "AdvancedArtilleryBot",
       "instance_count": -1,
       "max_num_assisters": 15,
-      "priority": 205,
+      "priority": 199,
       "builders": ["AdvancedBotFactory"],
       "build_conditions": [
         [
@@ -161,7 +161,7 @@
       "to_build": "TMLBot",
       "instance_count": -1,
       "max_num_assisters": 15,
-      "priority": 205,
+      "priority": 199,
       "builders": ["AdvancedBotFactory"],
       "build_conditions": [
         [
@@ -213,7 +213,7 @@
       "to_build": "AdvancedArmorTank",
       "instance_count": -1,
       "max_num_assisters": 15,
-      "priority": 205,
+      "priority": 199,
       "builders": ["AdvancedVehicleFactory"],
       "build_conditions": [
         [
@@ -265,7 +265,7 @@
       "to_build": "AdvancedArtilleryVehicle",
       "instance_count": -1,
       "max_num_assisters": 15,
-      "priority": 205,
+      "priority": 199,
       "builders": ["AdvancedVehicleFactory"],
       "build_conditions": [
         [
@@ -308,6 +308,46 @@
             "unit_type_string0": "Structure & Teleporter",
             "compare0": ">",
             "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Infernodier - Basic Artillery Bot - UC",
+      "to_build": "BasicArtilleryBot",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 100,
+      "builders": ["UnitCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Infernodier",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Infernodier - Tesla Bot - UC",
+      "to_build": "TeslaBot",
+      "instance_count": -1,
+      "max_num_assisters": 10,
+      "priority": 100,
+      "builders": ["UnitCannon"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Infernodier",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
           }
         ]
       ]

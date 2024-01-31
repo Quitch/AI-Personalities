@@ -1,17 +1,17 @@
 {
   "build_list": [
     {
-      "name": "Assault - Advanced Gunship",
-      "to_build": "AdvancedGunship",
+      "name": "Sniper - Advanced Air Bomber",
+      "to_build": "AdvancedBomber",
       "instance_count": -1,
       "max_num_assisters": 15,
-      "priority": 205,
+      "priority": 199,
       "builders": ["AdvancedAirFactory"],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Assault",
+            "string0": "Sniper",
             "boolean": true
           },
           {
@@ -25,7 +25,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Assault",
+            "string0": "Sniper",
             "boolean": true
           },
           {
@@ -37,7 +37,7 @@
           },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Gunship",
+            "unit_type_string0": "Bomber",
             "compare0": "<",
             "value0": 20
           }
@@ -45,17 +45,17 @@
       ]
     },
     {
-      "name": "Assault - Basic Assault Bot",
-      "to_build": "BasicAssaultBot",
+      "name": "Sniper - Basic Artillery Bot",
+      "to_build": "BasicArtilleryBot",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 98,
+      "priority": 97,
       "builders": ["BasicBotFactory"],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Assault",
+            "string0": "Sniper",
             "boolean": true
           },
           {
@@ -64,12 +64,16 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           }
         ],
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Assault",
+            "string0": "Sniper",
             "boolean": true
           },
           {
@@ -89,84 +93,26 @@
             "compare0": ">",
             "value0": 0
           }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Assault",
-            "boolean": true
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Tank | Air) & Factory",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountPerPlanetRadius",
-            "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - SelfDestruct",
-            "compare0": "<",
-            "value0": 200
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Assault",
-            "boolean": true
-          },
-          {
-            "test_type": "BaseThreatened",
-            "boolean": false
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Tank | Air) & Factory",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "(Bot & Mobile) - Fabber - AirDefense - Construction - Artillery - Heavy - SelfDestruct",
-            "compare0": "<",
-            "value0": 1
-          },
-          {
-            "test_type": "HaveFullPlanetIntel",
-            "boolean": false
-          }
         ]
       ]
     },
     {
-      "name": "Assault - Light Laser Tank",
-      "to_build": "LightLaserTank",
+      "name": "Sniper - Hover Tank",
+      "to_build": "HoverTank",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 98,
+      "priority": 97,
       "builders": ["BasicVehicleFactory"],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Assault",
+            "string0": "Sniper",
             "boolean": true
           },
           {
             "test_type": "AloneOnPlanet",
             "boolean": false
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
@@ -175,7 +121,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Assault",
+            "string0": "Sniper",
             "boolean": true
           },
           {
@@ -199,17 +145,17 @@
       ]
     },
     {
-      "name": "Assault - Advanced Assault Bot",
-      "to_build": "AdvancedAssaultBot",
+      "name": "Sniper - Advanced Artillery Bot",
+      "to_build": "AdvancedArtilleryBot",
       "instance_count": -1,
       "max_num_assisters": 15,
-      "priority": 205,
+      "priority": 199,
       "builders": ["AdvancedBotFactory"],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Assault",
+            "string0": "Sniper",
             "boolean": true
           },
           {
@@ -218,12 +164,16 @@
           },
           {
             "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           }
         ],
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Assault",
+            "string0": "Sniper",
             "boolean": true
           },
           {
@@ -247,17 +197,69 @@
       ]
     },
     {
-      "name": "Assault - Advanced Laser Tank",
-      "to_build": "AdvancedLaserTank",
+      "name": "Sniper - Advanced Tactical Bot",
+      "to_build": "TMLBot",
       "instance_count": -1,
       "max_num_assisters": 15,
-      "priority": 205,
+      "priority": 199,
+      "builders": ["AdvancedBotFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Sniper",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Sniper",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
+            "boolean": true
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Structure & Teleporter",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Sniper - Advanced Artillery Vehicle",
+      "to_build": "AdvancedArtilleryVehicle",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
       "builders": ["AdvancedVehicleFactory"],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Assault",
+            "string0": "Sniper",
             "boolean": true
           },
           {
@@ -265,17 +267,17 @@
             "boolean": false
           },
           {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
+            "test_type": "CanAffordBuildDemand"
           },
           {
-            "test_type": "CanAffordBuildDemand"
+            "test_type": "CanDeployLandFromBase",
+            "boolean": true
           }
         ],
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Assault",
+            "string0": "Sniper",
             "boolean": true
           },
           {
@@ -299,17 +301,17 @@
       ]
     },
     {
-      "name": "Assault - Destroyer",
+      "name": "Sniper - Destroyer",
       "to_build": "Destroyer",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 98,
+      "priority": 97,
       "builders": ["BasicNavalFactory"],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Assault",
+            "string0": "Sniper",
             "boolean": true
           },
           {
@@ -327,58 +329,17 @@
       ]
     },
     {
-      "name": "Assault - Attack Sub",
-      "to_build": "Sub",
-      "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 98,
-      "builders": ["BasicNavalFactory"],
-      "build_conditions": [
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Assault",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Mobile & Naval & Sub",
-            "unit_type_string1": "Mobile & Naval - Fabber",
-            "compare0": "<",
-            "value0": 0.25
-          },
-          {
-            "test_type": "CanAffordBuildDemand"
-          }
-        ]
-      ]
-    },
-    {
-      "name": "Assault - Battleship",
+      "name": "Sniper - Battleship",
       "to_build": "Battleship",
       "instance_count": -1,
       "max_num_assisters": 15,
-      "priority": 205,
+      "priority": 199,
       "builders": ["AdvancedNavalFactory"],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Assault",
+            "string0": "Sniper",
             "boolean": true
           },
           {
@@ -396,39 +357,18 @@
       ]
     },
     {
-      "name": "Assault - Missile Sub",
-      "to_build": "MissileSub",
+      "name": "Sniper - Basic Artillery Bot - UC",
+      "to_build": "BasicArtilleryBot",
       "instance_count": -1,
-      "max_num_assisters": 15,
-      "priority": 205,
-      "builders": ["AdvancedNavalFactory"],
+      "max_num_assisters": 10,
+      "priority": 100,
+      "builders": ["UnitCannon"],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Assault",
+            "string0": "Sniper",
             "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
-            "boolean": false
-          },
-          {
-            "test_type": "CanDeployNavalFromBase",
-            "boolean": true
-          },
-          {
-            "test_type": "PlanetThreat",
-            "string0": "Naval",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
-            "test_type": "UnitRatioOnPlanet",
-            "unit_type_string0": "Mobile & Naval & Sub",
-            "unit_type_string1": "Mobile & Naval - Fabber",
-            "compare0": "<",
-            "value0": 0.25
           },
           {
             "test_type": "CanAffordBuildDemand"

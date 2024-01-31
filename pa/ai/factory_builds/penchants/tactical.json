@@ -1,17 +1,61 @@
 {
   "build_list": [
     {
-      "name": "Boomer - Boom Bot",
-      "to_build": "BoomBot",
+      "name": "Tactical - Advanced Air Bomber",
+      "to_build": "AdvancedBomber",
       "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 98,
-      "builders": ["BasicBotFactory"],
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": ["AdvancedAirFactory"],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Boomer",
+            "string0": "Tactical",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": false
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tactical",
+            "boolean": true
+          },
+          {
+            "test_type": "AloneOnPlanet",
+            "boolean": true
+          },
+          {
+            "test_type": "CanAffordBuildDemand"
+          },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Bomber",
+            "compare0": "<",
+            "value0": 20
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Tactical - Advanced Tactical Bot",
+      "to_build": "TMLBot",
+      "instance_count": -1,
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": ["AdvancedBotFactory"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Tactical",
             "boolean": true
           },
           {
@@ -29,7 +73,7 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Boomer",
+            "string0": "Tactical",
             "boolean": true
           },
           {
@@ -53,17 +97,17 @@
       ]
     },
     {
-      "name": "Boomer - Nano Swarm",
-      "to_build": "NanoSwarm",
+      "name": "Tactical - MissleShip",
+      "to_build": "MissleShip",
       "instance_count": -1,
-      "max_num_assisters": 10,
-      "priority": 205,
-      "builders": ["AdvancedBotFactory"],
+      "max_num_assisters": 15,
+      "priority": 199,
+      "builders": ["AdvancedNavalFactory"],
       "build_conditions": [
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Boomer",
+            "string0": "Tactical",
             "boolean": true
           },
           {
@@ -71,35 +115,11 @@
             "boolean": false
           },
           {
-            "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "CanDeployLandFromBase",
-            "boolean": true
-          }
-        ],
-        [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "Boomer",
-            "boolean": true
-          },
-          {
-            "test_type": "AloneOnPlanet",
+            "test_type": "CanDeployNavalFromBase",
             "boolean": true
           },
           {
             "test_type": "CanAffordBuildDemand"
-          },
-          {
-            "test_type": "OtherPlanetCanReceiveLandUnitAssistance",
-            "boolean": true
-          },
-          {
-            "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Structure & Teleporter",
-            "compare0": ">",
-            "value0": 0
           }
         ]
       ]

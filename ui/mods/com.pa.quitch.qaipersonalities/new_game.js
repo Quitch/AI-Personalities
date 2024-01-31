@@ -21,7 +21,15 @@ if (!aiPersonalitiesLoaded) {
           },
           aipAllTerrainMla: {
             display_name: "!LOC:AIP All-terrain" + " (MLA)",
-            personality_tags: ["Default", "PreventsWaste", "AllTerrain"],
+            personality_tags: [
+              "Default",
+              "PreventsWaste",
+              "AllTerrain",
+              "PenchantT1Bot",
+              "PenchantT2Bot",
+              "PenchantT1Vehicle",
+              "PenchantT2Naval",
+            ],
           },
           aipAmphibious: {
             display_name: "!LOC:AIP Amphibious",
@@ -36,11 +44,26 @@ if (!aiPersonalitiesLoaded) {
           },
           aipAssaultMla: {
             display_name: "!LOC:AIP Assault" + " (MLA)",
-            personality_tags: ["PreventsWaste", "Assault"],
+            personality_tags: [
+              "PreventsWaste",
+              "Assault",
+              "PenchantT2Air",
+              "PenchantT1Bot",
+              "PenchantT1Vehicle",
+              "PenchantT2Vehicle",
+              "PenchantT1Naval",
+              "PenchantT2Naval",
+            ],
           },
           aipBoomerMla: {
             display_name: "!LOC:AIP Boomer" + " (MLA)",
-            personality_tags: ["Default", "PreventsWaste", "Boomer"],
+            personality_tags: [
+              "Default",
+              "PreventsWaste",
+              "Boomer",
+              "PenchantT1Bot",
+              "PenchantT2Bot",
+            ],
           },
           aipBot: {
             display_name: "!LOC:AIP Bot",
@@ -84,7 +107,13 @@ if (!aiPersonalitiesLoaded) {
           },
           aipFortressMla: {
             display_name: "!LOC:AIP Fortress" + " (MLA)",
-            personality_tags: ["Default", "PreventsWaste", "Fortress"],
+            personality_tags: [
+              "Default",
+              "PreventsWaste",
+              "Fortress",
+              "PenchantT1Defence",
+              "PenchantT2Defence",
+            ],
           },
           aipFoundation: {
             display_name: "!LOC:AIP Foundation",
@@ -103,11 +132,30 @@ if (!aiPersonalitiesLoaded) {
           },
           aipHeavyMla: {
             display_name: "!LOC:AIP Heavy" + " (MLA)",
-            personality_tags: ["PreventsWaste", "Heavy"],
+            personality_tags: [
+              "PreventsWaste",
+              "Heavy",
+              "NoPercentage",
+              "PenchantT2Air",
+              "PenchantT1Bot",
+              "PenchantT2Bot",
+              "PenchantT1Vehicle",
+              "PenchantT2Vehicle",
+              "PenchantT1Naval",
+              "PenchantT2Naval",
+            ],
           },
           aipInfernodierMla: {
             display_name: "!LOC:AIP Infernodier" + " (MLA)",
-            personality_tags: ["PreventsWaste", "Infernodier"],
+            personality_tags: [
+              "PreventsWaste",
+              "Infernodier",
+              "NoPercentage",
+              "PenchantT1Bot",
+              "PenchantT2Bot",
+              "PenchantT1Vehicle",
+              "PenchantT2Vehicle",
+            ],
           },
           aipLand: {
             display_name: "!LOC:AIP Land",
@@ -138,7 +186,17 @@ if (!aiPersonalitiesLoaded) {
           },
           aipMetaMla: {
             display_name: "!LOC:AIP Meta" + " (MLA)",
-            personality_tags: ["PreventsWaste", "Meta"],
+            personality_tags: [
+              "PreventsWaste",
+              "Meta",
+              "NoPercentage",
+              "PenchantT2Air",
+              "PenchantT1Bot",
+              "PenchantT1Vehicle",
+              "PenchantT2Vehicle",
+              "PenchantT1Naval",
+              "PenchantT2Naval",
+            ],
           },
           aipNaval: {
             display_name: "!LOC:AIP Naval",
@@ -162,7 +220,16 @@ if (!aiPersonalitiesLoaded) {
           },
           aipRaiderMla: {
             display_name: "!LOC:AIP Raider" + " (MLA)",
-            personality_tags: ["PreventsWaste", "Raider"],
+            personality_tags: [
+              "PreventsWaste",
+              "Raider",
+              "PenchantT2Air",
+              "PenchantT1Bot",
+              "PenchantT2Bot",
+              "PenchantT1Vehicle",
+              "PenchantT1Naval",
+              "PenchantT2Naval",
+            ],
           },
           aipRandom: {
             display_name: "!LOC:AIP Random",
@@ -194,7 +261,18 @@ if (!aiPersonalitiesLoaded) {
           },
           aipSniperMla: {
             display_name: "!LOC:AIP Sniper" + " (MLA)",
-            personality_tags: ["PreventsWaste", "Sniper"],
+            personality_tags: [
+              "PreventsWaste",
+              "Sniper",
+              "NoPercentage",
+              "PenchantT2Air",
+              "PenchantT1Bot",
+              "PenchantT2Bot",
+              "PenchantT1Vehicle",
+              "PenchantT2Vehicle",
+              "PenchantT1Naval",
+              "PenchantT2Naval",
+            ],
           },
           aipSwarm: {
             display_name: "!LOC:AIP Swarm",
@@ -220,7 +298,15 @@ if (!aiPersonalitiesLoaded) {
             display_name: "!LOC:AIP Tactical (MLA)",
             percent_vehicle: 0.25,
             percent_bot: 0.45,
-            personality_tags: ["PreventsWaste", "Tactical"],
+            personality_tags: [
+              "PreventsWaste",
+              "Tactical",
+              "NoPercentage",
+              "PenchantT2Defence",
+              "PenchantT2Air",
+              "PenchantT2Bot",
+              "PenchantT2Naval",
+            ],
           },
           aipTank: {
             display_name: "!LOC:AIP Tank",
