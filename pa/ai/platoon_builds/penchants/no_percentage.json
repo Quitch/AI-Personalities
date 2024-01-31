@@ -10,8 +10,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Default",
-            "boolean": false
+            "string0": "NoPercentage",
+            "boolean": true
           },
           {
             "test_type": "EnemyPresenceOnPlanet",
@@ -45,8 +45,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Default",
-            "boolean": false
+            "string0": "NoPercentage",
+            "boolean": true
           },
           {
             "test_type": "EnemyPresenceOnPlanet",
@@ -79,8 +79,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Default",
-            "boolean": false
+            "string0": "NoPercentage",
+            "boolean": true
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
@@ -111,8 +111,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Default",
-            "boolean": false
+            "string0": "NoPercentage",
+            "boolean": true
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
@@ -143,8 +143,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Default",
-            "boolean": false
+            "string0": "NoPercentage",
+            "boolean": true
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
@@ -175,8 +175,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Default",
-            "boolean": false
+            "string0": "NoPercentage",
+            "boolean": true
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",
@@ -207,8 +207,8 @@
         [
           {
             "test_type": "HasPersonalityTag",
-            "string0": "Default",
-            "boolean": false
+            "string0": "NoPercentage",
+            "boolean": true
           },
           {
             "test_type": "EnemySurfacePresenceOnPlanet",

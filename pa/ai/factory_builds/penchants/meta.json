@@ -5,7 +5,7 @@
       "to_build": "AdvancedGunship",
       "instance_count": -1,
       "max_num_assisters": 15,
-      "priority": 205,
+      "priority": 199,
       "builders": ["AdvancedAirFactory"],
       "build_conditions": [
         [
@@ -49,7 +49,7 @@
       "to_build": "BasicAssaultBot",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 98,
+      "priority": 97,
       "builders": ["BasicBotFactory"],
       "build_conditions": [
         [
@@ -151,7 +151,7 @@
       "to_build": "TeslaBot",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 98,
+      "priority": 97,
       "builders": ["BasicBotFactory", "UnitCannon"],
       "build_conditions": [
         [
@@ -203,7 +203,7 @@
       "to_build": "LightLaserTank",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 98,
+      "priority": 97,
       "builders": ["BasicVehicleFactory"],
       "build_conditions": [
         [
@@ -255,7 +255,7 @@
       "to_build": "BasicArmorTank",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 98,
+      "priority": 97,
       "builders": ["BasicVehicleFactory"],
       "build_conditions": [
         [
@@ -326,7 +326,7 @@
       "to_build": "HoverTank",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 98,
+      "priority": 97,
       "builders": ["BasicVehicleFactory"],
       "build_conditions": [
         [
@@ -359,7 +359,7 @@
       "to_build": "AdvancedLaserTank",
       "instance_count": -1,
       "max_num_assisters": 15,
-      "priority": 205,
+      "priority": 199,
       "builders": ["AdvancedVehicleFactory"],
       "build_conditions": [
         [
@@ -411,7 +411,7 @@
       "to_build": "AdvancedArtilleryVehicle",
       "instance_count": -1,
       "max_num_assisters": 15,
-      "priority": 205,
+      "priority": 199,
       "builders": ["AdvancedVehicleFactory"],
       "build_conditions": [
         [
@@ -477,7 +477,7 @@
       "to_build": "Frigate",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 98,
+      "priority": 97,
       "builders": ["BasicNavalFactory"],
       "build_conditions": [
         [
@@ -505,7 +505,7 @@
       "to_build": "Battleship",
       "instance_count": -1,
       "max_num_assisters": 15,
-      "priority": 205,
+      "priority": 199,
       "builders": ["AdvancedNavalFactory"],
       "build_conditions": [
         [
@@ -533,7 +533,7 @@
       "to_build": "BasicAssaultBot",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 105,
+      "priority": 100,
       "builders": ["UnitCannon"],
       "build_conditions": [
         [
@@ -553,7 +553,7 @@
       "to_build": "TeslaBot",
       "instance_count": -1,
       "max_num_assisters": 10,
-      "priority": 105,
+      "priority": 100,
       "builders": ["UnitCannon"],
       "build_conditions": [
         [

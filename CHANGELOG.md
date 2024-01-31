@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v3.0.0 - 2024-01-31
+
+- Changed how the AI is implemented to make MLA AIs stick to their penchant
+- Added AIP-Platoon which prefers to use a smaller number of larger armies
+- AIP-Artillery and AIP-Fortress will build the Lob
+
 ## v2.5.0 - 2023-06-24
 
 - Updated for PA 116982
