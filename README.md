@@ -120,6 +120,11 @@ All personalities are based on Absurd difficulty.
 
 - Puts more emphasis on an orbital presence.
 
+### Platoon
+
+- Fewer armies
+- More units in armies
+
 ### Raider
 
 - Prefers to use fast units.

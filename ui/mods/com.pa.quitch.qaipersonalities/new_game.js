@@ -218,6 +218,10 @@ if (!aiPersonalitiesLoaded) {
             percent_naval: 0,
             percent_orbital: 0.95,
           },
+          aipPlatoon: {
+            display_name: "!LOC:AIP Raider" + " (MLA)",
+            personality_tags: ["PreventsWaste", "Platoon", "PenchantPlatoon"],
+          },
           aipRaiderMla: {
             display_name: "!LOC:AIP Raider" + " (MLA)",
             personality_tags: [
