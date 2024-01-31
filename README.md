@@ -122,8 +122,8 @@ All personalities are based on Absurd difficulty.
 
 ### Platoon
 
-- Fewer armies
-- More units in armies
+- Fewer armies.
+- More units in armies.
 
 ### Raider
 
