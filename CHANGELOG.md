@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v3.0.1 - 2024-02-01
 
 - Fixed some personalities using too many bots and tanks
 
