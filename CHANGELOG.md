@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Fixed some personalities using too many bots and tanks
+
 ## v3.0.0 - 2024-01-31
 
 - Changed how the AI is implemented to make MLA AIs stick to their penchant
