@@ -100,6 +100,11 @@ if (!aiPersonalitiesLoaded) {
             fabber_alone_on_planet_mod: 4,
             factory_alone_on_planet_mod: 0.25,
           },
+          aipFactory: {
+            display_name: "!LOC:AIP Factory",
+            metal_demand_check: 0.99,
+            energy_demand_check: 0.99,
+          },
           aipFastTech: {
             display_name: "!LOC:AIP Fast Tech",
             adv_eco_mod: 0.85,
@@ -286,8 +291,7 @@ if (!aiPersonalitiesLoaded) {
           },
           aipSwarm: {
             display_name: "!LOC:AIP Swarm",
-            metal_demand_check: 0.99,
-            energy_demand_check: 0.99,
+            basic_to_advanced_factory_ratio: 10,
           },
           aipSynchronous: {
             display_name: "!LOC:AIP Synchronous",
@@ -361,10 +365,15 @@ if (!aiPersonalitiesLoaded) {
         var cachedFunction = model.startGame;
 
         return function () {
-          var isModFaction = function (slot) {
-            var factionCommander = ["l_", "bug_"];
-            return _.some(factionCommander, function (commander) {
-              return _.includes(slot.commander(), commander);
+          var isMLA = function (slot) {
+            var mlaCommanders = [
+              "/pa/units/commanders/imperial_",
+              "/pa/units/commanders/quad_",
+              "/pa/units/commanders/raptor_",
+              "/pa/units/commanders/tank_",
+            ];
+            return _.some(mlaCommanders, function (commander) {
+              return _.startsWith(slot.commander(), commander);
             });
           };
 
@@ -384,10 +393,10 @@ if (!aiPersonalitiesLoaded) {
           var noMlaPersonalities = _.xor(aipPersonalityNames, mlaPersonalities);
 
           var filterValidPersonalities = function (slot) {
-            if (isModFaction(slot)) {
-              return validPersonalities(noMlaPersonalities);
+            if (isMLA(slot)) {
+              return validPersonalities(aipPersonalityNames);
             }
-            return validPersonalities(aipPersonalityNames);
+            return validPersonalities(noMlaPersonalities);
           };
 
           _.forEach(model.armies(), function (army) {

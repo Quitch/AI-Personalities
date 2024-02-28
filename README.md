@@ -66,6 +66,10 @@ All personalities are based on Absurd difficulty.
 
 - Uses more basic fabbers.
 
+### Factory
+
+- Prefers factories over other structures.
+
 ### Fast Tech
 
 - Techs to T2 as quickly as possible.
@@ -151,7 +155,7 @@ All personalities are based on Absurd difficulty.
 
 ### Swarm
 
-- Prefers factories over other structures.
+- High ratio of T1 to T2.
 
 ### Synchronous
 
