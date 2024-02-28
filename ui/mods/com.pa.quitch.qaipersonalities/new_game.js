@@ -365,10 +365,15 @@ if (!aiPersonalitiesLoaded) {
         var cachedFunction = model.startGame;
 
         return function () {
-          var isModFaction = function (slot) {
-            var factionCommander = ["l_", "bug_"];
-            return _.some(factionCommander, function (commander) {
-              return _.includes(slot.commander(), commander);
+          var isMLA = function (slot) {
+            var mlaCommanders = [
+              "/pa/units/commanders/imperial_",
+              "/pa/units/commanders/quad_",
+              "/pa/units/commanders/raptor_",
+              "/pa/units/commanders/tank_",
+            ];
+            return _.some(mlaCommanders, function (commander) {
+              return _.startsWith(slot.commander(), commander);
             });
           };
 
@@ -388,10 +393,10 @@ if (!aiPersonalitiesLoaded) {
           var noMlaPersonalities = _.xor(aipPersonalityNames, mlaPersonalities);
 
           var filterValidPersonalities = function (slot) {
-            if (isModFaction(slot)) {
-              return validPersonalities(noMlaPersonalities);
+            if (isMLA(slot)) {
+              return validPersonalities(aipPersonalityNames);
             }
-            return validPersonalities(aipPersonalityNames);
+            return validPersonalities(noMlaPersonalities);
           };
 
           _.forEach(model.armies(), function (army) {
