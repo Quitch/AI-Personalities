@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v3.1.0 - 2024-02-28
 
 - AIP-Swarm now focuses on a high ratio of T1 to T2
 - Added AIP-Factory which focuses on factories over other structures i.e. what AIP-Swarm used to be
