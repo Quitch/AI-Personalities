@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Unreleased
+
+- AIP Swarm now focuses on a high ratio of T1 to T2
+- Added AIP Factory which focuses on factories over other structures i.e. what AIP Swarm used to be
+
 ## v3.0.1 - 2024-02-01
 
 - Fixed some personalities using too many bots and tanks
