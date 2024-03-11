@@ -385,16 +385,19 @@ if (!aiPersonalitiesLoaded) {
             });
           };
 
-          var aipPersonalityNames = _.keys(aipCompletePersonalities);
-          var mlaPersonalities = _.filter(
-            model.aiPersonalityNames(),
-            function (personality) {
-              return _.endsWith(personality, "Mla");
-            }
-          );
-          var noMlaPersonalities = _.xor(aipPersonalityNames, mlaPersonalities);
-
           var filterValidPersonalities = function (slot) {
+            var aipPersonalityNames = _.keys(aipCompletePersonalities);
+            var mlaPersonalities = _.filter(
+              model.aiPersonalityNames(),
+              function (personality) {
+                return _.endsWith(personality, "Mla");
+              }
+            );
+            var noMlaPersonalities = _.xor(
+              aipPersonalityNames,
+              mlaPersonalities
+            );
+
             if (isMLA(slot)) {
               return validPersonalities(aipPersonalityNames);
             }
