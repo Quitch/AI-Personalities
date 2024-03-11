@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## v3.2.0 - 2024-03-11
+
+- AIP-Swarm uses more advanced fabbers
+- Fixed name of AIP-Platoon in selection box
+
 ## v3.1.0 - 2024-02-28
 
 - AIP-Swarm now focuses on a high ratio of T1 to T2
