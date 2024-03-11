@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Removed land mine builds for performance reasons
+
 ## v3.2.0 - 2024-03-11
 
 - AIP-Swarm uses more advanced fabbers
