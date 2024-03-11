@@ -292,6 +292,7 @@ if (!aiPersonalitiesLoaded) {
           aipSwarm: {
             display_name: "!LOC:AIP Swarm",
             basic_to_advanced_factory_ratio: 10,
+            fabber_to_factory_ratio_advanced: 3,
           },
           aipSynchronous: {
             display_name: "!LOC:AIP Synchronous",

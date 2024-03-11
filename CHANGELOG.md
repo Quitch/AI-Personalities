@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- AIP-Swarm uses more advanced fabbers
+
 ## v3.1.0 - 2024-02-28
 
 - AIP-Swarm now focuses on a high ratio of T1 to T2
