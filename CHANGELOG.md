@@ -3,6 +3,7 @@
 ## Unreleased
 
 - AIP-Swarm uses more advanced fabbers
+- Fixed name of AIP-Platoon in selection box
 
 ## v3.1.0 - 2024-02-28
 
