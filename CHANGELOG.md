@@ -6,14 +6,14 @@
 
 ## v3.2.0 - 2024-03-11
 
-- AIP-Swarm uses more advanced fabbers
-- Fixed name of AIP-Platoon in selection box
+- AIP Swarm uses more advanced fabbers
+- Fixed name of AIP Platoon in selection box
 
 ## v3.1.0 - 2024-02-28
 
-- AIP-Swarm now focuses on a high ratio of T1 to T2
-- Added AIP-Factory which focuses on factories over other structures i.e. what AIP-Swarm used to be
-- Future-proof MLA detection by AIP-Random
+- AIP Swarm now focuses on a high ratio of T1 to T2
+- Added AIP Factory which focuses on factories over other structures i.e. what AIP Swarm used to be
+- Future-proof MLA detection by AIP Random
 
 ## v3.0.1 - 2024-02-01
 
@@ -22,8 +22,8 @@
 ## v3.0.0 - 2024-01-31
 
 - Changed how the AI is implemented to make MLA AIs stick to their penchant
-- Added AIP-Platoon which prefers to use a smaller number of larger armies
-- AIP-Artillery and AIP-Fortress will build the Lob
+- Added AIP Platoon which prefers to use a smaller number of larger armies
+- AIP Artillery and AIP Fortress will build the Lob
 
 ## v2.5.0 - 2023-06-24
 
@@ -82,21 +82,21 @@
 
 ## v1.9.0 - 2021-04-25
 
-- Added AIP-Amphibious which uses a mix of land and naval forces
+- Added AIP Amphibious which uses a mix of land and naval forces
 
 ## v1.8.0 - 2021-04-25
 
-- AIP-Bot and AIP-Tank use less air
-- AIP-Turtle is more likely to attack
-- Reverted to default opening factory for AIP-Economist, AIP-Fast Tech, AIP-Land, and AIP-Swarm
+- AIP Bot and AIP Tank use less air
+- AIP Turtle is more likely to attack
+- Reverted to default opening factory for AIP Economist, AIP Fast Tech, AIP Land, and AIP Swarm
 - Added opening factory requirements to unit type specialised personalities to future proof against Absurd personality changes
-- Removed changes to minimum fabber numbers from AIP-Swarm
-- AIP-Fast Tech and AIP-Turtle take slightly longer to tech
-- Increased orbital focus of AIP-Orbital
+- Removed changes to minimum fabber numbers from AIP Swarm
+- AIP Fast Tech and AIP Turtle take slightly longer to tech
+- Increased orbital focus of AIP Orbital
 
 ## v1.7.1 - 2021-04-14
 
-- Ensure AIP-Random doesn't pick a personality from any other AI mod
+- Ensure AIP Random doesn't pick a personality from any other AI mod
 
 ## v1.7.0 - 2020-10-07
 
@@ -114,7 +114,7 @@
 
 ## v1.5.3 - 2020-07-12
 
-- All AIP- prefixes have had the hyphen removed to resolve a crash issue
+- All AIP prefixes have had the hyphen removed to resolve a crash issue
 
 ## v1.5.2 - 2020-06-26
 
