@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- Limit minelaying to specific personalities only
+- Limit minelaying to AIP Fortress and the new AIP Minelayer
 
 ## v3.2.0 - 2024-03-11
 

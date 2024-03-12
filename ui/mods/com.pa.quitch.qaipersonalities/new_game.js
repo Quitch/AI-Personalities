@@ -210,6 +210,10 @@ function penchantAI() {
           "PenchantT2Naval",
         ],
       },
+      aipMinelayer: {
+        display_name: "!LOC:AIP Minelayer" + " (MLA)",
+        personality_tags: ["PreventsWaste", "Minelayer"],
+      },
       aipNaval: {
         display_name: "!LOC:AIP Naval",
         percent_vehicle: 0,
