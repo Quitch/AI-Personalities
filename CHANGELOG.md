@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Limit minelaying to specific personalities only
+
 ## v3.2.0 - 2024-03-11
 
 - AIP Swarm uses more advanced fabbers

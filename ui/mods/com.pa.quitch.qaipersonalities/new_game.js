@@ -121,6 +121,7 @@ function penchantAI() {
           "Fortress",
           "PenchantT1Defence",
           "PenchantT2Defence",
+          "Minelayer",
         ],
       },
       aipFoundation: {
