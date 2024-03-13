@@ -111,6 +111,10 @@ All personalities are based on Absurd difficulty.
 - Prefers units used at the top of the ladder.
 - Does not support factions.
 
+### Minelayer
+
+- Builds landmines.
+
 ### Naval
 
 - Prefers naval.

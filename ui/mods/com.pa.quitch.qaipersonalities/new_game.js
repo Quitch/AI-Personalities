@@ -121,6 +121,7 @@ function penchantAI() {
           "Fortress",
           "PenchantT1Defence",
           "PenchantT2Defence",
+          "Minelayer",
         ],
       },
       aipFoundation: {
@@ -208,6 +209,10 @@ function penchantAI() {
           "PenchantT1Naval",
           "PenchantT2Naval",
         ],
+      },
+      aipMinelayer: {
+        display_name: "!LOC:AIP Minelayer" + " (MLA)",
+        personality_tags: ["PreventsWaste", "Minelayer"],
       },
       aipNaval: {
         display_name: "!LOC:AIP Naval",
