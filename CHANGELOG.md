@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v3.3.0 - 2024-03-13
 
 - Limit minelaying to AIP Fortress and the new AIP Minelayer
 
