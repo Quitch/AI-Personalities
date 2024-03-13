@@ -2,7 +2,7 @@
   "context": "server",
   "identifier": "com.pa.quitch.qaipersonalities-dev",
   "display_name": "Penchant AI DEV",
-  "description": "Tailor the AI to play how you want it to play at Absurd difficulty. Want it to mass ships? AIP Naval. Want it to play defensive? AIP Turtle. Compatible with the Queller AI. Does not affect Galactic War. See the forum thread below for full personality descriptions.",
+  "description": "Introduces over 30 new personalities for the AI. Tailor it to play however you want, or just have it use a random personality. Compatible with the Queller AI. Does not affect Galactic War. See the forum thread below for full personality descriptions.",
   "author": "Quitch",
   "version": "3.2.0",
   "build": "116982",
