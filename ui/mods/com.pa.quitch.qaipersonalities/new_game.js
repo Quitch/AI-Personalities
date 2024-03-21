@@ -374,41 +374,41 @@ function penchantAI() {
     model.startGame = (function () {
       var cachedFunction = model.startGame;
 
-      return function () {
-        var isMLA = function (slot) {
-          var mlaCommanders = [
-            "/pa/units/commanders/imperial_",
-            "/pa/units/commanders/quad_",
-            "/pa/units/commanders/raptor_",
-            "/pa/units/commanders/tank_",
-          ];
-          return _.some(mlaCommanders, function (commander) {
-            return _.startsWith(slot.commander(), commander);
-          });
-        };
+      var isMLA = function (slot) {
+        var mlaCommanders = [
+          "/pa/units/commanders/imperial_",
+          "/pa/units/commanders/quad_",
+          "/pa/units/commanders/raptor_",
+          "/pa/units/commanders/tank_",
+        ];
+        return _.some(mlaCommanders, function (commander) {
+          return _.startsWith(slot.commander(), commander);
+        });
+      };
 
-        var validPersonalities = function (personalityNames) {
-          return _.filter(personalityNames, function (name) {
-            return !_.startsWith(name, "aipRandom");
-          });
-        };
+      var validPersonalities = function (personalityNames) {
+        return _.filter(personalityNames, function (name) {
+          return !_.startsWith(name, "aipRandom");
+        });
+      };
 
-        var filterValidPersonalities = function (slot) {
-          var aipPersonalityNames = _.keys(aipCompletePersonalities);
-          var mlaPersonalities = _.filter(
-            model.aiPersonalityNames(),
-            function (personality) {
-              return _.endsWith(personality, "Mla");
-            }
-          );
-          var noMlaPersonalities = _.xor(aipPersonalityNames, mlaPersonalities);
-
-          if (isMLA(slot)) {
-            return validPersonalities(aipPersonalityNames);
+      var filterValidPersonalities = function (slot) {
+        var aipPersonalityNames = _.keys(aipCompletePersonalities);
+        var mlaPersonalities = _.filter(
+          model.aiPersonalityNames(),
+          function (personality) {
+            return _.endsWith(personality, "Mla");
           }
-          return validPersonalities(noMlaPersonalities);
-        };
+        );
+        var noMlaPersonalities = _.xor(aipPersonalityNames, mlaPersonalities);
 
+        if (isMLA(slot)) {
+          return validPersonalities(aipPersonalityNames);
+        }
+        return validPersonalities(noMlaPersonalities);
+      };
+
+      return function () {
         _.forEach(model.armies(), function (army) {
           _.forEach(army.slots(), function (slot) {
             if (slot.ai() === true && slot.aiPersonality() === "aipRandom") {
