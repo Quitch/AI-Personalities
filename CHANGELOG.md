@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.4.0 - 2024-04-22
+
+- Support Kaiju using teleporters
+
 ## v3.3.0 - 2024-03-13
 
 - Limit minelaying to AIP Fortress and the new AIP Minelayer
