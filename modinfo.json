@@ -20,7 +20,7 @@
     "titans",
     "skirmish"
   ],
-  "icon": "https://raw.githubusercontent.com/Quitch/AI-Personalities/develop/images/icon.png",
+  "icon": "https://raw.githubusercontent.com/Quitch/AI-Personalities/master/images/icon.png",
   "scenes": {
     "new_game": ["coui://ui/mods/com.pa.quitch.qaipersonalities/new_game.js"]
   },
