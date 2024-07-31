@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.4.1 - 2024-07-31
+
+- Fix anti-air in the Unit Cannon not properly considering air threat
+
 ## v3.4.0 - 2024-04-22
 
 - Support Kaiju using teleporters
