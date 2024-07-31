@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v3.4.1 - 2024-07-31
 
 - Fix anti-air in the Unit Cannon not properly considering air threat
 
