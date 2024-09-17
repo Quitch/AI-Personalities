@@ -370,54 +370,57 @@ function penchantAI() {
     _.assign(model.aiPersonalities(), aipCompletePersonalities);
     model.aiPersonalities.valueHasMutated();
 
-    // assign random personalities when Start Game clicked
+    const isMLA = function (slot) {
+      const mlaCommanders = [
+        "/pa/units/commanders/imperial_",
+        "/pa/units/commanders/quad_",
+        "/pa/units/commanders/raptor_",
+        "/pa/units/commanders/tank_",
+      ];
+      return _.some(mlaCommanders, function (commander) {
+        return _.startsWith(slot.commander(), commander);
+      });
+    };
+
+    const validPersonalities = function (personalityNames) {
+      return _.filter(personalityNames, function (name) {
+        return !_.startsWith(name, "aipRandom");
+      });
+    };
+
+    const filterValidPersonalities = function (slot) {
+      const aipPersonalityNames = _.keys(aipCompletePersonalities);
+      const mlaPersonalities = _.filter(
+        model.aiPersonalityNames(),
+        function (personality) {
+          return _.endsWith(personality, "Mla");
+        }
+      );
+      const noMlaPersonalities = _.xor(aipPersonalityNames, mlaPersonalities);
+
+      if (isMLA(slot)) {
+        return validPersonalities(aipPersonalityNames);
+      }
+      return validPersonalities(noMlaPersonalities);
+    };
+
+    const assignRandomPersonalities = function () {
+      _.forEach(model.armies(), function (army) {
+        _.forEach(army.slots(), function (slot) {
+          if (slot.ai() === true && slot.aiPersonality() === "aipRandom") {
+            const availablePersonalities = filterValidPersonalities(slot);
+            const chosenPersonality = _.sample(availablePersonalities);
+            slot.aiPersonality(chosenPersonality);
+          }
+        });
+      });
+    };
+
     model.startGame = (function () {
       const cachedFunction = model.startGame;
 
-      const isMLA = function (slot) {
-        const mlaCommanders = [
-          "/pa/units/commanders/imperial_",
-          "/pa/units/commanders/quad_",
-          "/pa/units/commanders/raptor_",
-          "/pa/units/commanders/tank_",
-        ];
-        return _.some(mlaCommanders, function (commander) {
-          return _.startsWith(slot.commander(), commander);
-        });
-      };
-
-      const validPersonalities = function (personalityNames) {
-        return _.filter(personalityNames, function (name) {
-          return !_.startsWith(name, "aipRandom");
-        });
-      };
-
-      const filterValidPersonalities = function (slot) {
-        const aipPersonalityNames = _.keys(aipCompletePersonalities);
-        const mlaPersonalities = _.filter(
-          model.aiPersonalityNames(),
-          function (personality) {
-            return _.endsWith(personality, "Mla");
-          }
-        );
-        const noMlaPersonalities = _.xor(aipPersonalityNames, mlaPersonalities);
-
-        if (isMLA(slot)) {
-          return validPersonalities(aipPersonalityNames);
-        }
-        return validPersonalities(noMlaPersonalities);
-      };
-
       return function () {
-        _.forEach(model.armies(), function (army) {
-          _.forEach(army.slots(), function (slot) {
-            if (slot.ai() === true && slot.aiPersonality() === "aipRandom") {
-              const availablePersonalities = filterValidPersonalities(slot);
-              const chosenPersonality = _.sample(availablePersonalities);
-              slot.aiPersonality(chosenPersonality);
-            }
-          });
-        });
+        assignRandomPersonalities();
 
         return cachedFunction.apply(this, arguments);
       };
