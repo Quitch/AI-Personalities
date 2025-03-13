@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v3.4.2 - 2025-03-13
 
 - Fix Booms not being sent through teleporters
 
