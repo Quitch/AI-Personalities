@@ -8,7 +8,7 @@ function penchantAI() {
   penchantAILoaded = true;
 
   try {
-    var aipPersonalities = {
+    const aipPersonalities = {
       aipAggressive: {
         display_name: "!LOC:AIP Aggressive",
         neural_data_mod: 1.33,
@@ -355,10 +355,10 @@ function penchantAI() {
         min_basic_fabbers: 4,
       },
     };
-    var aipCompletePersonalities = _.mapValues(
+    const aipCompletePersonalities = _.mapValues(
       aipPersonalities,
       function (personality, name) {
-        var result = _.assign(
+        const result = _.assign(
           _.clone(model.aiPersonalities().Absurd),
           personality
         );
@@ -370,54 +370,57 @@ function penchantAI() {
     _.assign(model.aiPersonalities(), aipCompletePersonalities);
     model.aiPersonalities.valueHasMutated();
 
-    // assign random personalities when Start Game clicked
-    model.startGame = (function () {
-      var cachedFunction = model.startGame;
+    const isMLA = function (slot) {
+      const mlaCommanders = [
+        "/pa/units/commanders/imperial_",
+        "/pa/units/commanders/quad_",
+        "/pa/units/commanders/raptor_",
+        "/pa/units/commanders/tank_",
+      ];
+      return _.some(mlaCommanders, function (commander) {
+        return _.startsWith(slot.commander(), commander);
+      });
+    };
 
-      var isMLA = function (slot) {
-        var mlaCommanders = [
-          "/pa/units/commanders/imperial_",
-          "/pa/units/commanders/quad_",
-          "/pa/units/commanders/raptor_",
-          "/pa/units/commanders/tank_",
-        ];
-        return _.some(mlaCommanders, function (commander) {
-          return _.startsWith(slot.commander(), commander);
-        });
-      };
+    const validPersonalities = function (personalityNames) {
+      return _.filter(personalityNames, function (name) {
+        return !_.startsWith(name, "aipRandom");
+      });
+    };
 
-      var validPersonalities = function (personalityNames) {
-        return _.filter(personalityNames, function (name) {
-          return !_.startsWith(name, "aipRandom");
-        });
-      };
-
-      var filterValidPersonalities = function (slot) {
-        var aipPersonalityNames = _.keys(aipCompletePersonalities);
-        var mlaPersonalities = _.filter(
-          model.aiPersonalityNames(),
-          function (personality) {
-            return _.endsWith(personality, "Mla");
-          }
-        );
-        var noMlaPersonalities = _.xor(aipPersonalityNames, mlaPersonalities);
-
-        if (isMLA(slot)) {
-          return validPersonalities(aipPersonalityNames);
+    const filterValidPersonalities = function (slot) {
+      const aipPersonalityNames = _.keys(aipCompletePersonalities);
+      const mlaPersonalities = _.filter(
+        model.aiPersonalityNames(),
+        function (personality) {
+          return _.endsWith(personality, "Mla");
         }
-        return validPersonalities(noMlaPersonalities);
-      };
+      );
+      const noMlaPersonalities = _.xor(aipPersonalityNames, mlaPersonalities);
+
+      if (isMLA(slot)) {
+        return validPersonalities(aipPersonalityNames);
+      }
+      return validPersonalities(noMlaPersonalities);
+    };
+
+    const assignRandomPersonalities = function () {
+      _.forEach(model.armies(), function (army) {
+        _.forEach(army.slots(), function (slot) {
+          if (slot.ai() === true && slot.aiPersonality() === "aipRandom") {
+            const availablePersonalities = filterValidPersonalities(slot);
+            const chosenPersonality = _.sample(availablePersonalities);
+            slot.aiPersonality(chosenPersonality);
+          }
+        });
+      });
+    };
+
+    model.startGame = (function () {
+      const cachedFunction = model.startGame;
 
       return function () {
-        _.forEach(model.armies(), function (army) {
-          _.forEach(army.slots(), function (slot) {
-            if (slot.ai() === true && slot.aiPersonality() === "aipRandom") {
-              var availablePersonalities = filterValidPersonalities(slot);
-              var chosenPersonality = _.sample(availablePersonalities);
-              slot.aiPersonality(chosenPersonality);
-            }
-          });
-        });
+        assignRandomPersonalities();
 
         return cachedFunction.apply(this, arguments);
       };

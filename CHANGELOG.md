@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## v3.4.2 - 2025-03-13
+
+- Fix Booms not being sent through teleporters
+
 ## v3.4.1 - 2024-07-31
 
 - Fix anti-air in the Unit Cannon not properly considering air threat
