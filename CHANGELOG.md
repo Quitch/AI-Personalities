@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Fix Tactical not building Catapults in response to threats
+- Implement support for the Ward, Nyx, and Kessler
 
 ## v3.4.2 - 2025-03-13
 
