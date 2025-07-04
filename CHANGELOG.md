@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v3.5.0 - 2025-07-04
+
+- Fix Tactical not building Catapults in response to threats
+- Implement support for the Ward, Nyx, and Kessler
+- Removed AIP Meta
+
 ## v3.4.2 - 2025-03-13
 
 - Fix Booms not being sent through teleporters

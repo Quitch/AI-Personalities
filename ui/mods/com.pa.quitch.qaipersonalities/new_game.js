@@ -196,20 +196,6 @@ function penchantAI() {
         adv_eco_mod: 3,
         adv_eco_mod_alone: 2,
       },
-      aipMetaMla: {
-        display_name: "!LOC:AIP Meta" + " (MLA)",
-        personality_tags: [
-          "PreventsWaste",
-          "Meta",
-          "NoPercentage",
-          "PenchantT2Air",
-          "PenchantT1Bot",
-          "PenchantT1Vehicle",
-          "PenchantT2Vehicle",
-          "PenchantT1Naval",
-          "PenchantT2Naval",
-        ],
-      },
       aipMinelayer: {
         display_name: "!LOC:AIP Minelayer" + " (MLA)",
         personality_tags: ["PreventsWaste", "Minelayer"],
