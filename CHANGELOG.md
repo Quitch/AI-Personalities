@@ -4,6 +4,7 @@
 
 - Fix Tactical not building Catapults in response to threats
 - Implement support for the Ward, Nyx, and Kessler
+- Removed AIP Meta
 
 ## v3.4.2 - 2025-03-13
 
