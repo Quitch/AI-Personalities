@@ -106,11 +106,6 @@ All personalities are based on Absurd difficulty.
 
 - Remains at T1 for longer.
 
-### Meta
-
-- Prefers units used at the top of the ladder.
-- Does not support factions.
-
 ### Minelayer
 
 - Builds landmines.
