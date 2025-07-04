@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Fix Tactical not building Catapults in response to threats
+
 ## v3.4.2 - 2025-03-13
 
 - Fix Booms not being sent through teleporters
