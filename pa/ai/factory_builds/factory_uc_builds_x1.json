@@ -43,7 +43,17 @@
       "max_num_assisters": 10,
       "priority": 100,
       "builders": ["UnitCannon"],
-      "build_conditions": [[{ "test_type": "CanAffordBuildDemand" }]]
+      "build_conditions": [
+        [
+          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "SystemThreat",
+            "string0": "Air",
+            "compare0": ">",
+            "value0": 0
+          }
+        ]
+      ]
     }
   ]
 }
