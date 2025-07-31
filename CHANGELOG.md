@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v3.6.0 - 2025-07-31
 
 - Aggressive is more aggressive
 - Defender techs faster
