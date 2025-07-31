@@ -5,7 +5,7 @@
 - Aggressive is more aggressive
 - Defender techs faster
 - Economist focuses more on factories and less on other structures
-- Fabbers likes advanced fabbers more too
+- Fabber likes advanced fabbers more too
 - Factory builds less fabbers to afford more factories
 - Fast Tech techs faster while better maintaining a robust number of basic fabbers
 - Rush no longer has a unit focus but is more aggressive
