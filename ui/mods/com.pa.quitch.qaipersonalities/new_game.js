@@ -231,8 +231,8 @@ function penchantAI() {
         percent_naval: 0,
         percent_orbital: 0.95,
       },
-      aipPlatoonMla: {
-        display_name: "!LOC:AIP Platoon" + " (MLA)",
+      aipPlatoon: {
+        display_name: "!LOC:AIP Platoon",
         personality_tags: ["PreventsWaste", "Platoon", "PenchantPlatoon"],
       },
       aipRaiderMla: {

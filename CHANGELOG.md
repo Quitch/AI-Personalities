@@ -2,7 +2,8 @@
 
 ## Unreleased
 
-- Fixed AIP-Minelayer and AIP-Platoon not being considered MLA only by AIP-Random
+- Fixed AIP-Minelayer not being considered MLA only by AIP-Random
+- Removed the incorrect MLA label from AIP-Platoon
 
 ## v3.6.0 - 2025-07-31
 

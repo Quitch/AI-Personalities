@@ -109,6 +109,7 @@ All personalities are based on Absurd difficulty.
 ### Minelayer
 
 - Builds landmines.
+- Does not support factions.
 
 ### Naval
 
