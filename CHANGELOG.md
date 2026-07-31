@@ -1,11 +1,17 @@
 # CHANGELOG
 
+## v3.6.1 - 2026-07-31
+
+- Fixed AIP-Minelayer not being considered MLA only by AIP-Random
+- Removed the incorrect MLA label from AIP-Platoon
+- AIP-Artillery properly excludes metal extractors from consideration when looking for bases a Holkins build could shell
+
 ## v3.6.0 - 2025-07-31
 
 - Aggressive is more aggressive
 - Defender techs faster
 - Economist focuses more on factories and less on other structures
-- Fabbers likes advanced fabbers more too
+- Fabber likes advanced fabbers more too
 - Factory builds less fabbers to afford more factories
 - Fast Tech techs faster while better maintaining a robust number of basic fabbers
 - Rush no longer has a unit focus but is more aggressive

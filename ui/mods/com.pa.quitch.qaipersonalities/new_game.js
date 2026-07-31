@@ -8,7 +8,7 @@ function penchantAI() {
   penchantAILoaded = true;
 
   try {
-    const aipPersonalities = {
+    var aipPersonalities = {
       aipAggressive: {
         display_name: "!LOC:AIP Aggressive",
         neural_data_mod: 2,
@@ -206,7 +206,7 @@ function penchantAI() {
         adv_eco_mod: 3,
         adv_eco_mod_alone: 2,
       },
-      aipMinelayer: {
+      aipMinelayerMla: {
         display_name: "!LOC:AIP Minelayer" + " (MLA)",
         personality_tags: ["PreventsWaste", "Minelayer"],
       },
@@ -232,7 +232,7 @@ function penchantAI() {
         percent_orbital: 0.95,
       },
       aipPlatoon: {
-        display_name: "!LOC:AIP Platoon" + " (MLA)",
+        display_name: "!LOC:AIP Platoon",
         personality_tags: ["PreventsWaste", "Platoon", "PenchantPlatoon"],
       },
       aipRaiderMla: {
@@ -346,10 +346,10 @@ function penchantAI() {
         min_basic_fabbers: 4,
       },
     };
-    const aipCompletePersonalities = _.mapValues(
+    var aipCompletePersonalities = _.mapValues(
       aipPersonalities,
       function (personality, name) {
-        const result = _.assign(
+        var result = _.assign(
           _.clone(model.aiPersonalities().Absurd),
           personality
         );
@@ -361,8 +361,8 @@ function penchantAI() {
     _.assign(model.aiPersonalities(), aipCompletePersonalities);
     model.aiPersonalities.valueHasMutated();
 
-    const isMLA = function (slot) {
-      const mlaCommanders = [
+    var isMLA = function (slot) {
+      var mlaCommanders = [
         "/pa/units/commanders/imperial_",
         "/pa/units/commanders/quad_",
         "/pa/units/commanders/raptor_",
@@ -373,21 +373,21 @@ function penchantAI() {
       });
     };
 
-    const validPersonalities = function (personalityNames) {
+    var validPersonalities = function (personalityNames) {
       return _.filter(personalityNames, function (name) {
         return !_.startsWith(name, "aipRandom");
       });
     };
 
-    const filterValidPersonalities = function (slot) {
-      const aipPersonalityNames = _.keys(aipCompletePersonalities);
-      const mlaPersonalities = _.filter(
+    var filterValidPersonalities = function (slot) {
+      var aipPersonalityNames = _.keys(aipCompletePersonalities);
+      var mlaPersonalities = _.filter(
         model.aiPersonalityNames(),
         function (personality) {
           return _.endsWith(personality, "Mla");
         }
       );
-      const noMlaPersonalities = _.xor(aipPersonalityNames, mlaPersonalities);
+      var noMlaPersonalities = _.xor(aipPersonalityNames, mlaPersonalities);
 
       if (isMLA(slot)) {
         return validPersonalities(aipPersonalityNames);
@@ -395,12 +395,12 @@ function penchantAI() {
       return validPersonalities(noMlaPersonalities);
     };
 
-    const assignRandomPersonalities = function () {
+    var assignRandomPersonalities = function () {
       _.forEach(model.armies(), function (army) {
         _.forEach(army.slots(), function (slot) {
           if (slot.ai() === true && slot.aiPersonality() === "aipRandom") {
-            const availablePersonalities = filterValidPersonalities(slot);
-            const chosenPersonality = _.sample(availablePersonalities);
+            var availablePersonalities = filterValidPersonalities(slot);
+            var chosenPersonality = _.sample(availablePersonalities);
             slot.aiPersonality(chosenPersonality);
           }
         });
@@ -408,7 +408,7 @@ function penchantAI() {
     };
 
     model.startGame = (function () {
-      const cachedFunction = model.startGame;
+      var cachedFunction = model.startGame;
 
       return function () {
         assignRandomPersonalities();
