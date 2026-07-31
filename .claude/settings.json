@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm ci)",
+      "Bash(npx eslint *)",
+      "Bash(npx prettier *)",
+      "Bash(git status)",
+      "Bash(git status *)",
+      "Bash(git log)",
+      "Bash(git log *)",
+      "Bash(git diff)",
+      "Bash(git diff *)",
+      "Bash(git show *)",
+      "Bash(git ls-files)",
+      "Bash(git ls-files *)",
+      "Bash(git branch)",
+      "Bash(git branch *)",
+      "Bash(git tag)",
+      "Bash(git tag *)"
+    ]
+  }
+}
