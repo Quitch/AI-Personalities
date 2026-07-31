@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## Unreleased
+## v3.6.1 - 2026-07-31
 
 - Fixed AIP-Minelayer not being considered MLA only by AIP-Random
 - Removed the incorrect MLA label from AIP-Platoon
