@@ -206,7 +206,7 @@ function penchantAI() {
         adv_eco_mod: 3,
         adv_eco_mod_alone: 2,
       },
-      aipMinelayer: {
+      aipMinelayerMla: {
         display_name: "!LOC:AIP Minelayer" + " (MLA)",
         personality_tags: ["PreventsWaste", "Minelayer"],
       },
@@ -231,7 +231,7 @@ function penchantAI() {
         percent_naval: 0,
         percent_orbital: 0.95,
       },
-      aipPlatoon: {
+      aipPlatoonMla: {
         display_name: "!LOC:AIP Platoon" + " (MLA)",
         personality_tags: ["PreventsWaste", "Platoon", "PenchantPlatoon"],
       },

@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- Fixed AIP-Minelayer and AIP-Platoon not being considered MLA only by AIP-Random
+
 ## v3.6.0 - 2025-07-31
 
 - Aggressive is more aggressive
