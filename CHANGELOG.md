@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 3.6.2 - 2026-08-04
+
+- Fix forum link
+
 ## v3.6.1 - 2026-07-31
 
 - Fixed AIP-Minelayer not being considered MLA only by AIP-Random
