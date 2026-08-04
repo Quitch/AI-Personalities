@@ -418,7 +418,7 @@ function penchantAI() {
     })();
   } catch (e) {
     console.error(e);
-    console.error(JSON.stringify(e));
+    console.error("Penchant AI: " + (e.stack || e.message || e));
   }
 }
 penchantAI();
