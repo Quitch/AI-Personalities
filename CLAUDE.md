@@ -245,12 +245,13 @@ identical; leave it in place.
   restated as explicit errors with reasons: `let`/`const`, block-scoped function
   declarations, and `String.prototype.startsWith`/`endsWith` (PA's engine polyfills
   these in one-argument form, so a position argument is silently dropped and returns a
-  _wrong_ answer rather than throwing - use `indexOf`/`slice`). `ecmaVersion` is pinned
+  _wrong_ answer rather than throwing - use `_.startsWith`/`_.endsWith`). `ecmaVersion` is pinned
   at 6 as a backstop and cannot be lowered to 5, since `for...of` would then become an
   unsuppressible parse error that skips every other rule in the file. The config file's
   own comments explain each decision in full - read them before changing it.
   `lodash` (`_`) and jQuery are available as globals in shipped code and are the
   idiomatic tools here.
+- The `eslint-plugin-lodash` `v3` rules apply to shipped code only, because `_` is a PA runtime global the Node tooling does not have. Every non-`prefer-*` rule is on. Of the `prefer-*` rules only `prefer-get`, `prefer-includes`, and `prefer-startswith` are kept, since there the lodash method stands in for a post-ES5 feature Chrome 40 lacks; the other fourteen are off as style preferences over ES5 equivalents. ESLint is held at **9.x**: `eslint-plugin-lodash` calls `context.getSourceCode`, which ESLint 10 removed. `eslint-plugin-es-x` is held at 9.x for the same reason (its 10.x needs ESLint >= 10.6).
 - `pa/**` JSON in this repo **is** Prettier-formatted (2-space), unlike
   `GW-AI-Overhaul` where the equivalent tree is intentionally minified and
   Prettier-ignored. Keep it that way; do not import GWO's minification convention.
