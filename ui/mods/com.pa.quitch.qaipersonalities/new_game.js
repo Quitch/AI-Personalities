@@ -354,6 +354,7 @@ function penchantAI() {
           personality
         );
         result.name = name;
+        result.personality_tags = result.personality_tags.concat("PenchantAI");
         return result;
       }
     );
@@ -379,15 +380,13 @@ function penchantAI() {
       });
     };
 
+    var isMlaPersonality = function (name) {
+      return _.endsWith(name, "Mla");
+    };
+
     var filterValidPersonalities = function (slot) {
       var aipPersonalityNames = _.keys(aipCompletePersonalities);
-      var mlaPersonalities = _.filter(
-        model.aiPersonalityNames(),
-        function (personality) {
-          return _.endsWith(personality, "Mla");
-        }
-      );
-      var noMlaPersonalities = _.xor(aipPersonalityNames, mlaPersonalities);
+      var noMlaPersonalities = _.reject(aipPersonalityNames, isMlaPersonality);
 
       if (isMLA(slot)) {
         return validPersonalities(aipPersonalityNames);
@@ -395,20 +394,38 @@ function penchantAI() {
       return validPersonalities(noMlaPersonalities);
     };
 
+    var stockRandomPersonalities = function () {
+      return _.filter(model.aiPersonalityNames(), function (name) {
+        return (
+          !_.startsWith(name, "Idle") &&
+          !_.includes(name, "Random") &&
+          !isMlaPersonality(name)
+        );
+      });
+    };
+
     var assignRandomPersonalities = function () {
       _.forEach(model.armies(), function (army) {
         _.forEach(army.slots(), function (slot) {
-          if (slot.ai() === true && slot.aiPersonality() === "aipRandom") {
-            var availablePersonalities = filterValidPersonalities(slot);
-            var chosenPersonality = _.sample(availablePersonalities);
+          if (slot.ai() !== true) {
+            return;
+          }
+          var personality = slot.aiPersonality();
+          var chosenPersonality;
+          if (personality === "aipRandom") {
+            chosenPersonality = _.sample(filterValidPersonalities(slot));
+          } else if (personality === "Random" && !isMLA(slot)) {
+            chosenPersonality = _.sample(stockRandomPersonalities());
+          }
+          if (chosenPersonality) {
             slot.aiPersonality(chosenPersonality);
           }
         });
       });
     };
 
-    model.startGame = (function () {
-      var cachedFunction = model.startGame;
+    model.assignRandomAI = (function () {
+      var cachedFunction = model.assignRandomAI;
 
       return function () {
         assignRandomPersonalities();

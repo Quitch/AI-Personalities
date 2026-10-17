@@ -77,8 +77,9 @@ wrapped in a try/catch that logs rather than throwing. It:
 1. Declares `aipPersonalities`, one sparse object per personality, each merged over a
    clone of `model.aiPersonalities().Absurd`, then assigned back into
    `model.aiPersonalities()` followed by `valueHasMutated()` so the UI picks them up.
-2. Hijacks `model.startGame`, caching the original and calling it after resolving any
-   slot still set to `aipRandom` into a concrete personality.
+2. Wraps `model.assignRandomAI`, resolving each `aipRandom` slot (and each stock
+   `Random` slot with a non-MLA commander) before calling the original. Stock `startGame`
+   calls it only after its ready checks pass, so a refused start reveals no pick.
 
 Because everything is a diff over `Absurd`, **all personalities are Absurd-difficulty**.
 There is no way to offer them at lower difficulties, since in PA terms a difficulty
@@ -119,6 +120,14 @@ telling them apart is the key to reading this tree:
   instead. The suppressor tags are `PenchantT1Bot`, `PenchantT2Bot`,
   `PenchantT1Vehicle`, `PenchantT2Vehicle`, `PenchantT2Air`, `PenchantT1Naval`,
   `PenchantT2Naval`, `PenchantT1Defence`, `PenchantT2Defence`, `PenchantPlatoon`.
+- **`PenchantAI`, used both ways.** `new_game.js` appends it to the tags of every
+  personality this mod defines; stock and Queller personalities never carry it.
+  Where Penchant personalities deliberately differ from stock (no combat fabber bots
+  outside Minelayer, the air-threat test on mobile anti-air, the Boom squad in the
+  Transfer templates), the stock entry carries `PenchantAI false` and the Penchant
+  version lives in `penchants/penchant_ai.json` gated `PenchantAI true`. Templates
+  cannot be gated, so the Penchant Transfer templates have their own names
+  (`PenchantAI_Land_Attack_*_Transfer`) and gated platoon builds point at them.
 - **Behaviour tags, always `boolean: true`, in `penchants/` subdirectories.** These are
   _enablers_: `Artillery`, `Fortress`, `Nuker`, `Minelayer`, `Tactical`, `Raider`,
   `Sniper`, `Heavy`, `Assault`, `Boomer`, `Infernodier`, `AllTerrain`, `Platoon`,
@@ -161,7 +170,9 @@ to `pa/ai/`.
 Shadowed files are full copies, not diffs, so a base-game patch to the parts this mod
 did not touch is silently lost until someone re-syncs by hand. When PA updates, re-diff
 every file under `pa/ai/` against the install and re-apply the `Penchant*` gates on top
-of the new base content. `modinfo.json`'s `build` field records the PA build the mod was
+of the new base content. The three `penchants/penchant_ai.json` files are base copies
+too (base entry or template plus the Penchant change), so re-sync them from the same
+base entries. `modinfo.json`'s `build` field records the PA build the mod was
 last verified against.
 
 ### MLA-only personalities and `aipRandom`
@@ -178,7 +189,9 @@ personality needs the key suffix. `filterValidPersonalities` partitions
 `model.aiPersonalityNames()` on `_.endsWith(name, "Mla")` and, for a slot whose
 commander is not one of the four MLA commanders (`isMLA` prefix-matches
 `/pa/units/commanders/{imperial,quad,raptor,tank}_`), restricts the `aipRandom` draw to
-the non-MLA set. `aipRandom` itself is always excluded from the draw.
+the non-MLA set. `aipRandom` itself is always excluded from the draw. For such a slot
+set to the stock `Random`, the mod draws from the stock pool (no `Idle*`, no `*Random*`)
+minus every `*Mla` name, and leaves the rest to the stock function.
 
 README.md is the third place this set is recorded, as a "Does not support factions"
 bullet per personality. All three agree as of the current `develop`, so an MLA-only
@@ -202,13 +215,13 @@ personality's penchant files ultimately reference:
 
 ### Localisation
 
-Display names use PA's `!LOC:` prefix, and the key is written as a concatenation -
-`"!LOC:AIP All-terrain" + " (MLA)"` - specifically so the `(MLA)` suffix stays _out_
-of the translatable key. `aipTacticalMla` breaks this (`"!LOC:AIP Tactical (MLA)"`,
-suffix inside the key); match the concatenated form for new entries.
-`ui/main/_i18n/locales/pt-BR/ai_personalities.json` is the only shipped locale and
-covers a subset of personalities; keys there must match the `!LOC:` string exactly.
-PA merges every locale file into one flat bundle, so a key added here collides
+Display names use PA's `!LOC:` prefix. Most MLA-only entries are written as a
+concatenation (`"!LOC:AIP All-terrain" + " (MLA)"`), but that is cosmetic: JS joins the
+string before PA sees it, and `loc()` (`ui/main/shared/js/localization.js`) uses
+everything after `!LOC:` as the key, so the runtime key is `AIP All-terrain (MLA)`.
+Stock `new_game.js` binds and `loc()`s `display_name` itself, so the suffix cannot be
+kept out of the key. The mod ships no locale file; a translation must use the full key.
+PA merges every locale file into one flat bundle, so a key added in a locale collides
 globally.
 
 ## Relationship to GW-AI-Overhaul
@@ -230,6 +243,11 @@ and port the change deliberately in whichever direction is correct - and expect 
 find pre-existing differences unrelated to your change, which are not automatically
 yours to fix.
 
+Do not port the `PenchantAI` gates. GWO's tree is read only by Penchant brains, whose
+tags come from GWO's own `shared/ai.js` and do not include `PenchantAI`, so a copied
+`PenchantAI false` entry would turn the stock behaviour on and every
+`penchant_ai.json` entry off. There, the Penchant versions replace the base entries.
+
 GWO-specific content that lives here but is inert in this mod (the `GWAlly` tag in
 `factory_builds/penchants/subcommander.json`) exists so the two copies can stay
 identical; leave it in place.
@@ -245,12 +263,13 @@ identical; leave it in place.
   restated as explicit errors with reasons: `let`/`const`, block-scoped function
   declarations, and `String.prototype.startsWith`/`endsWith` (PA's engine polyfills
   these in one-argument form, so a position argument is silently dropped and returns a
-  _wrong_ answer rather than throwing - use `indexOf`/`slice`). `ecmaVersion` is pinned
+  _wrong_ answer rather than throwing - use `_.startsWith`/`_.endsWith`). `ecmaVersion` is pinned
   at 6 as a backstop and cannot be lowered to 5, since `for...of` would then become an
   unsuppressible parse error that skips every other rule in the file. The config file's
   own comments explain each decision in full - read them before changing it.
   `lodash` (`_`) and jQuery are available as globals in shipped code and are the
   idiomatic tools here.
+- The `eslint-plugin-lodash` `v3` rules apply to shipped code only, because `_` is a PA runtime global the Node tooling does not have. Every non-`prefer-*` rule is on. Of the `prefer-*` rules only `prefer-get`, `prefer-includes`, and `prefer-startswith` are kept, since there the lodash method stands in for a post-ES5 feature Chrome 40 lacks; the other fourteen are off as style preferences over ES5 equivalents. ESLint is held at **9.x**: `eslint-plugin-lodash` calls `context.getSourceCode`, which ESLint 10 removed. `eslint-plugin-es-x` is held at 9.x for the same reason (its 10.x needs ESLint >= 10.6).
 - `pa/**` JSON in this repo **is** Prettier-formatted (2-space), unlike
   `GW-AI-Overhaul` where the equivalent tree is intentionally minified and
   Prettier-ignored. Keep it that way; do not import GWO's minification convention.
