@@ -119,7 +119,8 @@ telling them apart is the key to reading this tree:
   instead. The suppressor tags are `PenchantT1Bot`, `PenchantT2Bot`,
   `PenchantT1Vehicle`, `PenchantT2Vehicle`, `PenchantT2Air`, `PenchantT1Naval`,
   `PenchantT2Naval`, `PenchantT1Defence`, `PenchantT2Defence`, `PenchantPlatoon`.
-- **`PenchantAI`, used both ways.** `new_game.js` appends it to every personality's tags.
+- **`PenchantAI`, used both ways.** `new_game.js` appends it to the tags of every
+  personality this mod defines; stock and Queller personalities never carry it.
   Where Penchant personalities deliberately differ from stock (no combat fabber bots
   outside Minelayer, the air-threat test on mobile anti-air, the Boom squad in the
   Transfer templates), the stock entry carries `PenchantAI false` and the Penchant
@@ -168,7 +169,9 @@ to `pa/ai/`.
 Shadowed files are full copies, not diffs, so a base-game patch to the parts this mod
 did not touch is silently lost until someone re-syncs by hand. When PA updates, re-diff
 every file under `pa/ai/` against the install and re-apply the `Penchant*` gates on top
-of the new base content. `modinfo.json`'s `build` field records the PA build the mod was
+of the new base content. The three `penchants/penchant_ai.json` files are base copies
+too (base entry or template plus the Penchant change), so re-sync them from the same
+base entries. `modinfo.json`'s `build` field records the PA build the mod was
 last verified against.
 
 ### MLA-only personalities and `aipRandom`
@@ -236,6 +239,11 @@ intentional (e.g. `fabber_builds/penchants/artillery.json` tests
 and port the change deliberately in whichever direction is correct - and expect to
 find pre-existing differences unrelated to your change, which are not automatically
 yours to fix.
+
+Do not port the `PenchantAI` gates. GWO's tree is read only by Penchant brains, whose
+tags come from GWO's own `shared/ai.js` and do not include `PenchantAI`, so a copied
+`PenchantAI false` entry would turn the stock behaviour on and every
+`penchant_ai.json` entry off. There, the Penchant versions replace the base entries.
 
 GWO-specific content that lives here but is inert in this mod (the `GWAlly` tag in
 `factory_builds/penchants/subcommander.json`) exists so the two copies can stay
