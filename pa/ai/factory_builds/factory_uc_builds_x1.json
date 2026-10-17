@@ -45,13 +45,12 @@
       "builders": ["UnitCannon"],
       "build_conditions": [
         [
-          { "test_type": "CanAffordBuildDemand" },
           {
-            "test_type": "SystemThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
-          }
+            "test_type": "HasPersonalityTag",
+            "string0": "PenchantAI",
+            "boolean": false
+          },
+          { "test_type": "CanAffordBuildDemand" }
         ]
       ]
     }

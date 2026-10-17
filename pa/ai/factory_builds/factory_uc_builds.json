@@ -86,6 +86,24 @@
             "string0": "Raider",
             "boolean": false
           },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "GalacticWar",
+            "boolean": false
+          },
+          { "test_type": "CanAffordBuildDemand" }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "Raider",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "GalacticWar",
+            "boolean": true
+          },
           { "test_type": "CanAffordBuildDemand" },
           {
             "test_type": "SystemThreat",
