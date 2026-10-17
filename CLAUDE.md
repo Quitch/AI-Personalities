@@ -119,6 +119,13 @@ telling them apart is the key to reading this tree:
   instead. The suppressor tags are `PenchantT1Bot`, `PenchantT2Bot`,
   `PenchantT1Vehicle`, `PenchantT2Vehicle`, `PenchantT2Air`, `PenchantT1Naval`,
   `PenchantT2Naval`, `PenchantT1Defence`, `PenchantT2Defence`, `PenchantPlatoon`.
+- **`PenchantAI`, used both ways.** `new_game.js` appends it to every personality's tags.
+  Where Penchant personalities deliberately differ from stock (no combat fabber bots
+  outside Minelayer, the air-threat test on mobile anti-air, the Boom squad in the
+  Transfer templates), the stock entry carries `PenchantAI false` and the Penchant
+  version lives in `penchants/penchant_ai.json` gated `PenchantAI true`. Templates
+  cannot be gated, so the Penchant Transfer templates have their own names
+  (`PenchantAI_Land_Attack_*_Transfer`) and gated platoon builds point at them.
 - **Behaviour tags, always `boolean: true`, in `penchants/` subdirectories.** These are
   _enablers_: `Artillery`, `Fortress`, `Nuker`, `Minelayer`, `Tactical`, `Raider`,
   `Sniper`, `Heavy`, `Assault`, `Boomer`, `Infernodier`, `AllTerrain`, `Platoon`,

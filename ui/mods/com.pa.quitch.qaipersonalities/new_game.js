@@ -354,6 +354,7 @@ function penchantAI() {
           personality
         );
         result.name = name;
+        result.personality_tags = result.personality_tags.concat("PenchantAI");
         return result;
       }
     );

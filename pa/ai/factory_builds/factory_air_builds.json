@@ -72,24 +72,28 @@
       "builders": ["BasicAirFactory"],
       "build_conditions": [
         [
-          { "test_type": "EnemyAirPresenceOnPlanet", "boolean": true },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "GalacticWar",
+            "boolean": false
+          },
+          { "test_type": "AloneOnPlanet", "boolean": false },
           { "test_type": "CanAffordBuildDemand" },
           {
             "test_type": "UnitCountOnPlanet",
-            "unit_type_string0": "Air & Fighter",
+            "unit_type_string0": "Fighter & Basic",
             "compare0": "<",
             "value0": 50
           }
         ],
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "GalacticWar",
+            "boolean": false
+          },
           { "test_type": "AloneOnPlanet", "boolean": true },
           { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
-          },
           {
             "test_type": "UnitCountPerPlanetRadius",
             "unit_type_string0": "Air & Fighter",
@@ -98,6 +102,44 @@
           }
         ],
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "GalacticWar",
+            "boolean": false
+          },
+          { "test_type": "AloneOnPlanet", "boolean": false },
+          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "UnitRatioOnPlanet",
+            "unit_type_string0": "Air & Fighter",
+            "unit_type_string1": "Air & (Bomber | Gunship)",
+            "compare0": "<",
+            "value0": 0.15
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "GalacticWar",
+            "boolean": true
+          },
+          { "test_type": "AloneOnPlanet", "boolean": false },
+          { "test_type": "EnemyAirPresenceOnPlanet", "boolean": true },
+          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "UnitCountOnPlanet",
+            "unit_type_string0": "Fighter & Basic",
+            "compare0": "<",
+            "value0": 50
+          }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "GalacticWar",
+            "boolean": true
+          },
+          { "test_type": "AloneOnPlanet", "boolean": false },
           { "test_type": "EnemyAirPresenceOnPlanet", "boolean": true },
           { "test_type": "CanAffordBuildDemand" },
           {
