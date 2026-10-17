@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## Unreleased
+
+- The stock Random AI no longer gives MLA-only Penchant personalities to faction commanders
+- AIP-Random no longer reveals its pick when the game fails to start because a player is not ready
+
 ## 3.6.2 - 2026-08-04
 
 - Fix forum link

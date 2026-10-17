@@ -387,7 +387,10 @@ function penchantAI() {
           return _.endsWith(personality, "Mla");
         }
       );
-      var noMlaPersonalities = _.xor(aipPersonalityNames, mlaPersonalities);
+      var noMlaPersonalities = _.difference(
+        aipPersonalityNames,
+        mlaPersonalities
+      );
 
       if (isMLA(slot)) {
         return validPersonalities(aipPersonalityNames);
@@ -395,20 +398,34 @@ function penchantAI() {
       return validPersonalities(noMlaPersonalities);
     };
 
+    var stockRandomPersonalities = function () {
+      return _.filter(model.aiPersonalityNames(), function (name) {
+        return (
+          !_.startsWith(name, "Idle") &&
+          !_.includes(name, "Random") &&
+          !_.endsWith(name, "Mla")
+        );
+      });
+    };
+
     var assignRandomPersonalities = function () {
       _.forEach(model.armies(), function (army) {
         _.forEach(army.slots(), function (slot) {
-          if (slot.ai() === true && slot.aiPersonality() === "aipRandom") {
-            var availablePersonalities = filterValidPersonalities(slot);
-            var chosenPersonality = _.sample(availablePersonalities);
-            slot.aiPersonality(chosenPersonality);
+          if (slot.ai() !== true) {
+            return;
+          }
+          var personality = slot.aiPersonality();
+          if (personality === "aipRandom") {
+            slot.aiPersonality(_.sample(filterValidPersonalities(slot)));
+          } else if (personality === "Random" && !isMLA(slot)) {
+            slot.aiPersonality(_.sample(stockRandomPersonalities()));
           }
         });
       });
     };
 
-    model.startGame = (function () {
-      var cachedFunction = model.startGame;
+    model.assignRandomAI = (function () {
+      var cachedFunction = model.assignRandomAI;
 
       return function () {
         assignRandomPersonalities();

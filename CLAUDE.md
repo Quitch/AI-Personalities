@@ -77,8 +77,9 @@ wrapped in a try/catch that logs rather than throwing. It:
 1. Declares `aipPersonalities`, one sparse object per personality, each merged over a
    clone of `model.aiPersonalities().Absurd`, then assigned back into
    `model.aiPersonalities()` followed by `valueHasMutated()` so the UI picks them up.
-2. Hijacks `model.startGame`, caching the original and calling it after resolving any
-   slot still set to `aipRandom` into a concrete personality.
+2. Wraps `model.assignRandomAI`, resolving each `aipRandom` slot (and each stock
+   `Random` slot with a non-MLA commander) before calling the original. Stock `startGame`
+   calls it only after its ready checks pass, so a refused start reveals no pick.
 
 Because everything is a diff over `Absurd`, **all personalities are Absurd-difficulty**.
 There is no way to offer them at lower difficulties, since in PA terms a difficulty
@@ -178,7 +179,9 @@ personality needs the key suffix. `filterValidPersonalities` partitions
 `model.aiPersonalityNames()` on `_.endsWith(name, "Mla")` and, for a slot whose
 commander is not one of the four MLA commanders (`isMLA` prefix-matches
 `/pa/units/commanders/{imperial,quad,raptor,tank}_`), restricts the `aipRandom` draw to
-the non-MLA set. `aipRandom` itself is always excluded from the draw.
+the non-MLA set. `aipRandom` itself is always excluded from the draw. For such a slot
+set to the stock `Random`, the mod draws from the stock pool (no `Idle*`, no `*Random*`)
+minus every `*Mla` name, and leaves the rest to the stock function.
 
 README.md is the third place this set is recorded, as a "Does not support factions"
 bullet per personality. All three agree as of the current `develop`, so an MLA-only
