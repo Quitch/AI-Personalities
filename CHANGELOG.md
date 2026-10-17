@@ -4,6 +4,8 @@
 
 - Stock AI personalities behave as in the unmodded game again while Penchant AI is enabled: they build walls and combat fabber bots, build anti-air without waiting for enemy air, add mobile anti-nuke and radar to land platoons, and do not send Booms through teleporters
 - Penchant personalities pick up the same base game AI updates: they build walls (unless they skip basic defences), add mobile radar and anti-nuke to land platoons, wait for a naval threat before building naval defences, and build fighters and anti-air structures without waiting for enemy air
+- The stock Random AI no longer gives MLA-only Penchant personalities to faction commanders
+- AIP-Random no longer reveals its pick when the lobby refuses to start the game, such as when a player is not ready
 
 ## 3.6.2 - 2026-08-04
 

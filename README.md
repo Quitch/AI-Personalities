@@ -136,7 +136,7 @@ All personalities are based on Absurd difficulty.
 
 ### Random
 
-- Picks a random personality.
+- Picks a random personality. Faction commanders only get personalities that support factions.
 
 ### Revenants
 
