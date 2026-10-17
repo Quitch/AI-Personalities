@@ -379,18 +379,13 @@ function penchantAI() {
       });
     };
 
+    var isMlaPersonality = function (name) {
+      return _.endsWith(name, "Mla");
+    };
+
     var filterValidPersonalities = function (slot) {
       var aipPersonalityNames = _.keys(aipCompletePersonalities);
-      var mlaPersonalities = _.filter(
-        model.aiPersonalityNames(),
-        function (personality) {
-          return _.endsWith(personality, "Mla");
-        }
-      );
-      var noMlaPersonalities = _.difference(
-        aipPersonalityNames,
-        mlaPersonalities
-      );
+      var noMlaPersonalities = _.reject(aipPersonalityNames, isMlaPersonality);
 
       if (isMLA(slot)) {
         return validPersonalities(aipPersonalityNames);
@@ -403,7 +398,7 @@ function penchantAI() {
         return (
           !_.startsWith(name, "Idle") &&
           !_.includes(name, "Random") &&
-          !_.endsWith(name, "Mla")
+          !isMlaPersonality(name)
         );
       });
     };
@@ -415,10 +410,14 @@ function penchantAI() {
             return;
           }
           var personality = slot.aiPersonality();
+          var chosenPersonality;
           if (personality === "aipRandom") {
-            slot.aiPersonality(_.sample(filterValidPersonalities(slot)));
+            chosenPersonality = _.sample(filterValidPersonalities(slot));
           } else if (personality === "Random" && !isMLA(slot)) {
-            slot.aiPersonality(_.sample(stockRandomPersonalities()));
+            chosenPersonality = _.sample(stockRandomPersonalities());
+          }
+          if (chosenPersonality) {
+            slot.aiPersonality(chosenPersonality);
           }
         });
       });
