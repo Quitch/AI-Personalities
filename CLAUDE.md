@@ -204,8 +204,7 @@ personality's penchant files ultimately reference:
 
 Display names use PA's `!LOC:` prefix, and the key is written as a concatenation -
 `"!LOC:AIP All-terrain" + " (MLA)"` - specifically so the `(MLA)` suffix stays _out_
-of the translatable key. `aipTacticalMla` breaks this (`"!LOC:AIP Tactical (MLA)"`,
-suffix inside the key); match the concatenated form for new entries.
+of the translatable key. Match the concatenated form for new entries.
 `ui/main/_i18n/locales/pt-BR/ai_personalities.json` is the only shipped locale and
 covers a subset of personalities; keys there must match the `!LOC:` string exactly.
 PA merges every locale file into one flat bundle, so a key added here collides

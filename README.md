@@ -189,7 +189,7 @@ Yes, though these personalities will use the vanilla brain rather than Queller. 
 
 **Does this replace Queller?**
 
-No, this is completely separate. It's simply a way for you to better tailor your experience with the vanilla AI. It also works with PA Classic, which Queller does not.
+No, this is completely separate. It's simply a way for you to better tailor your experience with the vanilla AI.
 
 **Will this work in multiplayer?**
 

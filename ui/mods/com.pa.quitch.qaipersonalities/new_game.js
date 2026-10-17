@@ -311,7 +311,7 @@ function penchantAI() {
         energy_demand_check: 0.85,
       },
       aipTacticalMla: {
-        display_name: "!LOC:AIP Tactical (MLA)",
+        display_name: "!LOC:AIP Tactical" + " (MLA)",
         percent_vehicle: 0.25,
         percent_bot: 0.45,
         personality_tags: [
