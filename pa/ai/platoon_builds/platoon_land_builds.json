@@ -58,6 +58,11 @@
         [
           {
             "test_type": "HasPersonalityTag",
+            "string0": "PenchantAI",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
             "string0": "Tutorial",
             "boolean": false
           },
@@ -85,6 +90,11 @@
       "priority": 116,
       "build_conditions": [
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PenchantAI",
+            "boolean": false
+          },
           {
             "test_type": "HasPersonalityTag",
             "string0": "Tutorial",
