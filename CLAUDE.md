@@ -202,12 +202,13 @@ personality's penchant files ultimately reference:
 
 ### Localisation
 
-Display names use PA's `!LOC:` prefix, and the key is written as a concatenation -
-`"!LOC:AIP All-terrain" + " (MLA)"` - specifically so the `(MLA)` suffix stays _out_
-of the translatable key. Match the concatenated form for new entries.
-`ui/main/_i18n/locales/pt-BR/ai_personalities.json` is the only shipped locale and
-covers a subset of personalities; keys there must match the `!LOC:` string exactly.
-PA merges every locale file into one flat bundle, so a key added here collides
+Display names use PA's `!LOC:` prefix. Most MLA-only entries are written as a
+concatenation (`"!LOC:AIP All-terrain" + " (MLA)"`), but that is cosmetic: JS joins the
+string before PA sees it, and `loc()` (`ui/main/shared/js/localization.js`) uses
+everything after `!LOC:` as the key, so the runtime key is `AIP All-terrain (MLA)`.
+Stock `new_game.js` binds and `loc()`s `display_name` itself, so the suffix cannot be
+kept out of the key. The mod ships no locale file; a translation must use the full key.
+PA merges every locale file into one flat bundle, so a key added in a locale collides
 globally.
 
 ## Relationship to GW-AI-Overhaul
