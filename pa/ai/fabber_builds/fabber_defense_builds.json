@@ -15,13 +15,12 @@
             "string0": "PenchantT1Defence",
             "boolean": false
           },
-          { "test_type": "CanAffordBuildDemand" },
           {
-            "test_type": "SystemThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "HasPersonalityTag",
+            "string0": "GalacticWar",
+            "boolean": false
           },
+          { "test_type": "CanAffordBuildDemand" },
           { "test_type": "DistFromMainBase", "compare0": ">=", "value0": 150 },
           {
             "test_type": "UnitCountInBase",
@@ -43,13 +42,72 @@
             "string0": "PenchantT1Defence",
             "boolean": false
           },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "GalacticWar",
+            "boolean": false
+          },
           { "test_type": "CanAffordBuildDemand" },
           {
-            "test_type": "SystemThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "DistFromNearestEnemyThreat",
+            "compare0": "<=",
+            "value0": 200
           },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & AirDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
+            "value0": 2
+          },
+          { "test_type": "CanFindPlaceToBuild", "string0": "BasicAirDefense" }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PenchantT1Defence",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "GalacticWar",
+            "boolean": true
+          },
+          { "test_type": "EnemyAirPresenceOnPlanet", "boolean": true },
+          { "test_type": "CanAffordBuildDemand" },
+          { "test_type": "DistFromMainBase", "compare0": ">=", "value0": 150 },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Basic & AirDefense",
+            "compare0": "<",
+            "value0": 1
+          },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & MetalProduction",
+            "compare0": ">=",
+            "value0": 2
+          },
+          { "test_type": "CanFindPlaceToBuild", "string0": "BasicAirDefense" }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PenchantT1Defence",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "GalacticWar",
+            "boolean": true
+          },
+          { "test_type": "EnemyAirPresenceOnPlanet", "boolean": true },
+          { "test_type": "CanAffordBuildDemand" },
           {
             "test_type": "DistFromNearestEnemyThreat",
             "compare0": "<=",
@@ -213,13 +271,12 @@
             "string0": "PenchantT1Defence",
             "boolean": false
           },
-          { "test_type": "CanAffordBuildDemand" },
           {
-            "test_type": "SystemThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "HasPersonalityTag",
+            "string0": "GalacticWar",
+            "boolean": false
           },
+          { "test_type": "CanAffordBuildDemand" },
           {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & AirDefense",
@@ -240,13 +297,12 @@
             "string0": "PenchantT1Defence",
             "boolean": false
           },
-          { "test_type": "CanAffordBuildDemand" },
           {
-            "test_type": "SystemThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
+            "test_type": "HasPersonalityTag",
+            "string0": "GalacticWar",
+            "boolean": false
           },
+          { "test_type": "CanAffordBuildDemand" },
           {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Basic & AirDefense",
@@ -259,6 +315,21 @@
             "compare0": ">=",
             "value0": 1
           },
+          { "test_type": "CanFindPlaceToBuild", "string0": "BasicAirDefense" }
+        ],
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PenchantT1Defence",
+            "boolean": false
+          },
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "GalacticWar",
+            "boolean": true
+          },
+          { "test_type": "EnemyAirPresenceOnPlanet", "boolean": true },
+          { "test_type": "CanAffordBuildDemand" },
           { "test_type": "CanFindPlaceToBuild", "string0": "BasicAirDefense" }
         ]
       ],
@@ -743,12 +814,6 @@
           },
           { "test_type": "CanAffordBuildDemand" },
           {
-            "test_type": "SystemThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
-          },
-          {
             "test_type": "HasPersonalityTag",
             "string0": "Tutorial",
             "boolean": false
@@ -782,12 +847,6 @@
             "boolean": false
           },
           { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
-          },
           {
             "test_type": "UnitCountInBase",
             "unit_type_string0": "Structure & Advanced & AirDefense",
@@ -1053,6 +1112,50 @@
             "compare_type": "<",
             "range": 75,
             "count": 2
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wall",
+      "to_build": "Wall",
+      "instance_count": 1,
+      "priority": 0,
+      "base_sort": "FromPerimeter",
+      "builders": ["AnyBasicFabber", "AnyAdvancedFabber"],
+      "build_conditions": [
+        [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PenchantT1Defence",
+            "boolean": false
+          },
+          { "test_type": "CanAffordBuildDemand" },
+          {
+            "test_type": "UnitCountInBase",
+            "unit_type_string0": "Structure & Defense",
+            "compare0": ">=",
+            "value0": 1
+          },
+          { "test_type": "CanFindPlaceToBuild", "string0": "Wall" }
+        ]
+      ],
+      "placement_rules": {
+        "placement_type": "FromMainBasePerimeter",
+        "unit_count_rules": [
+          {
+            "unit_type_string": "Structure & Defense - AirDefense",
+            "alliance": "Ally",
+            "compare_type": ">=",
+            "range": 8,
+            "count": 1
+          },
+          {
+            "unit_type_string": "Structure & Wall",
+            "alliance": "Ally",
+            "compare_type": "<",
+            "range": 20,
+            "count": 4
           }
         ]
       }

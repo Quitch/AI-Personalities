@@ -237,6 +237,11 @@
       "builders": ["AdvancedVehicleFactory"],
       "build_conditions": [
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PenchantAI",
+            "boolean": false
+          },
           { "test_type": "AloneOnPlanet", "boolean": false },
           { "test_type": "CanAffordBuildDemand" },
           {
@@ -255,6 +260,11 @@
           }
         ],
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PenchantAI",
+            "boolean": false
+          },
           { "test_type": "AloneOnPlanet", "boolean": false },
           { "test_type": "CanAffordBuildDemand" },
           {
@@ -275,6 +285,11 @@
         ],
         [
           {
+            "test_type": "HasPersonalityTag",
+            "string0": "PenchantAI",
+            "boolean": false
+          },
+          {
             "test_type": "BaseThreatRatio",
             "string0": "Air",
             "string1": "AntiAir",
@@ -283,14 +298,13 @@
           }
         ],
         [
+          {
+            "test_type": "HasPersonalityTag",
+            "string0": "PenchantAI",
+            "boolean": false
+          },
           { "test_type": "AloneOnPlanet", "boolean": true },
           { "test_type": "CanAffordBuildDemand" },
-          {
-            "test_type": "SystemThreat",
-            "string0": "Air",
-            "compare0": ">",
-            "value0": 0
-          },
           {
             "test_type": "UnitRatioOnPlanet",
             "unit_type_string0": "(Tank | Bot) & AirDefense",
