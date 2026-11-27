@@ -213,7 +213,9 @@ copy can also keep an old mod edit that a re-sync removed from the stock entry, 
 template (NoPercentage, and the Penchant AI Transfer templates) also subtracts
 `NukeDefense`, unlike base, so a platoon takes at most the one Ward its Defense row
 allows (#52). The NoPercentage and Platoon land attack builds subtract `SelfDestruct`
-from their pool count, unlike base, because their templates take no Booms (#56).
+from their pool count, unlike base, because their templates take no Booms (#56). The
+Penchant AI Transfer templates' anti-nuke row requires `Mobile`, unlike base, as the
+NoPercentage and GWO rows do, so no structure can join the platoon (#58).
 `modinfo.json`'s `build` field records the PA build the mod was last verified against.
 
 ### MLA-only personalities and `aipRandom`

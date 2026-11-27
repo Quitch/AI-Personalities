@@ -63,7 +63,7 @@
           "squad": "Defense"
         },
         {
-          "unit_types": "Land & NukeDefense - Titan",
+          "unit_types": "Land & NukeDefense & Mobile - Titan",
           "min_count": 0,
           "max_count": 1,
           "squad": "Defense"
@@ -133,7 +133,7 @@
           "squad": "Defense"
         },
         {
-          "unit_types": "Land & NukeDefense - Titan",
+          "unit_types": "Land & NukeDefense & Mobile - Titan",
           "min_count": 0,
           "max_count": 1,
           "squad": "Defense"
