@@ -138,11 +138,6 @@
       "priority": 105,
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "PenchantPlatoon",
-            "boolean": false
-          },
           { "test_type": "EnemySurfacePresenceOnPlanet", "boolean": true },
           {
             "test_type": "HasPersonalityTag",
