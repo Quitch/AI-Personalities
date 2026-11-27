@@ -15,6 +15,12 @@
           "squad": "Suicide"
         },
         {
+          "unit_types": "Bot & Deconstruction",
+          "min_count": 0,
+          "max_count": 40,
+          "squad": "Fast"
+        },
+        {
           "unit_types": "((Tank | Bot | Hover) & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Deconstruction - Titan",
           "min_count": 0,
           "max_count": 40,
@@ -77,6 +83,12 @@
           "min_count": 0,
           "max_count": -1,
           "squad": "Suicide"
+        },
+        {
+          "unit_types": "Bot & Deconstruction",
+          "min_count": 0,
+          "max_count": -1,
+          "squad": "Fast"
         },
         {
           "unit_types": "((Tank | Bot | Hover) & Mobile) - Fabber - AirDefense - OrbitalDefense - Construction - Artillery - Tactical - Heavy - Scout - SelfDestruct - Deconstruction - Titan",
