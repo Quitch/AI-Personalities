@@ -163,7 +163,8 @@ templates (`platoon_builds/penchants/no_percentage.json`,
 `platoon_templates/penchants/no_percentage.json`) that ignore the `percent_*` army-mix
 weighting entirely, for personalities that compose armies by unit role instead. Its two
 teleporter builds use their own `NoPercentage_Land_Attack_*_Transfer` templates, which
-add hover units and a Boom (`"Suicide"`) squad, as the Penchant AI transfer templates do.
+add `Hover` to the General row and a Boom (`"Suicide"`) squad, as the Penchant AI transfer
+templates do.
 
 The `penchants/` subdirectory is not a special name to the engine - the AI discovers
 build files by scanning the manager directory recursively (the base game's own Queller
