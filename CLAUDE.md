@@ -163,8 +163,8 @@ templates (`platoon_builds/penchants/no_percentage.json`,
 `platoon_templates/penchants/no_percentage.json`) that ignore the `percent_*` army-mix
 weighting entirely, for personalities that compose armies by unit role instead. Its two
 teleporter builds use their own `NoPercentage_Land_Attack_*_Transfer` templates, which
-add `Hover` to the General row and a Boom (`"Suicide"`) squad, as the Penchant AI transfer
-templates do.
+add `Hover` to the General row, as the stock transfer templates do, and the Penchant AI
+Boom (`"Suicide"`) squad.
 
 The `penchants/` subdirectory is not a special name to the engine - the AI discovers
 build files by scanning the manager directory recursively (the base game's own Queller
@@ -203,8 +203,9 @@ counterpart and must be carried over by hand: "Frigate - AA" and "MissleShip - A
 copies too (base entry or template plus the Penchant change), so re-sync them from the
 same base entries. Most other `penchants/` entries are also copies of a base entry with
 the penchant's changes - `Fortress - X` mirrors stock `X`, the NoPercentage templates
-mirror `Land_Attack_*` and their `_Transfer` versions the Penchant AI transfer templates -
-and they go stale the same way: re-diff each against the base entry it mirrors and keep
+mirror `Land_Attack_*`, and each NoPercentage `_Transfer` template is its own XLarge or
+Max template plus the stock transfer `Hover` and the Penchant AI Boom row - and they go
+stale the same way: re-diff each against the base entry it mirrors and keep
 only the intentional differences. Issue #33 was this kind of drift from build 124683. A
 copy can also keep an old mod edit that a re-sync removed from the stock entry, as
 "Tactical - Advanced Air Defense" did (#39).
@@ -272,10 +273,11 @@ stay in sync, but they **do** drift, and the drift is silent because nothing che
 On 2026-11-27, 25 of the 39 files both trees share were identical (the three
 `penchant_ai.json` files exist only here, by design). The drift has run both ways. This
 repo's resync of the shadowed base files to build 124683 (#30) has not reached GWO.
-GWO's Penchant fixes #542-#544 came back here as #37, #33 and #35, and the fixes made
-here for #33, #36, #38, #39 and #42 are tracked in GWO as #705-#708 and #711. When
-changing a penchant file, diff the GWO counterpart and port the change deliberately in whichever direction is correct, and before filing a
-Penchant bug, check whether GWO already fixed it. Expect to find pre-existing
+GWO's Penchant fixes #542-#544 came back here as #37, #33 and #35. GWO tracks the fixes
+made here as #705 (#36), #706 (#33), #707 (#38), #708 (#42) and #711 (#39). When
+changing a penchant file, diff the GWO counterpart and port the change deliberately in
+whichever direction is correct, and before filing a Penchant bug, check whether GWO
+already fixed it. Expect to find pre-existing
 differences unrelated to your change, which are not automatically yours to fix.
 
 Do not port the `PenchantAI` gates. GWO's tree is read only by Penchant brains, whose
