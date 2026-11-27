@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- AIP Tactical builds anti-nuke launchers, and builds advanced anti-air without waiting for enemy air
+
 ## v3.6.3 - 2026-10-17
 
 - Stock AI personalities behave as in the unmodded game again while Penchant AI is enabled: they build combat fabber bots, build anti-air without waiting for enemy air, add mobile anti-nuke and radar to land platoons, and do not send Booms through teleporters
