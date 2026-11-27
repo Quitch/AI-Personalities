@@ -10,6 +10,7 @@
 - AIP Legonis Machina uses the Galactic War boss's unit mix: more naval, less land
 - AIP personalities send at most one mobile anti-nuke with each teleporting land platoon, and AIP Heavy, Infernodier, Sniper, and Tactical send at most one with each land platoon
 - AIP personalities send Locusts through teleporters
+- AIP personalities count only units that can join when they form land platoons
 
 ## v3.6.3 - 2026-10-17
 
