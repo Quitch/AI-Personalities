@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- AIP Tactical builds anti-nuke launchers, and builds advanced anti-air without waiting for enemy air
+- AIP Tactical builds anti-nuke launchers
 
 ## v3.6.3 - 2026-10-17
 
