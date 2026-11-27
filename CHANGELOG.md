@@ -7,6 +7,7 @@
 - AIP Tactical builds anti-nuke launchers
 - AIP Platoon forms its largest amphibious platoons
 - AIP Heavy, Infernodier, Sniper, and Tactical add mobile radar and anti-nuke to land platoons, keep tactical missile bots with their artillery, and send Booms through teleporters
+- AIP Legonis Machina uses the Galactic War boss's unit mix: more naval, less land
 
 ## v3.6.3 - 2026-10-17
 
