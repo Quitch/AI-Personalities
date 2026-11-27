@@ -145,11 +145,6 @@
       "builders": ["AdvancedBotFactory"],
       "build_conditions": [
         [
-          {
-            "test_type": "HasPersonalityTag",
-            "string0": "PenchantT2Bot",
-            "boolean": false
-          },
           { "test_type": "BaseThreatened", "boolean": false },
           { "test_type": "CanAffordBuildDemand" },
           {
