@@ -141,7 +141,7 @@ telling them apart is the key to reading this tree:
 - **`PenchantAI`, used both ways.** `new_game.js` appends it to the tags of every
   personality this mod defines; stock and Queller personalities never carry it.
   Where Penchant personalities deliberately differ from stock (the air-threat test on
-  mobile anti-air, the Boom squad in the Transfer templates), the stock entry carries
+  mobile anti-air, the Boom and Locust rows in the Transfer templates), the stock entry carries
   `PenchantAI false` and the Penchant version lives in `penchants/penchant_ai.json`
   gated `PenchantAI true`. The stock "Basic Combat Fabber Bot" is gated
   `PenchantAI false` too, but its only replacement is
@@ -149,7 +149,8 @@ telling them apart is the key to reading this tree:
   Fortress (which also carries `Minelayer`) are the only Penchant personalities that
   build basic combat fabber bots. Templates cannot be gated, so the Penchant Transfer
   templates have their own names (`PenchantAI_Land_Attack_*_Transfer`) and gated
-  platoon builds point at them.
+  platoon builds point at them. The Penchant AI and NoPercentage Transfer builds also
+  subtract `Titan` from their pool count, because no Transfer row takes Titans (#53).
 - **Behaviour tags, tested `boolean: true`, in `penchants/` subdirectories.** These are
   _enablers_: `Artillery`, `Fortress`, `Nuker`, `Minelayer`, `Tactical`, `Raider`,
   `Sniper`, `Heavy`, `Assault`, `Boomer`, `Infernodier`, `AllTerrain`, `Platoon`,
@@ -164,7 +165,7 @@ templates (`platoon_builds/penchants/no_percentage.json`,
 weighting entirely, for personalities that compose armies by unit role instead. Its two
 teleporter builds use their own `NoPercentage_Land_Attack_*_Transfer` templates, which
 add `Hover` to the General row, as the stock transfer templates do, and the Penchant AI
-Boom (`"Suicide"`) squad.
+Boom (`"Suicide"`) and Locust rows.
 
 The `penchants/` subdirectory is not a special name to the engine - the AI discovers
 build files by scanning the manager directory recursively (the base game's own Queller
@@ -204,7 +205,7 @@ copies too (base entry or template plus the Penchant change), so re-sync them fr
 same base entries. Most other `penchants/` entries are also copies of a base entry with
 the penchant's changes - `Fortress - X` mirrors stock `X`, the NoPercentage templates
 mirror `Land_Attack_*`, and each NoPercentage `_Transfer` template is its own XLarge or
-Max template plus the stock transfer `Hover` and the Penchant AI Boom row - and they go
+Max template plus the stock transfer `Hover` and the Penchant AI Boom and Locust rows - and they go
 stale the same way: re-diff each against the base entry it mirrors and keep
 only the intentional differences. Issue #33 was this kind of drift from build 124683. A
 copy can also keep an old mod edit that a re-sync removed from the stock entry, as
@@ -274,7 +275,7 @@ On 2026-11-27, 25 of the 39 files both trees share were identical (the three
 `penchant_ai.json` files exist only here, by design). The drift has run both ways. This
 repo's resync of the shadowed base files to build 124683 (#30) has not reached GWO.
 GWO's Penchant fixes #542-#544 came back here as #37, #33 and #35. GWO tracks the fixes
-made here as #705 (#36), #706 (#33), #707 (#38), #708 (#42) and #711 (#39). When
+made here as #705 (#36), #706 (#33), #707 (#38), #708 (#42), #711 (#39) and #725 (#53). When
 changing a penchant file, diff the GWO counterpart and port the change deliberately in
 whichever direction is correct, and before filing a Penchant bug, check whether GWO
 already fixed it. Expect to find pre-existing
