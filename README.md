@@ -144,7 +144,7 @@ All personalities are based on Absurd difficulty.
 
 ### Rush
 
-- Prefers T1 and bots.
+- Stays at T1 a little longer.
 - More likely to attack.
 - Less likely to retreat.
 
