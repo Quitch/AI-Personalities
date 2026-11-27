@@ -3,6 +3,7 @@
 ## Unreleased
 
 - AIP All-terrain, Boomer, Heavy, Infernodier, Raider, Sniper, and Tactical build Support Commanders
+- AIP Assault's advanced bot factories build only assault bots and Support Commanders
 
 ## v3.6.3 - 2026-10-17
 
