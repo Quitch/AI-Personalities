@@ -99,8 +99,11 @@ A personality diff has exactly two levers:
   `fabber_alone_on_planet_mod`. The full field set is whatever `Absurd` defines in the
   base game's `ai.js` - look there, not here, for the authoritative list.
 - **`personality_tags`** - the bridge to the build data under `pa/ai/`. Overriding this
-  field _replaces_ Absurd's `["Default", "PreventsWaste"]` outright, so a tag list that
-  needs those must restate them (most do; a few deliberately drop `Default`).
+  field _replaces_ Absurd's `["Default", "PreventsWaste"]` outright, so a tag list must
+  restate any it needs. Only `PreventsWaste` matters: the base fabber air, land and naval
+  builds test it `true`, and every personality here keeps it. No build file, here or in
+  the base game, tests `Default`, so the lists that drop it behave exactly as if they
+  kept it.
 
 README.md documents the intended behaviour of every personality in prose and is the
 place to update when adding or retuning one.
@@ -112,7 +115,7 @@ build condition, a base-game test (`{"test_type": "HasPersonalityTag", "string0"
 "<tag>", "boolean": true|false}`). The mod uses it in two opposite directions, and
 telling them apart is the key to reading this tree:
 
-- **`Penchant*` tags, always `boolean: false`, in shadowed base files.** These are
+- **`Penchant*` tags tested `boolean: false` in shadowed base files.** These are
   _suppressors_. `pa/ai/factory_builds/factory_land_builds.json` etc. are copies of the
   base game's files with a `HasPersonalityTag <tag> false` clause prepended to every
   condition group of the affected entries. A personality carrying `PenchantT1Bot`
@@ -120,15 +123,31 @@ telling them apart is the key to reading this tree:
   instead. The suppressor tags are `PenchantT1Bot`, `PenchantT2Bot`,
   `PenchantT1Vehicle`, `PenchantT2Vehicle`, `PenchantT2Air`, `PenchantT1Naval`,
   `PenchantT2Naval`, `PenchantT1Defence`, `PenchantT2Defence`, `PenchantPlatoon`.
+  A suppressor turns off _every_ stock entry it gates, including builds the penchant
+  never mentions, and a build with no penchant replacement is simply lost - that is how
+  Tactical lost its anti-nuke and seven personalities their Support Commander (see
+  issues #35 and #36). Check what a tag gates before giving it to a personality.
+  Two things break the pattern. `Raider`, a behaviour tag, is also tested `false`, on
+  the stock "Basic AA Vehicle" (`factory_land_builds.json`) and "Basic AA Vehicle - UC"
+  (`factory_uc_builds.json`) and on "Penchant AI - Basic AA Vehicle", so Raider builds
+  no basic AA vehicles. And a few entries test a suppressor tag `true`, to give exactly
+  the personalities that lost a stock tier a narrower replacement: "Frigate - AA"
+  (`PenchantT1Naval`) and "MissleShip - AA" (`PenchantT2Naval`), added to the shadowed
+  `factory_naval_builds.json` so those personalities still answer an air threat at sea,
+  and the GWO-only fallbacks in `factory_builds/penchants/subcommander.json`.
 - **`PenchantAI`, used both ways.** `new_game.js` appends it to the tags of every
   personality this mod defines; stock and Queller personalities never carry it.
-  Where Penchant personalities deliberately differ from stock (no combat fabber bots
-  outside Minelayer, the air-threat test on mobile anti-air, the Boom squad in the
-  Transfer templates), the stock entry carries `PenchantAI false` and the Penchant
-  version lives in `penchants/penchant_ai.json` gated `PenchantAI true`. Templates
-  cannot be gated, so the Penchant Transfer templates have their own names
-  (`PenchantAI_Land_Attack_*_Transfer`) and gated platoon builds point at them.
-- **Behaviour tags, always `boolean: true`, in `penchants/` subdirectories.** These are
+  Where Penchant personalities deliberately differ from stock (the air-threat test on
+  mobile anti-air, the Boom squad in the Transfer templates), the stock entry carries
+  `PenchantAI false` and the Penchant version lives in `penchants/penchant_ai.json`
+  gated `PenchantAI true`. The stock "Basic Combat Fabber Bot" is gated
+  `PenchantAI false` too, but its only replacement is
+  `factory_builds/penchants/minelayer.json` (gated `Minelayer true`), so Minelayer and
+  Fortress (which also carries `Minelayer`) are the only Penchant personalities that
+  build basic combat fabber bots. Templates cannot be gated, so the Penchant Transfer
+  templates have their own names (`PenchantAI_Land_Attack_*_Transfer`) and gated
+  platoon builds point at them.
+- **Behaviour tags, tested `boolean: true`, in `penchants/` subdirectories.** These are
   _enablers_: `Artillery`, `Fortress`, `Nuker`, `Minelayer`, `Tactical`, `Raider`,
   `Sniper`, `Heavy`, `Assault`, `Boomer`, `Infernodier`, `AllTerrain`, `Platoon`,
   `NoPercentage`, plus `GWAlly` (used only by `factory_builds/penchants/subcommander.json`,
@@ -154,10 +173,12 @@ makes them compose with the vanilla brain (and what keeps them orthogonal to Que
 which does fork via `ai_path`).
 
 The consequence to respect: shadowing `pa/ai/**` puts the mod's build data in front of
-_every_ vanilla AI, and the only thing keeping stock personalities behaving identically
-is that every clause the mod adds is a `Penchant*` tag test they fail. **Any edit to a
-shadowed base file that is not gated behind a `Penchant*` tag silently retunes the
-vanilla AI.** That is the single most important invariant in this repo.
+_every_ vanilla AI. Stock personalities still behave identically only because every
+clause the mod adds tests a tag they never carry (a `Penchant*` tag, `PenchantAI`, or
+`Raider`): a `false` gate passes for them, so the stock entry runs as in the base game,
+and an entry gated `true` never runs for them. **Any edit to a shadowed base file that
+is not expressed through such a gate silently retunes the vanilla AI.** That is the
+single most important invariant in this repo.
 
 Consequently, only the files that actually needed a gate are shipped here - unlike
 `GW-AI-Overhaul`'s `pa/ai_penchant/`, this is not a complete AI tree, and `unit_maps/`,
@@ -170,10 +191,15 @@ to `pa/ai/`.
 Shadowed files are full copies, not diffs, so a base-game patch to the parts this mod
 did not touch is silently lost until someone re-syncs by hand. When PA updates, re-diff
 every file under `pa/ai/` against the install and re-apply the `Penchant*` gates on top
-of the new base content. The three `penchants/penchant_ai.json` files are base copies
-too (base entry or template plus the Penchant change), so re-sync them from the same
-base entries. `modinfo.json`'s `build` field records the PA build the mod was
-last verified against.
+of the new base content. Two entries have no base counterpart and must be carried over
+by hand: "Frigate - AA" and "MissleShip - AA" in `factory_naval_builds.json`. The three
+`penchants/penchant_ai.json` files are base copies too (base entry or template plus the
+Penchant change), so re-sync them from the same base entries. Most other `penchants/`
+entries are also copies of a base entry with the penchant's changes - `Fortress - X`
+mirrors stock `X`, the NoPercentage templates mirror `Land_Attack_*` - and they go stale
+the same way: re-diff each against the base entry it mirrors and keep only the
+intentional differences (#33 and #39 are this kind of drift from build 124683).
+`modinfo.json`'s `build` field records the PA build the mod was last verified against.
 
 ### MLA-only personalities and `aipRandom`
 
@@ -232,16 +258,16 @@ AI tree (all base files copied, not just the gated ones), selected per-personali
 `pa/ai_penchant/<x>` there.
 
 The two copies differ in formatting by design (minified single-line there, 2-space
-Prettier here), so compare them as **parsed JSON**, never as text. On that basis they
-are meant to stay in sync and mostly are - at time of writing 28 of the 40 files match
-exactly - but they **do** drift, and the drift is silent because nothing checks it. Current known divergences are small and look accidental rather than
-intentional (e.g. `fabber_builds/penchants/artillery.json` tests
-`"Structure - Metal"` here vs `"Structure - MetalProduction"` in GWO;
-`platoon_builds/penchants/platoon_amphibious.json` entry names are prefixed
-`"Platoon - "` in GWO only). When changing a penchant file, diff the GWO counterpart
-and port the change deliberately in whichever direction is correct - and expect to
-find pre-existing differences unrelated to your change, which are not automatically
-yours to fix.
+Prettier here), so compare them as **parsed JSON**, never as text. They are meant to
+stay in sync, but they **do** drift, and the drift is silent because nothing checks it.
+On 2026-11-27, 25 of the 39 files both trees share were identical (the three
+`penchant_ai.json` files exist only here, by design). The drift runs both ways: this
+repo's resync of the shadowed base files to build 124683 (#30) has not reached GWO, and
+GWO has Penchant fixes that never came back here (its #542-#544, tracked here as
+issues #37, #33 and #35). When changing a penchant file, diff the GWO counterpart and
+port the change deliberately in whichever direction is correct, and before filing a
+Penchant bug, check whether GWO already fixed it. Expect to find pre-existing
+differences unrelated to your change, which are not automatically yours to fix.
 
 Do not port the `PenchantAI` gates. GWO's tree is read only by Penchant brains, whose
 tags come from GWO's own `shared/ai.js` and do not include `PenchantAI`, so a copied
