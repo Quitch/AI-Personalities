@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- AIP All-terrain, Boomer, Heavy, Infernodier, Raider, Sniper, and Tactical build Support Commanders
+- AIP Assault no longer builds Nano Swarm, artillery bots, tactical missile bots, or advanced combat fabber bots
+- AIP Tactical builds anti-nuke launchers
 - AIP Platoon forms its largest amphibious platoons
 
 ## v3.6.3 - 2026-10-17

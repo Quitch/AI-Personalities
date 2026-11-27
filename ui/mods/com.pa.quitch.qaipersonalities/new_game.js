@@ -54,6 +54,7 @@ function penchantAI() {
           "Assault",
           "PenchantT2Air",
           "PenchantT1Bot",
+          "PenchantT2Bot",
           "PenchantT1Vehicle",
           "PenchantT2Vehicle",
           "PenchantT1Naval",
