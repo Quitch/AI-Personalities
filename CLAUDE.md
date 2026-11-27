@@ -190,15 +190,17 @@ to `pa/ai/`.
 
 Shadowed files are full copies, not diffs, so a base-game patch to the parts this mod
 did not touch is silently lost until someone re-syncs by hand. When PA updates, re-diff
-every file under `pa/ai/` against the install and re-apply the `Penchant*` gates on top
-of the new base content. Two entries have no base counterpart and must be carried over
-by hand: "Frigate - AA" and "MissleShip - AA" in `factory_naval_builds.json`. The three
-`penchants/penchant_ai.json` files are base copies too (base entry or template plus the
-Penchant change), so re-sync them from the same base entries. Most other `penchants/`
-entries are also copies of a base entry with the penchant's changes - `Fortress - X`
-mirrors stock `X`, the NoPercentage templates mirror `Land_Attack_*` - and they go stale
-the same way: re-diff each against the base entry it mirrors and keep only the
-intentional differences (#33 and #39 are this kind of drift from build 124683).
+every file under `pa/ai/` against the install and re-apply the mod's gates (`Penchant*`,
+`PenchantAI` and `Raider`) on top of the new base content. Two entries have no base
+counterpart and must be carried over by hand: "Frigate - AA" and "MissleShip - AA" in
+`factory_naval_builds.json`. The three `penchants/penchant_ai.json` files are base
+copies too (base entry or template plus the Penchant change), so re-sync them from the
+same base entries. Most other `penchants/` entries are also copies of a base entry with
+the penchant's changes - `Fortress - X` mirrors stock `X`, the NoPercentage templates
+mirror `Land_Attack_*` - and they go stale the same way: re-diff each against the base
+entry it mirrors and keep only the intentional differences. Issue #33 is this kind of
+drift from build 124683. A copy can also keep an old mod edit that a re-sync removed
+from the stock entry: issue #39.
 `modinfo.json`'s `build` field records the PA build the mod was last verified against.
 
 ### MLA-only personalities and `aipRandom`
