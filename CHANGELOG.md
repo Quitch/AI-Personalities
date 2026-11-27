@@ -2,7 +2,7 @@
 
 ## Unreleased
 
-- AIP Heavy, Infernodier, Sniper, and Tactical add mobile radar and anti-nuke to land platoons, keep tactical missile bots with their artillery, and send hover tanks and Booms through teleporters
+- AIP Heavy, Infernodier, Sniper, and Tactical add mobile radar and anti-nuke to land platoons, keep tactical missile bots with their artillery, and send Booms through teleporters
 
 ## v3.6.3 - 2026-10-17
 
