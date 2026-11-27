@@ -144,7 +144,7 @@ All personalities are based on Absurd difficulty.
 
 ### Rush
 
-- Remains at T1 for longer.
+- Stays at T1 a little longer.
 - More likely to attack.
 - Less likely to retreat.
 
