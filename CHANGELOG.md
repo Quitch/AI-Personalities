@@ -3,13 +3,14 @@
 ## Unreleased
 
 - AIP All-terrain, Boomer, Heavy, Infernodier, Raider, Sniper, and Tactical build Support Commanders
-- AIP Assault no longer builds Nano Swarm, artillery bots, tactical missile bots, or advanced combat fabber bots
+- AIP Assault no longer builds Locusts, artillery bots, tactical missile bots, or advanced combat fabber bots
 - AIP Tactical builds anti-nuke launchers
 - AIP Platoon forms its largest amphibious platoons
 - AIP Heavy, Infernodier, Sniper, and Tactical add mobile radar and anti-nuke to land platoons, keep tactical missile bots with their artillery, and send Booms through teleporters
 - AIP Legonis Machina uses the Galactic War boss's unit mix: more naval, less land
 - AIP personalities send at most one mobile anti-nuke with each teleporting land platoon, and AIP Heavy, Infernodier, Sniper, and Tactical send at most one with each land platoon
 - AIP personalities send Locusts through teleporters
+- AIP personalities count only units that can join when they form land platoons
 
 ## v3.6.3 - 2026-10-17
 
