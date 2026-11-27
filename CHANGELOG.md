@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## Unreleased
+
+- AIP Heavy, Infernodier, Sniper, and Tactical add mobile radar and anti-nuke to land platoons, keep tactical missile bots with their artillery, and send hover tanks and Booms through teleporters
+
 ## v3.6.3 - 2026-10-17
 
 - Stock AI personalities behave as in the unmodded game again while Penchant AI is enabled: they build combat fabber bots, build anti-air without waiting for enemy air, add mobile anti-nuke and radar to land platoons, and do not send Booms through teleporters
