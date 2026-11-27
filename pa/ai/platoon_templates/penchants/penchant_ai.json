@@ -33,7 +33,7 @@
           "squad": "Artillery"
         },
         {
-          "unit_types": "((Tank | Bot) & Mobile & Heavy) - Titan",
+          "unit_types": "((Tank | Bot) & Mobile & Heavy) - NukeDefense - Titan",
           "min_count": 0,
           "percent": 0.5,
           "squad": "Close"
@@ -103,7 +103,7 @@
           "squad": "Artillery"
         },
         {
-          "unit_types": "((Tank | Bot) & Mobile & Heavy) - Titan",
+          "unit_types": "((Tank | Bot) & Mobile & Heavy) - NukeDefense - Titan",
           "min_count": 0,
           "percent": 0.5,
           "squad": "Close"

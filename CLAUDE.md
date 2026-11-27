@@ -209,7 +209,10 @@ Max template plus the stock transfer `Hover` and the Penchant AI Boom and Locust
 stale the same way: re-diff each against the base entry it mirrors and keep
 only the intentional differences. Issue #33 was this kind of drift from build 124683. A
 copy can also keep an old mod edit that a re-sync removed from the stock entry, as
-"Tactical - Advanced Air Defense" did (#39).
+"Tactical - Advanced Air Defense" did (#39). The Close row of every Penchant-owned land
+template (NoPercentage, and the Penchant AI Transfer templates) also subtracts
+`NukeDefense`, unlike base, so a platoon takes at most the one Ward its Defense row
+allows (#52).
 `modinfo.json`'s `build` field records the PA build the mod was last verified against.
 
 ### MLA-only personalities and `aipRandom`
@@ -275,7 +278,7 @@ On 2026-11-27, 25 of the 39 files both trees share were identical (the three
 `penchant_ai.json` files exist only here, by design). The drift has run both ways. This
 repo's resync of the shadowed base files to build 124683 (#30) has not reached GWO.
 GWO's Penchant fixes #542-#544 came back here as #37, #33 and #35. GWO tracks the fixes
-made here as #705 (#36), #706 (#33), #707 (#38), #708 (#42), #711 (#39) and #725 (#53). When
+made here as #705 (#36), #706 (#33), #707 (#38), #708 (#42), #711 (#39), #724 (#52) and #725 (#53). When
 changing a penchant file, diff the GWO counterpart and port the change deliberately in
 whichever direction is correct, and before filing a Penchant bug, check whether GWO
 already fixed it. Expect to find pre-existing

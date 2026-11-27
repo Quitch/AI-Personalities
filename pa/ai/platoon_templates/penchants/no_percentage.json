@@ -21,7 +21,7 @@
           "squad": "Artillery"
         },
         {
-          "unit_types": "((Tank | Bot) & Mobile & Heavy) - Titan",
+          "unit_types": "((Tank | Bot) & Mobile & Heavy) - NukeDefense - Titan",
           "min_count": 0,
           "max_count": 3,
           "squad": "Close"
@@ -73,7 +73,7 @@
           "squad": "Artillery"
         },
         {
-          "unit_types": "((Tank | Bot) & Mobile & Heavy) - Titan",
+          "unit_types": "((Tank | Bot) & Mobile & Heavy) - NukeDefense - Titan",
           "min_count": 0,
           "max_count": 10,
           "squad": "Close"
@@ -125,7 +125,7 @@
           "squad": "Artillery"
         },
         {
-          "unit_types": "((Tank | Bot) & Mobile & Heavy) - Titan",
+          "unit_types": "((Tank | Bot) & Mobile & Heavy) - NukeDefense - Titan",
           "min_count": 0,
           "max_count": 20,
           "squad": "Close"
@@ -177,7 +177,7 @@
           "squad": "Artillery"
         },
         {
-          "unit_types": "((Tank | Bot) & Mobile & Heavy) - Titan",
+          "unit_types": "((Tank | Bot) & Mobile & Heavy) - NukeDefense - Titan",
           "min_count": 0,
           "max_count": 40,
           "squad": "Close"
@@ -229,7 +229,7 @@
           "squad": "Artillery"
         },
         {
-          "unit_types": "((Tank | Bot) & Mobile & Heavy) - Titan",
+          "unit_types": "((Tank | Bot) & Mobile & Heavy) - NukeDefense - Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "Close"
@@ -293,7 +293,7 @@
           "squad": "Artillery"
         },
         {
-          "unit_types": "((Tank | Bot) & Mobile & Heavy) - Titan",
+          "unit_types": "((Tank | Bot) & Mobile & Heavy) - NukeDefense - Titan",
           "min_count": 0,
           "max_count": 40,
           "squad": "Close"
@@ -357,7 +357,7 @@
           "squad": "Artillery"
         },
         {
-          "unit_types": "((Tank | Bot) & Mobile & Heavy) - Titan",
+          "unit_types": "((Tank | Bot) & Mobile & Heavy) - NukeDefense - Titan",
           "min_count": 0,
           "max_count": -1,
           "squad": "Close"
